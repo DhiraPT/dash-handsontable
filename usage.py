@@ -1,12 +1,16 @@
-import dash_handsontable
+"""The code below is an example of how to use the HotTable component in a Dash app."""
+
 import dash
 from dash import html
 from dash.dependencies import Input, Output
+from dash_handsontable import HotTable
+
 
 app = dash.Dash(__name__)
+app.title = 'Dash Handsontable'
 
 app.layout = html.Div([
-    dash_handsontable.HotTable(
+    HotTable(
         id='table',
         data=[
             ['', 'Tesla', 'Volvo', 'Toyota', 'Ford'],
