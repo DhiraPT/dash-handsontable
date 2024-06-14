@@ -12,6 +12,11 @@ type Props = HotTableProps & DashComponentProps & {
     exportDataParams: {
         filename?: string;
     };
+    getData: { row?: number, col?: number, row2?: number, col2?: number } | false;
+    currentData: any[][];
+    getDataAtRow: { row: number, prop?: string } | false;
+    currentDataAtRow: any[];
+    selectedCells: [number, number, number, number][][] | null;
 };
 
 /**
@@ -37,15 +42,64 @@ const HotTable = (props: Props) => {
         });
     };
 
+    const handleGetData = (row?: number, col?: number, row2?: number, col2?: number) => {
+        if (hotRef.current) {
+            const hotInstance = hotRef.current.hotInstance;
+            const data = hotInstance.getData(row, col, row2, col2);
+            props.setProps({
+                currentData: data,
+            });
+        }
+        props.setProps({
+            getData: false,
+        });
+    }
+
+    const handleGetDataAtRow = (row: number, prop?: string) => {
+        if (hotRef.current) {
+            const hotInstance = hotRef.current.hotInstance;
+            const data = hotInstance.getDataAtRow(row, prop);
+            props.setProps({
+                currentDataAtRow: data,
+            });
+        }
+        props.setProps({
+            getDataAtRow: false,
+        });
+    }
+
     useEffect(() => {
         if (props.exportData) {
             handleExportData(props.exportDataParams);
         }
     }, [props.exportData]);
 
+    useEffect(() => {
+        if (props.getData) {
+            handleGetData(props.getData.row, props.getData.col, props.getData.row2, props.getData.col2);
+        }
+    }, [props.getData]);
+
+    useEffect(() => {
+        if (props.getDataAtRow) {
+            handleGetDataAtRow(props.getDataAtRow.row, props.getDataAtRow.prop);
+        }
+    }, [props.getDataAtRow]);
+
+    const handleAfterSelection = () => {
+        if (hotRef.current) {
+            const hotInstance = hotRef.current.hotInstance;
+            const selectedCells = hotInstance.getSelected();
+            props.setProps({
+                selectedCells: selectedCells,
+            });
+        }
+    };
+
     return (
         <ReactHotTable
             ref={hotRef}
+            afterSelection={handleAfterSelection}
             {...restProps}
         />
     );
@@ -55,6 +109,11 @@ HotTable.defaultProps = {
     ...ReactHotTable.defaultProps,
     exportData: false,
     exportDataParams: {},
+    getData: false,
+    currentData: [],
+    getDataAtRow: false,
+    currentDataAtRow: [],
+    selectedCells: null,
 };
 
 export default HotTable;

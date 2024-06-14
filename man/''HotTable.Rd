@@ -116,6 +116,7 @@ columnSummary=NULL, columns=NULL,
 commentedCellClassName=NULL, comments=NULL, construct=NULL,
 contextMenu=NULL, copyPaste=NULL, copyable=NULL,
 correctFormat=NULL, currentColClassName=NULL,
+currentData=NULL, currentDataAtRow=NULL,
 currentHeaderClassName=NULL, currentRowClassName=NULL,
 customBorders=NULL, data=NULL, dataSchema=NULL,
 dateFormat=NULL, datePickerConfig=NULL, defaultDate=NULL,
@@ -125,14 +126,15 @@ enterMoves=NULL, exportData=NULL, exportDataParams=NULL,
 fillHandle=NULL, filter=NULL, filteringCaseSensitive=NULL,
 filters=NULL, fixedColumnsLeft=NULL, fixedColumnsStart=NULL,
 fixedRowsBottom=NULL, fixedRowsTop=NULL, formulas=NULL,
-fragmentSelection=NULL, height=NULL, hiddenColumns=NULL,
-hiddenRows=NULL, imeFastEdit=NULL, init=NULL,
-invalidCellClassName=NULL, isEmptyCol=NULL, isEmptyRow=NULL,
-label=NULL, language=NULL, layoutDirection=NULL,
-licenseKey=NULL, locale=NULL, manualColumnFreeze=NULL,
-manualColumnMove=NULL, manualColumnResize=NULL,
-manualRowMove=NULL, manualRowResize=NULL, maxCols=NULL,
-maxRows=NULL, mergeCells=NULL, minCols=NULL, minRows=NULL,
+fragmentSelection=NULL, getData=NULL, getDataAtRow=NULL,
+height=NULL, hiddenColumns=NULL, hiddenRows=NULL,
+imeFastEdit=NULL, init=NULL, invalidCellClassName=NULL,
+isEmptyCol=NULL, isEmptyRow=NULL, label=NULL, language=NULL,
+layoutDirection=NULL, licenseKey=NULL, locale=NULL,
+manualColumnFreeze=NULL, manualColumnMove=NULL,
+manualColumnResize=NULL, manualRowMove=NULL,
+manualRowResize=NULL, maxCols=NULL, maxRows=NULL,
+mergeCells=NULL, minCols=NULL, minRows=NULL,
 minSpareCols=NULL, minSpareRows=NULL,
 modifyAutoColumnSizeSeed=NULL, modifyAutofillRange=NULL,
 modifyColHeader=NULL, modifyColWidth=NULL,
@@ -155,8 +157,8 @@ preventOverflow=NULL, preventWheel=NULL, readOnly=NULL,
 readOnlyCellClassName=NULL, renderAllColumns=NULL,
 renderAllRows=NULL, renderer=NULL, rowHeaderWidth=NULL,
 rowHeaders=NULL, rowHeights=NULL, search=NULL,
-selectOptions=NULL, selectionMode=NULL, settings=NULL,
-skipColumnOnPaste=NULL, skipRowOnPaste=NULL,
+selectOptions=NULL, selectedCells=NULL, selectionMode=NULL,
+settings=NULL, skipColumnOnPaste=NULL, skipRowOnPaste=NULL,
 sortByRelevance=NULL, source=NULL, startCols=NULL,
 startRows=NULL, stretchH=NULL, strict=NULL, style=NULL,
 tabMoves=NULL, tabNavigation=NULL, tableClassName=NULL,
@@ -596,6 +598,10 @@ width=NULL, wordWrap=NULL)
 \item{correctFormat}{Logical. }
 
 \item{currentColClassName}{Character. }
+
+\item{currentData}{List of list of logical | numeric | character | named list | unnamed listss. }
+
+\item{currentDataAtRow}{List of logical | numeric | character | named list | unnamed lists. }
 
 \item{currentHeaderClassName}{Character. }
 
@@ -3302,7 +3308,7 @@ those elements have the following types:
   - tabindex (numeric; required)
   - blur (required)
   - focus (required)
-  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3408,7 +3414,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3417,13 +3423,13 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - setdefaultdate (logical; optional): make the defaultdate the initial selected value.
   - firstday (numeric; optional): first day of the week (0: sunday, 1: monday, etc).
   - mindate (optional): the earliest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3529,7 +3535,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3538,11 +3544,11 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - maxdate (optional): the latest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3648,7 +3654,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3657,7 +3663,7 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - disableweekends (logical; optional): disallow selection of saturdays and sundays.
@@ -3743,6 +3749,18 @@ those elements have the following types:
   - sheetname (character; optional). }
 
 \item{fragmentSelection}{Logical | numeric | character | named list | unnamed list. }
+
+\item{getData}{Lists containing elements 'row', 'col', 'row2', 'col2'.
+those elements have the following types:
+  - row (numeric; optional)
+  - col (numeric; optional)
+  - row2 (numeric; optional)
+  - col2 (numeric; optional). }
+
+\item{getDataAtRow}{Lists containing elements 'row', 'prop'.
+those elements have the following types:
+  - row (numeric; required)
+  - prop (character; optional). }
 
 \item{height}{Character | numeric. }
 
@@ -3892,6 +3910,8 @@ those elements have the following types:
 \item{search}{Logical | numeric | character | named list | unnamed list. }
 
 \item{selectOptions}{List of characters. }
+
+\item{selectedCells}{List of lists. }
 
 \item{selectionMode}{A value equal to: 'single', 'range', 'multiple'. }
 
@@ -6628,7 +6648,7 @@ those elements have the following types:
   - tabindex (numeric; required)
   - blur (required)
   - focus (required)
-  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6734,7 +6754,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -6743,13 +6763,13 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - setdefaultdate (logical; optional): make the defaultdate the initial selected value.
   - firstday (numeric; optional): first day of the week (0: sunday, 1: monday, etc).
   - mindate (optional): the earliest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6855,7 +6875,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -6864,11 +6884,11 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - maxdate (optional): the latest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4735'.
+date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6974,7 +6994,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4735 (required): converts a date object to a string.
+  - __@toprimitive@4742 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -6983,7 +7003,7 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4735 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
 those elements have the following types:
 
   - disableweekends (logical; optional): disallow selection of saturdays and sundays.

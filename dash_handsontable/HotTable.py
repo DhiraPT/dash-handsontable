@@ -76,6 +76,10 @@ Keyword arguments:
 
 - currentColClassName (string; optional)
 
+- currentData (list of list of boolean | number | string | dict | listss; optional)
+
+- currentDataAtRow (list of boolean | number | string | dict | lists; optional)
+
 - currentHeaderClassName (string; optional)
 
 - currentRowClassName (string; optional)
@@ -2182,7 +2186,7 @@ Keyword arguments:
 
         `defaultDate` is a dict with keys:
 
-        - __@toPrimitive@4735 (dict; required):
+        - __@toPrimitive@4742 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -2192,7 +2196,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4735` is a dict with keys:
+            `__@toPrimitive@4742` is a dict with keys:
 
 
         - getDate (required):
@@ -4594,7 +4598,7 @@ Keyword arguments:
 
         `maxDate` is a dict with keys:
 
-        - __@toPrimitive@4735 (dict; required):
+        - __@toPrimitive@4742 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -4604,7 +4608,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4735` is a dict with keys:
+            `__@toPrimitive@4742` is a dict with keys:
 
 
         - getDate (required):
@@ -4879,7 +4883,7 @@ Keyword arguments:
 
         `minDate` is a dict with keys:
 
-        - __@toPrimitive@4735 (dict; required):
+        - __@toPrimitive@4742 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -4889,7 +4893,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4735` is a dict with keys:
+            `__@toPrimitive@4742` is a dict with keys:
 
 
         - getDate (required):
@@ -7348,6 +7352,26 @@ Keyword arguments:
 
 - fragmentSelection (boolean | number | string | dict | list; optional)
 
+- getData (dict; default False)
+
+    `getData` is a dict with keys:
+
+    - col (number; optional)
+
+    - col2 (number; optional)
+
+    - row (number; optional)
+
+    - row2 (number; optional)
+
+- getDataAtRow (dict; default False)
+
+    `getDataAtRow` is a dict with keys:
+
+    - prop (string; optional)
+
+    - row (number; required)
+
 - height (string | number; optional)
 
 - hiddenColumns (boolean | number | string | dict | list; optional)
@@ -7451,6 +7475,8 @@ Keyword arguments:
 - search (boolean | number | string | dict | list; optional)
 
 - selectOptions (list of strings; optional)
+
+- selectedCells (list of list of list of 4 elements: [number, number, number, number]ss; optional)
 
 - selectionMode (a value equal to: 'single', 'range', 'multiple'; optional)
 
@@ -10010,7 +10036,7 @@ Keyword arguments:
 
             `defaultDate` is a dict with keys:
 
-            - __@toPrimitive@4735 (dict; required):
+            - __@toPrimitive@4742 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -10021,7 +10047,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4735` is a dict with keys:
+                `__@toPrimitive@4742` is a dict with keys:
 
 
             - getDate (required):
@@ -12456,7 +12482,7 @@ Keyword arguments:
 
             `maxDate` is a dict with keys:
 
-            - __@toPrimitive@4735 (dict; required):
+            - __@toPrimitive@4742 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -12467,7 +12493,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4735` is a dict with keys:
+                `__@toPrimitive@4742` is a dict with keys:
 
 
             - getDate (required):
@@ -12751,7 +12777,7 @@ Keyword arguments:
 
             `minDate` is a dict with keys:
 
-            - __@toPrimitive@4735 (dict; required):
+            - __@toPrimitive@4742 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -12762,7 +12788,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4735` is a dict with keys:
+                `__@toPrimitive@4742` is a dict with keys:
 
 
             - getDate (required):
@@ -22726,9 +22752,9 @@ they may still be used as keyword arguments."""
     _type = 'HotTable'
     @_explicitize_args
     def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, settings=Component.UNDEFINED, activeHeaderClassName=Component.UNDEFINED, allowEmpty=Component.UNDEFINED, allowHtml=Component.UNDEFINED, allowInsertColumn=Component.UNDEFINED, allowInsertRow=Component.UNDEFINED, allowInvalid=Component.UNDEFINED, allowRemoveColumn=Component.UNDEFINED, allowRemoveRow=Component.UNDEFINED, ariaTags=Component.UNDEFINED, autoColumnSize=Component.UNDEFINED, autoRowSize=Component.UNDEFINED, autoWrapCol=Component.UNDEFINED, autoWrapRow=Component.UNDEFINED, bindRowsWithHeaders=Component.UNDEFINED, cell=Component.UNDEFINED, cells=Component.UNDEFINED, checkedTemplate=Component.UNDEFINED, colHeaders=Component.UNDEFINED, collapsibleColumns=Component.UNDEFINED, columnHeaderHeight=Component.UNDEFINED, columns=Component.UNDEFINED, columnSorting=Component.UNDEFINED, columnSummary=Component.UNDEFINED, colWidths=Component.UNDEFINED, commentedCellClassName=Component.UNDEFINED, comments=Component.UNDEFINED, contextMenu=Component.UNDEFINED, copyable=Component.UNDEFINED, copyPaste=Component.UNDEFINED, correctFormat=Component.UNDEFINED, currentColClassName=Component.UNDEFINED, currentHeaderClassName=Component.UNDEFINED, currentRowClassName=Component.UNDEFINED, customBorders=Component.UNDEFINED, data=Component.UNDEFINED, dataSchema=Component.UNDEFINED, dateFormat=Component.UNDEFINED, datePickerConfig=Component.UNDEFINED, defaultDate=Component.UNDEFINED, tabNavigation=Component.UNDEFINED, disableVisualSelection=Component.UNDEFINED, dragToScroll=Component.UNDEFINED, dropdownMenu=Component.UNDEFINED, editor=Component.UNDEFINED, enterBeginsEditing=Component.UNDEFINED, enterMoves=Component.UNDEFINED, fillHandle=Component.UNDEFINED, filter=Component.UNDEFINED, filteringCaseSensitive=Component.UNDEFINED, filters=Component.UNDEFINED, fixedColumnsLeft=Component.UNDEFINED, fixedColumnsStart=Component.UNDEFINED, fixedRowsBottom=Component.UNDEFINED, fixedRowsTop=Component.UNDEFINED, formulas=Component.UNDEFINED, fragmentSelection=Component.UNDEFINED, height=Component.UNDEFINED, hiddenColumns=Component.UNDEFINED, hiddenRows=Component.UNDEFINED, invalidCellClassName=Component.UNDEFINED, imeFastEdit=Component.UNDEFINED, isEmptyCol=Component.UNDEFINED, isEmptyRow=Component.UNDEFINED, label=Component.UNDEFINED, language=Component.UNDEFINED, locale=Component.UNDEFINED, layoutDirection=Component.UNDEFINED, licenseKey=Component.UNDEFINED, manualColumnFreeze=Component.UNDEFINED, manualColumnMove=Component.UNDEFINED, manualColumnResize=Component.UNDEFINED, manualRowMove=Component.UNDEFINED, manualRowResize=Component.UNDEFINED, maxCols=Component.UNDEFINED, maxRows=Component.UNDEFINED, mergeCells=Component.UNDEFINED, minCols=Component.UNDEFINED, minRows=Component.UNDEFINED, minSpareCols=Component.UNDEFINED, minSpareRows=Component.UNDEFINED, multiColumnSorting=Component.UNDEFINED, navigableHeaders=Component.UNDEFINED, nestedHeaders=Component.UNDEFINED, nestedRows=Component.UNDEFINED, noWordWrapClassName=Component.UNDEFINED, numericFormat=Component.UNDEFINED, observeDOMVisibility=Component.UNDEFINED, outsideClickDeselects=Component.UNDEFINED, persistentState=Component.UNDEFINED, placeholder=Component.UNDEFINED, placeholderCellClassName=Component.UNDEFINED, preventOverflow=Component.UNDEFINED, preventWheel=Component.UNDEFINED, readOnly=Component.UNDEFINED, readOnlyCellClassName=Component.UNDEFINED, renderAllColumns=Component.UNDEFINED, renderAllRows=Component.UNDEFINED, renderer=Component.UNDEFINED, rowHeaders=Component.UNDEFINED, rowHeaderWidth=Component.UNDEFINED, rowHeights=Component.UNDEFINED, search=Component.UNDEFINED, selectionMode=Component.UNDEFINED, selectOptions=Component.UNDEFINED, skipColumnOnPaste=Component.UNDEFINED, skipRowOnPaste=Component.UNDEFINED, sortByRelevance=Component.UNDEFINED, source=Component.UNDEFINED, startCols=Component.UNDEFINED, startRows=Component.UNDEFINED, stretchH=Component.UNDEFINED, strict=Component.UNDEFINED, tableClassName=Component.UNDEFINED, tabMoves=Component.UNDEFINED, title=Component.UNDEFINED, trimDropdown=Component.UNDEFINED, trimRows=Component.UNDEFINED, trimWhitespace=Component.UNDEFINED, type=Component.UNDEFINED, uncheckedTemplate=Component.UNDEFINED, undo=Component.UNDEFINED, validator=Component.UNDEFINED, viewportColumnRenderingOffset=Component.UNDEFINED, viewportRowRenderingOffset=Component.UNDEFINED, visibleRows=Component.UNDEFINED, width=Component.UNDEFINED, wordWrap=Component.UNDEFINED, afterAddChild=Component.UNDEFINED, afterAutofill=Component.UNDEFINED, afterBeginEditing=Component.UNDEFINED, afterCellMetaReset=Component.UNDEFINED, afterChange=Component.UNDEFINED, afterChangesObserved=Component.UNDEFINED, afterColumnCollapse=Component.UNDEFINED, afterColumnExpand=Component.UNDEFINED, afterColumnFreeze=Component.UNDEFINED, afterColumnMove=Component.UNDEFINED, afterColumnResize=Component.UNDEFINED, afterColumnSequenceChange=Component.UNDEFINED, afterColumnSort=Component.UNDEFINED, afterColumnUnfreeze=Component.UNDEFINED, afterContextMenuDefaultOptions=Component.UNDEFINED, afterContextMenuHide=Component.UNDEFINED, afterContextMenuShow=Component.UNDEFINED, afterCopy=Component.UNDEFINED, afterCopyLimit=Component.UNDEFINED, afterCreateCol=Component.UNDEFINED, afterCreateRow=Component.UNDEFINED, afterCut=Component.UNDEFINED, afterDeselect=Component.UNDEFINED, afterDestroy=Component.UNDEFINED, afterDetachChild=Component.UNDEFINED, afterDocumentKeyDown=Component.UNDEFINED, afterDrawSelection=Component.UNDEFINED, afterDropdownMenuDefaultOptions=Component.UNDEFINED, afterDropdownMenuHide=Component.UNDEFINED, afterDropdownMenuShow=Component.UNDEFINED, afterFilter=Component.UNDEFINED, afterFormulasValuesUpdate=Component.UNDEFINED, afterGetCellMeta=Component.UNDEFINED, afterGetColHeader=Component.UNDEFINED, afterGetColumnHeaderRenderers=Component.UNDEFINED, afterGetRowHeader=Component.UNDEFINED, afterGetRowHeaderRenderers=Component.UNDEFINED, afterHideColumns=Component.UNDEFINED, afterHideRows=Component.UNDEFINED, afterInit=Component.UNDEFINED, afterLanguageChange=Component.UNDEFINED, afterListen=Component.UNDEFINED, afterLoadData=Component.UNDEFINED, afterMergeCells=Component.UNDEFINED, afterModifyTransformEnd=Component.UNDEFINED, afterModifyTransformFocus=Component.UNDEFINED, afterModifyTransformStart=Component.UNDEFINED, afterMomentumScroll=Component.UNDEFINED, afterNamedExpressionAdded=Component.UNDEFINED, afterNamedExpressionRemoved=Component.UNDEFINED, afterOnCellContextMenu=Component.UNDEFINED, afterOnCellCornerDblClick=Component.UNDEFINED, afterOnCellCornerMouseDown=Component.UNDEFINED, afterOnCellMouseDown=Component.UNDEFINED, afterOnCellMouseOut=Component.UNDEFINED, afterOnCellMouseOver=Component.UNDEFINED, afterOnCellMouseUp=Component.UNDEFINED, afterPaste=Component.UNDEFINED, afterPluginsInitialized=Component.UNDEFINED, afterRedo=Component.UNDEFINED, afterRedoStackChange=Component.UNDEFINED, afterRefreshDimensions=Component.UNDEFINED, afterRemoveCellMeta=Component.UNDEFINED, afterRemoveCol=Component.UNDEFINED, afterRemoveRow=Component.UNDEFINED, afterRender=Component.UNDEFINED, afterRenderer=Component.UNDEFINED, afterRowMove=Component.UNDEFINED, afterRowResize=Component.UNDEFINED, afterRowSequenceChange=Component.UNDEFINED, afterScrollHorizontally=Component.UNDEFINED, afterScrollVertically=Component.UNDEFINED, afterScroll=Component.UNDEFINED, afterSelectColumns=Component.UNDEFINED, afterSelection=Component.UNDEFINED, afterSelectionByProp=Component.UNDEFINED, afterSelectionEnd=Component.UNDEFINED, afterSelectionEndByProp=Component.UNDEFINED, afterSelectionFocusSet=Component.UNDEFINED, afterSelectRows=Component.UNDEFINED, afterSetCellMeta=Component.UNDEFINED, afterSetDataAtCell=Component.UNDEFINED, afterSetDataAtRowProp=Component.UNDEFINED, afterSetSourceDataAtCell=Component.UNDEFINED, afterSheetAdded=Component.UNDEFINED, afterSheetRemoved=Component.UNDEFINED, afterSheetRenamed=Component.UNDEFINED, afterTrimRow=Component.UNDEFINED, afterUndo=Component.UNDEFINED, afterUndoStackChange=Component.UNDEFINED, afterUnhideColumns=Component.UNDEFINED, afterUnhideRows=Component.UNDEFINED, afterUnlisten=Component.UNDEFINED, afterUnmergeCells=Component.UNDEFINED, afterUntrimRow=Component.UNDEFINED, afterUpdateData=Component.UNDEFINED, afterUpdateSettings=Component.UNDEFINED, afterValidate=Component.UNDEFINED, afterViewportColumnCalculatorOverride=Component.UNDEFINED, afterViewportRowCalculatorOverride=Component.UNDEFINED, afterViewRender=Component.UNDEFINED, beforeAddChild=Component.UNDEFINED, beforeAutofill=Component.UNDEFINED, beforeBeginEditing=Component.UNDEFINED, beforeCellAlignment=Component.UNDEFINED, beforeChange=Component.UNDEFINED, beforeChangeRender=Component.UNDEFINED, beforeColumnCollapse=Component.UNDEFINED, beforeColumnExpand=Component.UNDEFINED, beforeColumnFreeze=Component.UNDEFINED, beforeColumnMove=Component.UNDEFINED, beforeColumnResize=Component.UNDEFINED, beforeColumnSort=Component.UNDEFINED, beforeColumnWrap=Component.UNDEFINED, beforeColumnUnfreeze=Component.UNDEFINED, beforeContextMenuSetItems=Component.UNDEFINED, beforeContextMenuShow=Component.UNDEFINED, beforeCopy=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
+        self._prop_names = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentData', 'currentDataAtRow', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'getData', 'getDataAtRow', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectedCells', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
+        self.available_properties = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentData', 'currentDataAtRow', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'getData', 'getDataAtRow', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectedCells', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

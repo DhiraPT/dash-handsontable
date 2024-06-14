@@ -44,6 +44,8 @@ Keyword arguments:
 - `copyable` (Bool; optional)
 - `correctFormat` (Bool; optional)
 - `currentColClassName` (String; optional)
+- `currentData` (Array of Array of Bool | Real | String | Dict | Arrayss; optional)
+- `currentDataAtRow` (Array of Bool | Real | String | Dict | Arrays; optional)
 - `currentHeaderClassName` (String; optional)
 - `currentRowClassName` (String; optional)
 - `customBorders` (Bool | Real | String | Dict | Array; optional)
@@ -2743,7 +2745,7 @@ Those elements have the following types:
   - `tabIndex` (Real; required)
   - `blur` (required)
   - `focus` (required)
-  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -2849,7 +2851,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -2858,13 +2860,13 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `setDefaultDate` (Bool; optional): Make the defaultDate the initial selected value.
   - `firstDay` (Real; optional): First day of the week (0: Sunday, 1: Monday, etc).
   - `minDate` (optional): The earliest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -2970,7 +2972,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -2979,11 +2981,11 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `maxDate` (optional): The latest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -3089,7 +3091,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -3098,7 +3100,7 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `disableWeekends` (Bool; optional): Disallow selection of Saturdays and Sundays.
@@ -3165,6 +3167,16 @@ Those elements have the following types:
   - `engine` (Bool | Real | String | Dict | Array; required)
   - `sheetName` (String; optional)
 - `fragmentSelection` (Bool | Real | String | Dict | Array; optional)
+- `getData` (optional): . getData has the following type: lists containing elements 'row', 'col', 'row2', 'col2'.
+Those elements have the following types:
+  - `row` (Real; optional)
+  - `col` (Real; optional)
+  - `row2` (Real; optional)
+  - `col2` (Real; optional)
+- `getDataAtRow` (optional): . getDataAtRow has the following type: lists containing elements 'row', 'prop'.
+Those elements have the following types:
+  - `row` (Real; required)
+  - `prop` (String; optional)
 - `height` (String | Real; optional)
 - `hiddenColumns` (Bool | Real | String | Dict | Array; optional)
 - `hiddenRows` (Bool | Real | String | Dict | Array; optional)
@@ -3217,6 +3229,7 @@ Those elements have the following types:
 - `rowHeights` (String | Real | Array of Strings | Array of Reals; optional)
 - `search` (Bool | Real | String | Dict | Array; optional)
 - `selectOptions` (Array of Strings; optional)
+- `selectedCells` (Array of Arrays; optional)
 - `selectionMode` (a value equal to: 'single', 'range', 'multiple'; optional)
 - `settings` (optional): . settings has the following type: lists containing elements 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'cells', 'checkedTemplate', 'className', 'colHeaders', 'collapsibleColumns', 'columnHeaderHeight', 'columns', 'columnSorting', 'columnSummary', 'colWidths', 'commentedCellClassName', 'comments', 'contextMenu', 'copyable', 'copyPaste', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'tabNavigation', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'height', 'hiddenColumns', 'hiddenRows', 'invalidCellClassName', 'imeFastEdit', 'isEmptyCol', 'isEmptyRow', 'label', 'language', 'locale', 'layoutDirection', 'licenseKey', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaders', 'rowHeaderWidth', 'rowHeights', 'search', 'selectionMode', 'selectOptions', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'tableClassName', 'tabMoves', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap', 'afterAddChild', 'afterAutofill', 'afterBeginEditing', 'afterCellMetaReset', 'afterChange', 'afterChangesObserved', 'afterColumnCollapse', 'afterColumnExpand', 'afterColumnFreeze', 'afterColumnMove', 'afterColumnResize', 'afterColumnSequenceChange', 'afterColumnSort', 'afterColumnUnfreeze', 'afterContextMenuDefaultOptions', 'afterContextMenuHide', 'afterContextMenuShow', 'afterCopy', 'afterCopyLimit', 'afterCreateCol', 'afterCreateRow', 'afterCut', 'afterDeselect', 'afterDestroy', 'afterDetachChild', 'afterDocumentKeyDown', 'afterDrawSelection', 'afterDropdownMenuDefaultOptions', 'afterDropdownMenuHide', 'afterDropdownMenuShow', 'afterFilter', 'afterFormulasValuesUpdate', 'afterGetCellMeta', 'afterGetColHeader', 'afterGetColumnHeaderRenderers', 'afterGetRowHeader', 'afterGetRowHeaderRenderers', 'afterHideColumns', 'afterHideRows', 'afterInit', 'afterLanguageChange', 'afterListen', 'afterLoadData', 'afterMergeCells', 'afterModifyTransformEnd', 'afterModifyTransformFocus', 'afterModifyTransformStart', 'afterMomentumScroll', 'afterNamedExpressionAdded', 'afterNamedExpressionRemoved', 'afterOnCellContextMenu', 'afterOnCellCornerDblClick', 'afterOnCellCornerMouseDown', 'afterOnCellMouseDown', 'afterOnCellMouseOut', 'afterOnCellMouseOver', 'afterOnCellMouseUp', 'afterPaste', 'afterPluginsInitialized', 'afterRedo', 'afterRedoStackChange', 'afterRefreshDimensions', 'afterRemoveCellMeta', 'afterRemoveCol', 'afterRemoveRow', 'afterRender', 'afterRenderer', 'afterRowMove', 'afterRowResize', 'afterRowSequenceChange', 'afterScrollHorizontally', 'afterScrollVertically', 'afterScroll', 'afterSelectColumns', 'afterSelection', 'afterSelectionByProp', 'afterSelectionEnd', 'afterSelectionEndByProp', 'afterSelectionFocusSet', 'afterSelectRows', 'afterSetCellMeta', 'afterSetDataAtCell', 'afterSetDataAtRowProp', 'afterSetSourceDataAtCell', 'afterSheetAdded', 'afterSheetRemoved', 'afterSheetRenamed', 'afterTrimRow', 'afterUndo', 'afterUndoStackChange', 'afterUnhideColumns', 'afterUnhideRows', 'afterUnlisten', 'afterUnmergeCells', 'afterUntrimRow', 'afterUpdateData', 'afterUpdateSettings', 'afterValidate', 'afterViewportColumnCalculatorOverride', 'afterViewportRowCalculatorOverride', 'afterViewRender', 'beforeAddChild', 'beforeAutofill', 'beforeBeginEditing', 'beforeCellAlignment', 'beforeChange', 'beforeChangeRender', 'beforeColumnCollapse', 'beforeColumnExpand', 'beforeColumnFreeze', 'beforeColumnMove', 'beforeColumnResize', 'beforeColumnSort', 'beforeColumnWrap', 'beforeColumnUnfreeze', 'beforeContextMenuSetItems', 'beforeContextMenuShow', 'beforeCopy', 'beforeCreateCol', 'beforeCreateRow', 'beforeCut', 'beforeDetachChild', 'beforeDrawBorders', 'beforeDropdownMenuSetItems', 'beforeDropdownMenuShow', 'beforeFilter', 'beforeGetCellMeta', 'beforeHideColumns', 'beforeHideRows', 'beforeHighlightingColumnHeader', 'beforeHighlightingRowHeader', 'beforeInit', 'beforeInitWalkontable', 'beforeKeyDown', 'beforeLanguageChange', 'beforeLoadData', 'beforeMergeCells', 'beforeOnCellContextMenu', 'beforeOnCellMouseDown', 'beforeOnCellMouseOut', 'beforeOnCellMouseOver', 'beforeOnCellMouseUp', 'beforePaste', 'beforeRedo', 'beforeRedoStackChange', 'beforeRefreshDimensions', 'beforeRemoveCellClassNames', 'beforeRemoveCellMeta', 'beforeRemoveCol', 'beforeRemoveRow', 'beforeRender', 'beforeRenderer', 'beforeRowMove', 'beforeRowResize', 'beforeRowWrap', 'beforeSelectColumns', 'beforeSelectionFocusSet', 'beforeSelectionHighlightSet', 'beforeSelectRows', 'beforeSetCellMeta', 'beforeSetRangeEnd', 'beforeSetRangeStart', 'beforeSetRangeStartOnly', 'beforeStretchingColumnWidth', 'beforeTouchScroll', 'beforeTrimRow', 'beforeUndo', 'beforeUndoStackChange', 'beforeUnhideColumns', 'beforeUnhideRows', 'beforeUnmergeCells', 'beforeUntrimRow', 'beforeUpdateData', 'beforeValidate', 'beforeValueRender', 'beforeViewportScrollVertically', 'beforeViewportScrollHorizontally', 'beforeViewportScroll', 'beforeViewRender', 'construct', 'init', 'modifyAutoColumnSizeSeed', 'modifyAutofillRange', 'modifyColHeader', 'modifyColumnHeaderHeight', 'modifyColumnHeaderValue', 'modifyColWidth', 'modifyCopyableRange', 'modifyFiltersMultiSelectValue', 'modifyFocusedElement', 'modifyData', 'modifyFocusOnTabNavigation', 'modifyGetCellCoords', 'modifyRowData', 'modifyRowHeader', 'modifyRowHeaderWidth', 'modifyRowHeight', 'modifySourceData', 'modifyTransformEnd', 'modifyTransformFocus', 'modifyTransformStart', 'persistentStateLoad', 'persistentStateReset', 'persistentStateSave'.
 Those elements have the following types:
@@ -5951,7 +5964,7 @@ Those elements have the following types:
   - `tabIndex` (Real; required)
   - `blur` (required)
   - `focus` (required)
-  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6057,7 +6070,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6066,13 +6079,13 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `setDefaultDate` (Bool; optional): Make the defaultDate the initial selected value.
   - `firstDay` (Real; optional): First day of the week (0: Sunday, 1: Monday, etc).
   - `minDate` (optional): The earliest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6178,7 +6191,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6187,11 +6200,11 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `maxDate` (optional): The latest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4735'.
+Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6297,7 +6310,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4735` (required): Converts a Date object to a string.
+  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6306,7 +6319,7 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4735 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `disableWeekends` (Bool; optional): Disallow selection of Saturdays and Sundays.
@@ -12844,7 +12857,7 @@ Those elements have the following types:
 - `wordWrap` (Bool; optional)
 """
 function ''_hottable(; kwargs...)
-        available_props = Symbol[:children, :id, :activeHeaderClassName, :allowEmpty, :allowHtml, :allowInsertColumn, :allowInsertRow, :allowInvalid, :allowRemoveColumn, :allowRemoveRow, :ariaTags, :autoColumnSize, :autoRowSize, :autoWrapCol, :autoWrapRow, :bindRowsWithHeaders, :cell, :checkedTemplate, :className, :colHeaders, :colWidths, :collapsibleColumns, :columnHeaderHeight, :columnSorting, :columnSummary, :columns, :commentedCellClassName, :comments, :contextMenu, :copyPaste, :copyable, :correctFormat, :currentColClassName, :currentHeaderClassName, :currentRowClassName, :customBorders, :data, :dataSchema, :dateFormat, :datePickerConfig, :defaultDate, :disableVisualSelection, :dragToScroll, :dropdownMenu, :editor, :enterBeginsEditing, :enterMoves, :exportData, :exportDataParams, :fillHandle, :filter, :filteringCaseSensitive, :filters, :fixedColumnsLeft, :fixedColumnsStart, :fixedRowsBottom, :fixedRowsTop, :formulas, :fragmentSelection, :height, :hiddenColumns, :hiddenRows, :imeFastEdit, :invalidCellClassName, :label, :language, :layoutDirection, :licenseKey, :locale, :manualColumnFreeze, :manualColumnMove, :manualColumnResize, :manualRowMove, :manualRowResize, :maxCols, :maxRows, :mergeCells, :minCols, :minRows, :minSpareCols, :minSpareRows, :multiColumnSorting, :navigableHeaders, :nestedHeaders, :nestedRows, :noWordWrapClassName, :numericFormat, :observeDOMVisibility, :outsideClickDeselects, :persistentState, :placeholder, :placeholderCellClassName, :preventOverflow, :preventWheel, :readOnly, :readOnlyCellClassName, :renderAllColumns, :renderAllRows, :renderer, :rowHeaderWidth, :rowHeaders, :rowHeights, :search, :selectOptions, :selectionMode, :settings, :skipColumnOnPaste, :skipRowOnPaste, :sortByRelevance, :source, :startCols, :startRows, :stretchH, :strict, :style, :tabMoves, :tabNavigation, :tableClassName, :title, :trimDropdown, :trimRows, :trimWhitespace, :type, :uncheckedTemplate, :undo, :validator, :viewportColumnRenderingOffset, :viewportRowRenderingOffset, :visibleRows, :width, :wordWrap]
+        available_props = Symbol[:children, :id, :activeHeaderClassName, :allowEmpty, :allowHtml, :allowInsertColumn, :allowInsertRow, :allowInvalid, :allowRemoveColumn, :allowRemoveRow, :ariaTags, :autoColumnSize, :autoRowSize, :autoWrapCol, :autoWrapRow, :bindRowsWithHeaders, :cell, :checkedTemplate, :className, :colHeaders, :colWidths, :collapsibleColumns, :columnHeaderHeight, :columnSorting, :columnSummary, :columns, :commentedCellClassName, :comments, :contextMenu, :copyPaste, :copyable, :correctFormat, :currentColClassName, :currentData, :currentDataAtRow, :currentHeaderClassName, :currentRowClassName, :customBorders, :data, :dataSchema, :dateFormat, :datePickerConfig, :defaultDate, :disableVisualSelection, :dragToScroll, :dropdownMenu, :editor, :enterBeginsEditing, :enterMoves, :exportData, :exportDataParams, :fillHandle, :filter, :filteringCaseSensitive, :filters, :fixedColumnsLeft, :fixedColumnsStart, :fixedRowsBottom, :fixedRowsTop, :formulas, :fragmentSelection, :getData, :getDataAtRow, :height, :hiddenColumns, :hiddenRows, :imeFastEdit, :invalidCellClassName, :label, :language, :layoutDirection, :licenseKey, :locale, :manualColumnFreeze, :manualColumnMove, :manualColumnResize, :manualRowMove, :manualRowResize, :maxCols, :maxRows, :mergeCells, :minCols, :minRows, :minSpareCols, :minSpareRows, :multiColumnSorting, :navigableHeaders, :nestedHeaders, :nestedRows, :noWordWrapClassName, :numericFormat, :observeDOMVisibility, :outsideClickDeselects, :persistentState, :placeholder, :placeholderCellClassName, :preventOverflow, :preventWheel, :readOnly, :readOnlyCellClassName, :renderAllColumns, :renderAllRows, :renderer, :rowHeaderWidth, :rowHeaders, :rowHeights, :search, :selectOptions, :selectedCells, :selectionMode, :settings, :skipColumnOnPaste, :skipRowOnPaste, :sortByRelevance, :source, :startCols, :startRows, :stretchH, :strict, :style, :tabMoves, :tabNavigation, :tableClassName, :title, :trimDropdown, :trimRows, :trimWhitespace, :type, :uncheckedTemplate, :undo, :validator, :viewportColumnRenderingOffset, :viewportRowRenderingOffset, :visibleRows, :width, :wordWrap]
         wild_props = Symbol[]
         return Component("''_hottable", "HotTable", "dash_handsontable", available_props, wild_props; kwargs...)
 end

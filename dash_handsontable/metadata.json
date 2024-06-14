@@ -30486,7 +30486,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4735": {
+                    "__@toPrimitive@4742": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -30780,7 +30780,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4735": {
+                    "__@toPrimitive@4742": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -31062,7 +31062,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4735": {
+                    "__@toPrimitive@4742": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -47149,7 +47149,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4735": {
+                "__@toPrimitive@4742": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -47443,7 +47443,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4735": {
+                "__@toPrimitive@4742": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -47725,7 +47725,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4735": {
+                "__@toPrimitive@4742": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -50745,6 +50745,156 @@
             }
           },
           "raw": "{ filename?: string; }"
+        }
+      },
+      "getData": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "shape",
+              "value": {
+                "row": {
+                  "description": "",
+                  "required": false,
+                  "name": "number",
+                  "raw": "number"
+                },
+                "col": {
+                  "description": "",
+                  "required": false,
+                  "name": "number",
+                  "raw": "number"
+                },
+                "row2": {
+                  "description": "",
+                  "required": false,
+                  "name": "number",
+                  "raw": "number"
+                },
+                "col2": {
+                  "description": "",
+                  "required": false,
+                  "name": "number",
+                  "raw": "number"
+                }
+              },
+              "raw": "{ row?: number; col?: number; row2?: number; col2?: number; }"
+            }
+          ],
+          "raw": "false | { row?: number; col?: number; row2?: number; col2?: number; }"
+        }
+      },
+      "currentData": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "arrayOf",
+            "value": {
+              "name": "any",
+              "raw": "any"
+            },
+            "raw": "any[]"
+          },
+          "raw": "any[][]"
+        }
+      },
+      "getDataAtRow": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "shape",
+              "value": {
+                "row": {
+                  "description": "",
+                  "required": true,
+                  "name": "number",
+                  "raw": "number"
+                },
+                "prop": {
+                  "description": "",
+                  "required": false,
+                  "name": "string",
+                  "raw": "string"
+                }
+              },
+              "raw": "{ row: number; prop?: string; }"
+            }
+          ],
+          "raw": "false | { row: number; prop?: string; }"
+        }
+      },
+      "currentDataAtRow": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "any",
+            "raw": "any"
+          },
+          "raw": "any[]"
+        }
+      },
+      "selectedCells": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "arrayOf",
+            "value": {
+              "name": "tuple",
+              "elements": [
+                {
+                  "name": "number",
+                  "raw": "number"
+                },
+                {
+                  "name": "number",
+                  "raw": "number"
+                },
+                {
+                  "name": "number",
+                  "raw": "number"
+                },
+                {
+                  "name": "number",
+                  "raw": "number"
+                }
+              ],
+              "raw": "[number, number, number, number]"
+            },
+            "raw": "[number, number, number, number][]"
+          },
+          "raw": "[number, number, number, number][][]"
         }
       }
     },
