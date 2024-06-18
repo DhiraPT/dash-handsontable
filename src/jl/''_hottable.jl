@@ -14,6 +14,106 @@ Keyword arguments:
 - `children` (a list of or a singular dash component, string or number; optional)
 - `id` (String; optional): Unique ID to identify this component in Dash callbacks.
 - `activeHeaderClassName` (String; optional)
+- `afterAddChild` (String; optional)
+- `afterAutofill` (String; optional)
+- `afterBeginEditing` (String; optional)
+- `afterCellMetaReset` (String; optional)
+- `afterChange` (String; optional)
+- `afterColumnCollapse` (String; optional)
+- `afterColumnExpand` (String; optional)
+- `afterColumnFreeze` (String; optional)
+- `afterColumnMove` (String; optional)
+- `afterColumnResize` (String; optional)
+- `afterColumnSequenceChange` (String; optional)
+- `afterColumnSort` (String; optional)
+- `afterColumnUnfreeze` (String; optional)
+- `afterContextMenuDefaultOptions` (String; optional)
+- `afterContextMenuHide` (String; optional)
+- `afterContextMenuShow` (String; optional)
+- `afterCopy` (String; optional)
+- `afterCopyLimit` (String; optional)
+- `afterCreateCol` (String; optional)
+- `afterCreateRow` (String; optional)
+- `afterCut` (String; optional)
+- `afterDeselect` (String; optional)
+- `afterDestroy` (String; optional)
+- `afterDetachChild` (String; optional)
+- `afterDocumentKeyDown` (String; optional)
+- `afterDrawSelection` (String; optional)
+- `afterDropdownMenuDefaultOptions` (String; optional)
+- `afterDropdownMenuHide` (String; optional)
+- `afterDropdownMenuShow` (String; optional)
+- `afterFilter` (String; optional)
+- `afterFormulasValuesUpdate` (String; optional)
+- `afterGetCellMeta` (String; optional)
+- `afterGetColHeader` (String; optional)
+- `afterGetColumnHeaderRenderers` (String; optional)
+- `afterGetRowHeader` (String; optional)
+- `afterGetRowHeaderRenderers` (String; optional)
+- `afterHideColumns` (String; optional)
+- `afterHideRows` (String; optional)
+- `afterInit` (String; optional)
+- `afterLanguageChange` (String; optional)
+- `afterListen` (String; optional)
+- `afterLoadData` (String; optional)
+- `afterMergeCells` (String; optional)
+- `afterModifyTransformEnd` (String; optional)
+- `afterModifyTransformFocus` (String; optional)
+- `afterModifyTransformStart` (String; optional)
+- `afterMomentumScroll` (String; optional)
+- `afterNamedExpressionAdded` (String; optional)
+- `afterNamedExpressionRemoved` (String; optional)
+- `afterOnCellContextMenu` (String; optional)
+- `afterOnCellCornerDblClick` (String; optional)
+- `afterOnCellCornerMouseDown` (String; optional)
+- `afterOnCellMouseDown` (String; optional)
+- `afterOnCellMouseOut` (String; optional)
+- `afterOnCellMouseOver` (String; optional)
+- `afterOnCellMouseUp` (String; optional)
+- `afterPaste` (String; optional)
+- `afterPluginsInitialized` (String; optional)
+- `afterRedo` (String; optional)
+- `afterRedoStackChange` (String; optional)
+- `afterRefreshDimensions` (String; optional)
+- `afterRemoveCellMeta` (String; optional)
+- `afterRemoveCol` (String; optional)
+- `afterRemoveRow` (String; optional)
+- `afterRender` (String; optional)
+- `afterRenderer` (String; optional)
+- `afterRowMove` (String; optional)
+- `afterRowResize` (String; optional)
+- `afterRowSequenceChange` (String; optional)
+- `afterScroll` (String; optional)
+- `afterScrollHorizontally` (String; optional)
+- `afterScrollVertically` (String; optional)
+- `afterSelectColumns` (String; optional)
+- `afterSelectRows` (String; optional)
+- `afterSelection` (String; optional)
+- `afterSelectionByProp` (String; optional)
+- `afterSelectionEnd` (String; optional)
+- `afterSelectionEndByProp` (String; optional)
+- `afterSelectionFocusSet` (String; optional)
+- `afterSetCellMeta` (String; optional)
+- `afterSetDataAtCell` (String; optional)
+- `afterSetDataAtRowProp` (String; optional)
+- `afterSetSourceDataAtCell` (String; optional)
+- `afterSheetAdded` (String; optional)
+- `afterSheetRemoved` (String; optional)
+- `afterSheetRenamed` (String; optional)
+- `afterTrimRow` (String; optional)
+- `afterUndo` (String; optional)
+- `afterUndoStackChange` (String; optional)
+- `afterUnhideColumns` (String; optional)
+- `afterUnhideRows` (String; optional)
+- `afterUnlisten` (String; optional)
+- `afterUnmergeCells` (String; optional)
+- `afterUntrimRow` (String; optional)
+- `afterUpdateData` (String; optional)
+- `afterUpdateSettings` (String; optional)
+- `afterValidate` (String; optional)
+- `afterViewRender` (String; optional)
+- `afterViewportColumnCalculatorOverride` (String; optional)
+- `afterViewportRowCalculatorOverride` (String; optional)
 - `allowEmpty` (Bool; optional)
 - `allowHtml` (Bool; optional)
 - `allowInsertColumn` (Bool; optional)
@@ -26,8 +126,87 @@ Keyword arguments:
 - `autoRowSize` (Bool | Real | String | Dict | Array; optional)
 - `autoWrapCol` (Bool; optional)
 - `autoWrapRow` (Bool; optional)
+- `beforeAddChild` (String; optional)
+- `beforeAutofill` (String; optional)
+- `beforeBeginEditing` (String; optional)
+- `beforeCellAlignment` (String; optional)
+- `beforeChange` (String; optional)
+- `beforeChangeRender` (String; optional)
+- `beforeColumnCollapse` (String; optional)
+- `beforeColumnExpand` (String; optional)
+- `beforeColumnFreeze` (String; optional)
+- `beforeColumnMove` (String; optional)
+- `beforeColumnResize` (String; optional)
+- `beforeColumnSort` (String; optional)
+- `beforeColumnUnfreeze` (String; optional)
+- `beforeColumnWrap` (String; optional)
+- `beforeContextMenuSetItems` (String; optional)
+- `beforeContextMenuShow` (String; optional)
+- `beforeCopy` (String; optional)
+- `beforeCreateCol` (String; optional)
+- `beforeCreateRow` (String; optional)
+- `beforeCut` (String; optional)
+- `beforeDetachChild` (String; optional)
+- `beforeDrawBorders` (String; optional)
+- `beforeDropdownMenuSetItems` (String; optional)
+- `beforeDropdownMenuShow` (String; optional)
+- `beforeFilter` (String; optional)
+- `beforeGetCellMeta` (String; optional)
+- `beforeHideColumns` (String; optional)
+- `beforeHideRows` (String; optional)
+- `beforeHighlightingColumnHeader` (String; optional)
+- `beforeHighlightingRowHeader` (String; optional)
+- `beforeInit` (String; optional)
+- `beforeInitWalkontable` (String; optional)
+- `beforeKeyDown` (String; optional)
+- `beforeLanguageChange` (String; optional)
+- `beforeLoadData` (String; optional)
+- `beforeMergeCells` (String; optional)
+- `beforeOnCellContextMenu` (String; optional)
+- `beforeOnCellMouseDown` (String; optional)
+- `beforeOnCellMouseOut` (String; optional)
+- `beforeOnCellMouseOver` (String; optional)
+- `beforeOnCellMouseUp` (String; optional)
+- `beforePaste` (String; optional)
+- `beforeRedo` (String; optional)
+- `beforeRedoStackChange` (String; optional)
+- `beforeRefreshDimensions` (String; optional)
+- `beforeRemoveCellClassNames` (String; optional)
+- `beforeRemoveCellMeta` (String; optional)
+- `beforeRemoveCol` (String; optional)
+- `beforeRemoveRow` (String; optional)
+- `beforeRender` (String; optional)
+- `beforeRenderer` (String; optional)
+- `beforeRowMove` (String; optional)
+- `beforeRowResize` (String; optional)
+- `beforeRowWrap` (String; optional)
+- `beforeSelectColumns` (String; optional)
+- `beforeSelectRows` (String; optional)
+- `beforeSelectionFocusSet` (String; optional)
+- `beforeSelectionHighlightSet` (String; optional)
+- `beforeSetCellMeta` (String; optional)
+- `beforeSetRangeEnd` (String; optional)
+- `beforeSetRangeStart` (String; optional)
+- `beforeSetRangeStartOnly` (String; optional)
+- `beforeStretchingColumnWidth` (String; optional)
+- `beforeTouchScroll` (String; optional)
+- `beforeTrimRow` (String; optional)
+- `beforeUndo` (String; optional)
+- `beforeUndoStackChange` (String; optional)
+- `beforeUnhideColumns` (String; optional)
+- `beforeUnhideRows` (String; optional)
+- `beforeUnmergeCells` (String; optional)
+- `beforeUntrimRow` (String; optional)
+- `beforeUpdateData` (String; optional)
+- `beforeValidate` (String; optional)
+- `beforeValueRender` (String; optional)
+- `beforeViewRender` (String; optional)
+- `beforeViewportScroll` (String; optional)
+- `beforeViewportScrollHorizontally` (String; optional)
+- `beforeViewportScrollVertically` (String; optional)
 - `bindRowsWithHeaders` (Bool | Real | String | Dict | Array; optional)
 - `cell` (Array of Dict with Strings as keys and values of type Bool | Real | String | Dict | Arrays; optional)
+- `cells` (String; optional)
 - `checkedTemplate` (String | Real; optional)
 - `className` (String; optional)
 - `colHeaders` (Array of Strings; optional)
@@ -39,17 +218,17 @@ Keyword arguments:
 - `columns` (optional)
 - `commentedCellClassName` (String; optional)
 - `comments` (Bool | Real | String | Dict | Array; optional)
+- `construct` (String; optional)
 - `contextMenu` (Bool | Real | String | Dict | Array; optional)
 - `copyPaste` (Bool | Real | String | Dict | Array; optional)
 - `copyable` (Bool; optional)
 - `correctFormat` (Bool; optional)
 - `currentColClassName` (String; optional)
-- `currentData` (Array of Array of Bool | Real | String | Dict | Arrayss; optional)
-- `currentDataAtRow` (Array of Bool | Real | String | Dict | Arrays; optional)
 - `currentHeaderClassName` (String; optional)
 - `currentRowClassName` (String; optional)
 - `customBorders` (Bool | Real | String | Dict | Array; optional)
 - `data` (Array of Array of Bool | Real | String | Dict | Arrayss; optional)
+- `dataDotNotation` (Bool; optional)
 - `dataSchema` (Array of Bool | Real | String | Dict | Arrays; optional)
 - `dateFormat` (String; optional)
 - `datePickerConfig` (optional): . datePickerConfig has the following type: lists containing elements 'field', 'format', 'trigger', 'bound', 'ariaLabel', 'position', 'reposition', 'container', 'defaultDate', 'setDefaultDate', 'firstDay', 'minDate', 'maxDate', 'disableWeekends', 'disableDayFn', 'yearRange', 'showWeekNumber', 'pickWholeWeek', 'isRTL', 'i18n', 'yearSuffix', 'showMonthAfterYear', 'showDaysInNextAndPreviousMonths', 'enableSelectionDaysInNextAndPreviousMonths', 'numberOfMonths', 'mainCalendar', 'events', 'theme', 'blurFieldOnSelect', 'formatStrict', 'toString', 'parse', 'onSelect', 'onOpen', 'onClose', 'onDraw', 'keyboardInput'.
@@ -2745,7 +2924,7 @@ Those elements have the following types:
   - `tabIndex` (Real; required)
   - `blur` (required)
   - `focus` (required)
-  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -2851,7 +3030,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -2860,13 +3039,13 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `setDefaultDate` (Bool; optional): Make the defaultDate the initial selected value.
   - `firstDay` (Real; optional): First day of the week (0: Sunday, 1: Monday, etc).
   - `minDate` (optional): The earliest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -2972,7 +3151,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -2981,11 +3160,11 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `maxDate` (optional): The latest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -3091,7 +3270,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -3100,7 +3279,7 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `disableWeekends` (Bool; optional): Disallow selection of Saturdays and Sundays.
@@ -3151,9 +3330,20 @@ Those elements have the following types:
   - `row` (Real; required)
   - `col` (Real; required)
 - `exportData` (Bool; optional)
-- `exportDataParams` (optional): . exportDataParams has the following type: lists containing elements 'filename'.
+- `exportDataParams` (optional): . exportDataParams has the following type: lists containing elements 'mimeType', 'fileExtension', 'filename', 'encoding', 'bom', 'columnDelimiter', 'rowDelimiter', 'columnHeaders', 'rowHeaders', 'exportHiddenColumns', 'exportHiddenRows', 'range'.
 Those elements have the following types:
+  - `mimeType` (String; optional)
+  - `fileExtension` (String; optional)
   - `filename` (String; optional)
+  - `encoding` (String; optional)
+  - `bom` (Bool; optional)
+  - `columnDelimiter` (String; optional)
+  - `rowDelimiter` (String; optional)
+  - `columnHeaders` (Bool; optional)
+  - `rowHeaders` (Bool; optional)
+  - `exportHiddenColumns` (Bool; optional)
+  - `exportHiddenRows` (Bool; optional)
+  - `range` (Array of Reals; optional)
 - `fillHandle` (Bool | Real | String | Dict | Array; optional)
 - `filter` (Bool; optional)
 - `filteringCaseSensitive` (Bool; optional)
@@ -3162,26 +3352,143 @@ Those elements have the following types:
 - `fixedColumnsStart` (Real; optional)
 - `fixedRowsBottom` (Real; optional)
 - `fixedRowsTop` (Real; optional)
-- `formulas` (optional): . formulas has the following type: lists containing elements 'engine', 'sheetName'.
+- `formulas` (optional): . formulas has the following type: lists containing elements 'engine', 'sheetName', 'namedExpressions'.
 Those elements have the following types:
   - `engine` (Bool | Real | String | Dict | Array; required)
   - `sheetName` (String; optional)
+  - `namedExpressions` (optional): . namedExpressions has the following type: Array of lists containing elements 'name', 'expression', 'scope', 'options'.
+Those elements have the following types:
+  - `name` (String; required)
+  - `expression` (required): . expression has the following type: String | Real | lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
+Those elements have the following types:
+  - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
+  - `toDateString` (required): Returns a date as a string value.
+  - `toTimeString` (required): Returns a time as a string value.
+  - `toLocaleString` (optional): Returns a value as a string value appropriate to the host environment's current locale.
+
+
+Converts a date and time to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `toLocaleDateString` (required): Returns a date as a string value appropriate to the host environment's current locale.
+
+
+Converts a date to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleDateString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `toLocaleTimeString` (required): Returns a time as a string value appropriate to the host environment's current locale.
+
+
+Converts a time to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleTimeString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `valueOf` (optional): Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.
+  - `getTime` (required): Gets the time value in milliseconds.
+  - `getFullYear` (required): Gets the year, using local time.
+  - `getUTCFullYear` (required): Gets the year using Universal Coordinated Time (UTC).
+  - `getMonth` (required): Gets the month, using local time.
+  - `getUTCMonth` (required): Gets the month of a Date object using Universal Coordinated Time (UTC).
+  - `getDate` (required): Gets the day-of-the-month, using local time.
+  - `getUTCDate` (required): Gets the day-of-the-month, using Universal Coordinated Time (UTC).
+  - `getDay` (required): Gets the day of the week, using local time.
+  - `getUTCDay` (required): Gets the day of the week using Universal Coordinated Time (UTC).
+  - `getHours` (required): Gets the hours in a date, using local time.
+  - `getUTCHours` (required): Gets the hours value in a Date object using Universal Coordinated Time (UTC).
+  - `getMinutes` (required): Gets the minutes of a Date object, using local time.
+  - `getUTCMinutes` (required): Gets the minutes of a Date object using Universal Coordinated Time (UTC).
+  - `getSeconds` (required): Gets the seconds of a Date object, using local time.
+  - `getUTCSeconds` (required): Gets the seconds of a Date object using Universal Coordinated Time (UTC).
+  - `getMilliseconds` (required): Gets the milliseconds of a Date, using local time.
+  - `getUTCMilliseconds` (required): Gets the milliseconds of a Date object using Universal Coordinated Time (UTC).
+  - `getTimezoneOffset` (required): Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).
+  - `setTime` (required): Sets the date and time value in the Date object.
+@,param,time, ,A numeric value representing the number of elapsed milliseconds since midnight, January 1, 1970 GMT.
+  - `setMilliseconds` (required): Sets the milliseconds value in the Date object using local time.
+@,param,ms, ,A numeric value equal to the millisecond value.
+  - `setUTCMilliseconds` (required): Sets the milliseconds value in the Date object using Universal Coordinated Time (UTC).
+@,param,ms, ,A numeric value equal to the millisecond value.
+  - `setSeconds` (required): Sets the seconds value in the Date object using local time.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCSeconds` (required): Sets the seconds value in the Date object using Universal Coordinated Time (UTC).
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setMinutes` (required): Sets the minutes value in the Date object using local time.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCMinutes` (required): Sets the minutes value in the Date object using Universal Coordinated Time (UTC).
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setHours` (required): Sets the hour value in the Date object using local time.
+@,param,hours, ,A numeric value equal to the hours value.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCHours` (required): Sets the hours value in the Date object using Universal Coordinated Time (UTC).
+@,param,hours, ,A numeric value equal to the hours value.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setDate` (required): Sets the numeric day-of-the-month value of the Date object using local time.
+@,param,date, ,A numeric value equal to the day of the month.
+  - `setUTCDate` (required): Sets the numeric day of the month in the Date object using Universal Coordinated Time (UTC).
+@,param,date, ,A numeric value equal to the day of the month.
+  - `setMonth` (required): Sets the month value in the Date object using local time.
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.
+@,param,date, ,A numeric value representing the day of the month. If this value is not supplied, the value from a call to the getDate method is used.
+  - `setUTCMonth` (required): Sets the month value in the Date object using Universal Coordinated Time (UTC).
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.
+@,param,date, ,A numeric value representing the day of the month. If it is not supplied, the value from a call to the getUTCDate method is used.
+  - `setFullYear` (required): Sets the year of the Date object using local time.
+@,param,year, ,A numeric value for the year.
+@,param,month, ,A zero-based numeric value for the month (0 for January, 11 for December). Must be specified if numDate is specified.
+@,param,date, ,A numeric value equal for the day of the month.
+  - `setUTCFullYear` (required): Sets the year value in the Date object using Universal Coordinated Time (UTC).
+@,param,year, ,A numeric value equal to the year.
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively. Must be supplied if numDate is supplied.
+@,param,date, ,A numeric value equal to the day of the month.
+  - `toUTCString` (required): Returns a date converted to a string using Universal Coordinated Time (UTC).
+  - `toISOString` (required): Returns a date as a string value in ISO format.
+  - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
+  - `getVarDate` (required)
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
+
+
+Converts a Date object to a number.
+
+
+Converts a Date object to a string or number.
+@,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
+@,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `scope` (Real; optional)
+  - `options` (Dict with Strings as keys and values of type String | Real; optional)s
 - `fragmentSelection` (Bool | Real | String | Dict | Array; optional)
-- `getData` (optional): . getData has the following type: lists containing elements 'row', 'col', 'row2', 'col2'.
-Those elements have the following types:
-  - `row` (Real; optional)
-  - `col` (Real; optional)
-  - `row2` (Real; optional)
-  - `col2` (Real; optional)
-- `getDataAtRow` (optional): . getDataAtRow has the following type: lists containing elements 'row', 'prop'.
-Those elements have the following types:
-  - `row` (Real; required)
-  - `prop` (String; optional)
+- `globalBucket` (String; optional)
 - `height` (String | Real; optional)
 - `hiddenColumns` (Bool | Real | String | Dict | Array; optional)
 - `hiddenRows` (Bool | Real | String | Dict | Array; optional)
 - `imeFastEdit` (Bool; optional)
+- `init` (String; optional)
 - `invalidCellClassName` (String; optional)
+- `isEmptyCol` (String; optional)
+- `isEmptyRow` (String; optional)
 - `label` (optional): . label has the following type: lists containing elements 'property', 'position', 'value'.
 Those elements have the following types:
   - `property` (String; optional)
@@ -3203,6 +3510,26 @@ Those elements have the following types:
 - `minRows` (Real; optional)
 - `minSpareCols` (Real; optional)
 - `minSpareRows` (Real; optional)
+- `modifyAutoColumnSizeSeed` (String; optional)
+- `modifyAutofillRange` (String; optional)
+- `modifyColHeader` (String; optional)
+- `modifyColWidth` (String; optional)
+- `modifyColumnHeaderHeight` (String; optional)
+- `modifyColumnHeaderValue` (String; optional)
+- `modifyCopyableRange` (String; optional)
+- `modifyData` (String; optional)
+- `modifyFiltersMultiSelectValue` (String; optional)
+- `modifyFocusOnTabNavigation` (String; optional)
+- `modifyFocusedElement` (String; optional)
+- `modifyGetCellCoords` (String; optional)
+- `modifyRowData` (String; optional)
+- `modifyRowHeader` (String; optional)
+- `modifyRowHeaderWidth` (String; optional)
+- `modifyRowHeight` (String; optional)
+- `modifySourceData` (String; optional)
+- `modifyTransformEnd` (String; optional)
+- `modifyTransformFocus` (String; optional)
+- `modifyTransformStart` (String; optional)
 - `multiColumnSorting` (Bool | Real | String | Dict | Array; optional)
 - `navigableHeaders` (Bool; optional)
 - `nestedHeaders` (Dict with Strings as keys and values of type Array of Strings; optional)
@@ -3215,6 +3542,9 @@ Those elements have the following types:
 - `observeDOMVisibility` (Bool; optional)
 - `outsideClickDeselects` (optional)
 - `persistentState` (Bool; optional)
+- `persistentStateLoad` (String; optional)
+- `persistentStateReset` (String; optional)
+- `persistentStateSave` (String; optional)
 - `placeholder` (String; optional)
 - `placeholderCellClassName` (String; optional)
 - `preventOverflow` (Bool | Real | String | Dict | Array; optional)
@@ -3229,9 +3559,8 @@ Those elements have the following types:
 - `rowHeights` (String | Real | Array of Strings | Array of Reals; optional)
 - `search` (Bool | Real | String | Dict | Array; optional)
 - `selectOptions` (Array of Strings; optional)
-- `selectedCells` (Array of Arrays; optional)
 - `selectionMode` (a value equal to: 'single', 'range', 'multiple'; optional)
-- `settings` (optional): . settings has the following type: lists containing elements 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'cells', 'checkedTemplate', 'className', 'colHeaders', 'collapsibleColumns', 'columnHeaderHeight', 'columns', 'columnSorting', 'columnSummary', 'colWidths', 'commentedCellClassName', 'comments', 'contextMenu', 'copyable', 'copyPaste', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'tabNavigation', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'height', 'hiddenColumns', 'hiddenRows', 'invalidCellClassName', 'imeFastEdit', 'isEmptyCol', 'isEmptyRow', 'label', 'language', 'locale', 'layoutDirection', 'licenseKey', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaders', 'rowHeaderWidth', 'rowHeights', 'search', 'selectionMode', 'selectOptions', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'tableClassName', 'tabMoves', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap', 'afterAddChild', 'afterAutofill', 'afterBeginEditing', 'afterCellMetaReset', 'afterChange', 'afterChangesObserved', 'afterColumnCollapse', 'afterColumnExpand', 'afterColumnFreeze', 'afterColumnMove', 'afterColumnResize', 'afterColumnSequenceChange', 'afterColumnSort', 'afterColumnUnfreeze', 'afterContextMenuDefaultOptions', 'afterContextMenuHide', 'afterContextMenuShow', 'afterCopy', 'afterCopyLimit', 'afterCreateCol', 'afterCreateRow', 'afterCut', 'afterDeselect', 'afterDestroy', 'afterDetachChild', 'afterDocumentKeyDown', 'afterDrawSelection', 'afterDropdownMenuDefaultOptions', 'afterDropdownMenuHide', 'afterDropdownMenuShow', 'afterFilter', 'afterFormulasValuesUpdate', 'afterGetCellMeta', 'afterGetColHeader', 'afterGetColumnHeaderRenderers', 'afterGetRowHeader', 'afterGetRowHeaderRenderers', 'afterHideColumns', 'afterHideRows', 'afterInit', 'afterLanguageChange', 'afterListen', 'afterLoadData', 'afterMergeCells', 'afterModifyTransformEnd', 'afterModifyTransformFocus', 'afterModifyTransformStart', 'afterMomentumScroll', 'afterNamedExpressionAdded', 'afterNamedExpressionRemoved', 'afterOnCellContextMenu', 'afterOnCellCornerDblClick', 'afterOnCellCornerMouseDown', 'afterOnCellMouseDown', 'afterOnCellMouseOut', 'afterOnCellMouseOver', 'afterOnCellMouseUp', 'afterPaste', 'afterPluginsInitialized', 'afterRedo', 'afterRedoStackChange', 'afterRefreshDimensions', 'afterRemoveCellMeta', 'afterRemoveCol', 'afterRemoveRow', 'afterRender', 'afterRenderer', 'afterRowMove', 'afterRowResize', 'afterRowSequenceChange', 'afterScrollHorizontally', 'afterScrollVertically', 'afterScroll', 'afterSelectColumns', 'afterSelection', 'afterSelectionByProp', 'afterSelectionEnd', 'afterSelectionEndByProp', 'afterSelectionFocusSet', 'afterSelectRows', 'afterSetCellMeta', 'afterSetDataAtCell', 'afterSetDataAtRowProp', 'afterSetSourceDataAtCell', 'afterSheetAdded', 'afterSheetRemoved', 'afterSheetRenamed', 'afterTrimRow', 'afterUndo', 'afterUndoStackChange', 'afterUnhideColumns', 'afterUnhideRows', 'afterUnlisten', 'afterUnmergeCells', 'afterUntrimRow', 'afterUpdateData', 'afterUpdateSettings', 'afterValidate', 'afterViewportColumnCalculatorOverride', 'afterViewportRowCalculatorOverride', 'afterViewRender', 'beforeAddChild', 'beforeAutofill', 'beforeBeginEditing', 'beforeCellAlignment', 'beforeChange', 'beforeChangeRender', 'beforeColumnCollapse', 'beforeColumnExpand', 'beforeColumnFreeze', 'beforeColumnMove', 'beforeColumnResize', 'beforeColumnSort', 'beforeColumnWrap', 'beforeColumnUnfreeze', 'beforeContextMenuSetItems', 'beforeContextMenuShow', 'beforeCopy', 'beforeCreateCol', 'beforeCreateRow', 'beforeCut', 'beforeDetachChild', 'beforeDrawBorders', 'beforeDropdownMenuSetItems', 'beforeDropdownMenuShow', 'beforeFilter', 'beforeGetCellMeta', 'beforeHideColumns', 'beforeHideRows', 'beforeHighlightingColumnHeader', 'beforeHighlightingRowHeader', 'beforeInit', 'beforeInitWalkontable', 'beforeKeyDown', 'beforeLanguageChange', 'beforeLoadData', 'beforeMergeCells', 'beforeOnCellContextMenu', 'beforeOnCellMouseDown', 'beforeOnCellMouseOut', 'beforeOnCellMouseOver', 'beforeOnCellMouseUp', 'beforePaste', 'beforeRedo', 'beforeRedoStackChange', 'beforeRefreshDimensions', 'beforeRemoveCellClassNames', 'beforeRemoveCellMeta', 'beforeRemoveCol', 'beforeRemoveRow', 'beforeRender', 'beforeRenderer', 'beforeRowMove', 'beforeRowResize', 'beforeRowWrap', 'beforeSelectColumns', 'beforeSelectionFocusSet', 'beforeSelectionHighlightSet', 'beforeSelectRows', 'beforeSetCellMeta', 'beforeSetRangeEnd', 'beforeSetRangeStart', 'beforeSetRangeStartOnly', 'beforeStretchingColumnWidth', 'beforeTouchScroll', 'beforeTrimRow', 'beforeUndo', 'beforeUndoStackChange', 'beforeUnhideColumns', 'beforeUnhideRows', 'beforeUnmergeCells', 'beforeUntrimRow', 'beforeUpdateData', 'beforeValidate', 'beforeValueRender', 'beforeViewportScrollVertically', 'beforeViewportScrollHorizontally', 'beforeViewportScroll', 'beforeViewRender', 'construct', 'init', 'modifyAutoColumnSizeSeed', 'modifyAutofillRange', 'modifyColHeader', 'modifyColumnHeaderHeight', 'modifyColumnHeaderValue', 'modifyColWidth', 'modifyCopyableRange', 'modifyFiltersMultiSelectValue', 'modifyFocusedElement', 'modifyData', 'modifyFocusOnTabNavigation', 'modifyGetCellCoords', 'modifyRowData', 'modifyRowHeader', 'modifyRowHeaderWidth', 'modifyRowHeight', 'modifySourceData', 'modifyTransformEnd', 'modifyTransformFocus', 'modifyTransformStart', 'persistentStateLoad', 'persistentStateReset', 'persistentStateSave'.
+- `settings` (optional): . settings has the following type: lists containing elements 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'cells', 'checkedTemplate', 'className', 'colHeaders', 'collapsibleColumns', 'columnHeaderHeight', 'columns', 'columnSorting', 'columnSummary', 'colWidths', 'commentedCellClassName', 'comments', 'contextMenu', 'copyable', 'copyPaste', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataDotNotation', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'tabNavigation', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'height', 'hiddenColumns', 'hiddenRows', 'invalidCellClassName', 'imeFastEdit', 'isEmptyCol', 'isEmptyRow', 'label', 'language', 'locale', 'layoutDirection', 'licenseKey', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaders', 'rowHeaderWidth', 'rowHeights', 'search', 'selectionMode', 'selectOptions', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'tableClassName', 'tabMoves', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap', 'afterAddChild', 'afterAutofill', 'afterBeginEditing', 'afterCellMetaReset', 'afterChange', 'afterChangesObserved', 'afterColumnCollapse', 'afterColumnExpand', 'afterColumnFreeze', 'afterColumnMove', 'afterColumnResize', 'afterColumnSequenceChange', 'afterColumnSort', 'afterColumnUnfreeze', 'afterContextMenuDefaultOptions', 'afterContextMenuHide', 'afterContextMenuShow', 'afterCopy', 'afterCopyLimit', 'afterCreateCol', 'afterCreateRow', 'afterCut', 'afterDeselect', 'afterDestroy', 'afterDetachChild', 'afterDocumentKeyDown', 'afterDrawSelection', 'afterDropdownMenuDefaultOptions', 'afterDropdownMenuHide', 'afterDropdownMenuShow', 'afterFilter', 'afterFormulasValuesUpdate', 'afterGetCellMeta', 'afterGetColHeader', 'afterGetColumnHeaderRenderers', 'afterGetRowHeader', 'afterGetRowHeaderRenderers', 'afterHideColumns', 'afterHideRows', 'afterInit', 'afterLanguageChange', 'afterListen', 'afterLoadData', 'afterMergeCells', 'afterModifyTransformEnd', 'afterModifyTransformFocus', 'afterModifyTransformStart', 'afterMomentumScroll', 'afterNamedExpressionAdded', 'afterNamedExpressionRemoved', 'afterOnCellContextMenu', 'afterOnCellCornerDblClick', 'afterOnCellCornerMouseDown', 'afterOnCellMouseDown', 'afterOnCellMouseOut', 'afterOnCellMouseOver', 'afterOnCellMouseUp', 'afterPaste', 'afterPluginsInitialized', 'afterRedo', 'afterRedoStackChange', 'afterRefreshDimensions', 'afterRemoveCellMeta', 'afterRemoveCol', 'afterRemoveRow', 'afterRender', 'afterRenderer', 'afterRowMove', 'afterRowResize', 'afterRowSequenceChange', 'afterScrollHorizontally', 'afterScrollVertically', 'afterScroll', 'afterSelectColumns', 'afterSelection', 'afterSelectionByProp', 'afterSelectionEnd', 'afterSelectionEndByProp', 'afterSelectionFocusSet', 'afterSelectRows', 'afterSetCellMeta', 'afterSetDataAtCell', 'afterSetDataAtRowProp', 'afterSetSourceDataAtCell', 'afterSheetAdded', 'afterSheetRemoved', 'afterSheetRenamed', 'afterTrimRow', 'afterUndo', 'afterUndoStackChange', 'afterUnhideColumns', 'afterUnhideRows', 'afterUnlisten', 'afterUnmergeCells', 'afterUntrimRow', 'afterUpdateData', 'afterUpdateSettings', 'afterValidate', 'afterViewportColumnCalculatorOverride', 'afterViewportRowCalculatorOverride', 'afterViewRender', 'beforeAddChild', 'beforeAutofill', 'beforeBeginEditing', 'beforeCellAlignment', 'beforeChange', 'beforeChangeRender', 'beforeColumnCollapse', 'beforeColumnExpand', 'beforeColumnFreeze', 'beforeColumnMove', 'beforeColumnResize', 'beforeColumnSort', 'beforeColumnWrap', 'beforeColumnUnfreeze', 'beforeContextMenuSetItems', 'beforeContextMenuShow', 'beforeCopy', 'beforeCreateCol', 'beforeCreateRow', 'beforeCut', 'beforeDetachChild', 'beforeDrawBorders', 'beforeDropdownMenuSetItems', 'beforeDropdownMenuShow', 'beforeFilter', 'beforeGetCellMeta', 'beforeHideColumns', 'beforeHideRows', 'beforeHighlightingColumnHeader', 'beforeHighlightingRowHeader', 'beforeInit', 'beforeInitWalkontable', 'beforeKeyDown', 'beforeLanguageChange', 'beforeLoadData', 'beforeMergeCells', 'beforeOnCellContextMenu', 'beforeOnCellMouseDown', 'beforeOnCellMouseOut', 'beforeOnCellMouseOver', 'beforeOnCellMouseUp', 'beforePaste', 'beforeRedo', 'beforeRedoStackChange', 'beforeRefreshDimensions', 'beforeRemoveCellClassNames', 'beforeRemoveCellMeta', 'beforeRemoveCol', 'beforeRemoveRow', 'beforeRender', 'beforeRenderer', 'beforeRowMove', 'beforeRowResize', 'beforeRowWrap', 'beforeSelectColumns', 'beforeSelectionFocusSet', 'beforeSelectionHighlightSet', 'beforeSelectRows', 'beforeSetCellMeta', 'beforeSetRangeEnd', 'beforeSetRangeStart', 'beforeSetRangeStartOnly', 'beforeStretchingColumnWidth', 'beforeTouchScroll', 'beforeTrimRow', 'beforeUndo', 'beforeUndoStackChange', 'beforeUnhideColumns', 'beforeUnhideRows', 'beforeUnmergeCells', 'beforeUntrimRow', 'beforeUpdateData', 'beforeValidate', 'beforeValueRender', 'beforeViewportScrollVertically', 'beforeViewportScrollHorizontally', 'beforeViewportScroll', 'beforeViewRender', 'construct', 'init', 'modifyAutoColumnSizeSeed', 'modifyAutofillRange', 'modifyColHeader', 'modifyColumnHeaderHeight', 'modifyColumnHeaderValue', 'modifyColWidth', 'modifyCopyableRange', 'modifyFiltersMultiSelectValue', 'modifyFocusedElement', 'modifyData', 'modifyFocusOnTabNavigation', 'modifyGetCellCoords', 'modifyRowData', 'modifyRowHeader', 'modifyRowHeaderWidth', 'modifyRowHeight', 'modifySourceData', 'modifyTransformEnd', 'modifyTransformFocus', 'modifyTransformStart', 'persistentStateLoad', 'persistentStateReset', 'persistentStateSave'.
 Those elements have the following types:
   - `activeHeaderClassName` (String; optional)
   - `allowEmpty` (Bool; optional)
@@ -3269,6 +3598,7 @@ Those elements have the following types:
   - `currentRowClassName` (String; optional)
   - `customBorders` (Bool | Real | String | Dict | Array; optional)
   - `data` (Array of Array of Bool | Real | String | Dict | Arrayss; optional)
+  - `dataDotNotation` (Bool; optional)
   - `dataSchema` (Array of Bool | Real | String | Dict | Arrays; optional)
   - `dateFormat` (String; optional)
   - `datePickerConfig` (optional): . datePickerConfig has the following type: lists containing elements 'field', 'format', 'trigger', 'bound', 'ariaLabel', 'position', 'reposition', 'container', 'defaultDate', 'setDefaultDate', 'firstDay', 'minDate', 'maxDate', 'disableWeekends', 'disableDayFn', 'yearRange', 'showWeekNumber', 'pickWholeWeek', 'isRTL', 'i18n', 'yearSuffix', 'showMonthAfterYear', 'showDaysInNextAndPreviousMonths', 'enableSelectionDaysInNextAndPreviousMonths', 'numberOfMonths', 'mainCalendar', 'events', 'theme', 'blurFieldOnSelect', 'formatStrict', 'toString', 'parse', 'onSelect', 'onOpen', 'onClose', 'onDraw', 'keyboardInput'.
@@ -5964,7 +6294,7 @@ Those elements have the following types:
   - `tabIndex` (Real; required)
   - `blur` (required)
   - `focus` (required)
-  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+  - `defaultDate` (optional): The initial date to view when first opened.. defaultDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6070,7 +6400,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6079,13 +6409,13 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `setDefaultDate` (Bool; optional): Make the defaultDate the initial selected value.
   - `firstDay` (Real; optional): First day of the week (0: Sunday, 1: Monday, etc).
   - `minDate` (optional): The earliest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+Date object - e.g. new Date() or moment().toDate()).. minDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6191,7 +6521,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6200,11 +6530,11 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `maxDate` (optional): The latest date that can be selected (this should be a native
-Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@4742'.
+Date object - e.g. new Date() or moment().toDate()).. maxDate has the following type: lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
 Those elements have the following types:
   - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
   - `toDateString` (required): Returns a date as a string value.
@@ -6310,7 +6640,7 @@ Those elements have the following types:
   - `toISOString` (required): Returns a date as a string value in ISO format.
   - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
   - `getVarDate` (required)
-  - `__@toPrimitive@4742` (required): Converts a Date object to a string.
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
 
 
 Converts a Date object to a number.
@@ -6319,7 +6649,7 @@ Converts a Date object to a number.
 Converts a Date object to a string or number.
 @,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
-@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@4742 has the following type: lists containing elements .
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
 Those elements have the following types:
 
   - `disableWeekends` (Bool; optional): Disallow selection of Saturdays and Sundays.
@@ -6378,10 +6708,133 @@ Those elements have the following types:
   - `fixedColumnsStart` (Real; optional)
   - `fixedRowsBottom` (Real; optional)
   - `fixedRowsTop` (Real; optional)
-  - `formulas` (optional): . formulas has the following type: lists containing elements 'engine', 'sheetName'.
+  - `formulas` (optional): . formulas has the following type: lists containing elements 'engine', 'sheetName', 'namedExpressions'.
 Those elements have the following types:
   - `engine` (Bool | Real | String | Dict | Array; required)
   - `sheetName` (String; optional)
+  - `namedExpressions` (optional): . namedExpressions has the following type: Array of lists containing elements 'name', 'expression', 'scope', 'options'.
+Those elements have the following types:
+  - `name` (String; required)
+  - `expression` (required): . expression has the following type: String | Real | lists containing elements 'toString', 'toDateString', 'toTimeString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toUTCString', 'toISOString', 'toJSON', 'getVarDate', '__@toPrimitive@5513'.
+Those elements have the following types:
+  - `toString` (optional): Returns a string representation of a date. The format of the string depends on the locale.
+  - `toDateString` (required): Returns a date as a string value.
+  - `toTimeString` (required): Returns a time as a string value.
+  - `toLocaleString` (optional): Returns a value as a string value appropriate to the host environment's current locale.
+
+
+Converts a date and time to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `toLocaleDateString` (required): Returns a date as a string value appropriate to the host environment's current locale.
+
+
+Converts a date to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleDateString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `toLocaleTimeString` (required): Returns a time as a string value appropriate to the host environment's current locale.
+
+
+Converts a time to a string by using the current or specified locale.
+@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.
+@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.
+@,param,options, ,An object that contains one or more properties that specify comparison options.. toLocaleTimeString has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `valueOf` (optional): Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.
+  - `getTime` (required): Gets the time value in milliseconds.
+  - `getFullYear` (required): Gets the year, using local time.
+  - `getUTCFullYear` (required): Gets the year using Universal Coordinated Time (UTC).
+  - `getMonth` (required): Gets the month, using local time.
+  - `getUTCMonth` (required): Gets the month of a Date object using Universal Coordinated Time (UTC).
+  - `getDate` (required): Gets the day-of-the-month, using local time.
+  - `getUTCDate` (required): Gets the day-of-the-month, using Universal Coordinated Time (UTC).
+  - `getDay` (required): Gets the day of the week, using local time.
+  - `getUTCDay` (required): Gets the day of the week using Universal Coordinated Time (UTC).
+  - `getHours` (required): Gets the hours in a date, using local time.
+  - `getUTCHours` (required): Gets the hours value in a Date object using Universal Coordinated Time (UTC).
+  - `getMinutes` (required): Gets the minutes of a Date object, using local time.
+  - `getUTCMinutes` (required): Gets the minutes of a Date object using Universal Coordinated Time (UTC).
+  - `getSeconds` (required): Gets the seconds of a Date object, using local time.
+  - `getUTCSeconds` (required): Gets the seconds of a Date object using Universal Coordinated Time (UTC).
+  - `getMilliseconds` (required): Gets the milliseconds of a Date, using local time.
+  - `getUTCMilliseconds` (required): Gets the milliseconds of a Date object using Universal Coordinated Time (UTC).
+  - `getTimezoneOffset` (required): Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).
+  - `setTime` (required): Sets the date and time value in the Date object.
+@,param,time, ,A numeric value representing the number of elapsed milliseconds since midnight, January 1, 1970 GMT.
+  - `setMilliseconds` (required): Sets the milliseconds value in the Date object using local time.
+@,param,ms, ,A numeric value equal to the millisecond value.
+  - `setUTCMilliseconds` (required): Sets the milliseconds value in the Date object using Universal Coordinated Time (UTC).
+@,param,ms, ,A numeric value equal to the millisecond value.
+  - `setSeconds` (required): Sets the seconds value in the Date object using local time.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCSeconds` (required): Sets the seconds value in the Date object using Universal Coordinated Time (UTC).
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setMinutes` (required): Sets the minutes value in the Date object using local time.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCMinutes` (required): Sets the minutes value in the Date object using Universal Coordinated Time (UTC).
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setHours` (required): Sets the hour value in the Date object using local time.
+@,param,hours, ,A numeric value equal to the hours value.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setUTCHours` (required): Sets the hours value in the Date object using Universal Coordinated Time (UTC).
+@,param,hours, ,A numeric value equal to the hours value.
+@,param,min, ,A numeric value equal to the minutes value.
+@,param,sec, ,A numeric value equal to the seconds value.
+@,param,ms, ,A numeric value equal to the milliseconds value.
+  - `setDate` (required): Sets the numeric day-of-the-month value of the Date object using local time.
+@,param,date, ,A numeric value equal to the day of the month.
+  - `setUTCDate` (required): Sets the numeric day of the month in the Date object using Universal Coordinated Time (UTC).
+@,param,date, ,A numeric value equal to the day of the month.
+  - `setMonth` (required): Sets the month value in the Date object using local time.
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.
+@,param,date, ,A numeric value representing the day of the month. If this value is not supplied, the value from a call to the getDate method is used.
+  - `setUTCMonth` (required): Sets the month value in the Date object using Universal Coordinated Time (UTC).
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.
+@,param,date, ,A numeric value representing the day of the month. If it is not supplied, the value from a call to the getUTCDate method is used.
+  - `setFullYear` (required): Sets the year of the Date object using local time.
+@,param,year, ,A numeric value for the year.
+@,param,month, ,A zero-based numeric value for the month (0 for January, 11 for December). Must be specified if numDate is specified.
+@,param,date, ,A numeric value equal for the day of the month.
+  - `setUTCFullYear` (required): Sets the year value in the Date object using Universal Coordinated Time (UTC).
+@,param,year, ,A numeric value equal to the year.
+@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively. Must be supplied if numDate is supplied.
+@,param,date, ,A numeric value equal to the day of the month.
+  - `toUTCString` (required): Returns a date converted to a string using Universal Coordinated Time (UTC).
+  - `toISOString` (required): Returns a date as a string value in ISO format.
+  - `toJSON` (required): Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
+  - `getVarDate` (required)
+  - `__@toPrimitive@5513` (required): Converts a Date object to a string.
+
+
+Converts a Date object to a number.
+
+
+Converts a Date object to a string or number.
+@,param,hint, ,The strings "number", "string", or "default" to specify what primitive to return.
+@,throws,{TypeError} If 'hint' was given something other than "number", "string", or "default".
+@,returns,A number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toPrimitive@5513 has the following type: lists containing elements .
+Those elements have the following types:
+
+  - `scope` (Real; optional)
+  - `options` (Dict with Strings as keys and values of type String | Real; optional)s
   - `fragmentSelection` (Bool | Real | String | Dict | Array; optional)
   - `height` (String | Real; optional)
   - `hiddenColumns` (Bool | Real | String | Dict | Array; optional)
@@ -8524,7 +8977,7 @@ Those elements have the following types:
 | :----: | :-----: | :----: | :----: | :---: |
 | **1**  |  **1**  | **1**  | **12** | **4** |
 @,see,https,://developer.mozilla.org/docs/Web/CSS/letter-spacing
-  - `lineBreak` (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
+  - `lineBreak` (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
 
 **Syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -11370,7 +11823,7 @@ Those elements have the following types:
 **Syntax**: `auto | after`
 
 **Initial value**: `auto`
-  - `msLineBreak` (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
+  - `msLineBreak` (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
 
 **Syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -11819,7 +12272,7 @@ Those elements have the following types:
 **Syntax**: `normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]`
 
 **Initial value**: `normal`
-  - `WebkitLineBreak` (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
+  - `WebkitLineBreak` (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
 
 **Syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -12380,7 +12833,7 @@ Those elements have the following types:
 
 **Initial value**: `start`
 @,deprecated
-  - `KhtmlLineBreak` (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
+  - `KhtmlLineBreak` (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
 
 **Syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -12857,7 +13310,7 @@ Those elements have the following types:
 - `wordWrap` (Bool; optional)
 """
 function ''_hottable(; kwargs...)
-        available_props = Symbol[:children, :id, :activeHeaderClassName, :allowEmpty, :allowHtml, :allowInsertColumn, :allowInsertRow, :allowInvalid, :allowRemoveColumn, :allowRemoveRow, :ariaTags, :autoColumnSize, :autoRowSize, :autoWrapCol, :autoWrapRow, :bindRowsWithHeaders, :cell, :checkedTemplate, :className, :colHeaders, :colWidths, :collapsibleColumns, :columnHeaderHeight, :columnSorting, :columnSummary, :columns, :commentedCellClassName, :comments, :contextMenu, :copyPaste, :copyable, :correctFormat, :currentColClassName, :currentData, :currentDataAtRow, :currentHeaderClassName, :currentRowClassName, :customBorders, :data, :dataSchema, :dateFormat, :datePickerConfig, :defaultDate, :disableVisualSelection, :dragToScroll, :dropdownMenu, :editor, :enterBeginsEditing, :enterMoves, :exportData, :exportDataParams, :fillHandle, :filter, :filteringCaseSensitive, :filters, :fixedColumnsLeft, :fixedColumnsStart, :fixedRowsBottom, :fixedRowsTop, :formulas, :fragmentSelection, :getData, :getDataAtRow, :height, :hiddenColumns, :hiddenRows, :imeFastEdit, :invalidCellClassName, :label, :language, :layoutDirection, :licenseKey, :locale, :manualColumnFreeze, :manualColumnMove, :manualColumnResize, :manualRowMove, :manualRowResize, :maxCols, :maxRows, :mergeCells, :minCols, :minRows, :minSpareCols, :minSpareRows, :multiColumnSorting, :navigableHeaders, :nestedHeaders, :nestedRows, :noWordWrapClassName, :numericFormat, :observeDOMVisibility, :outsideClickDeselects, :persistentState, :placeholder, :placeholderCellClassName, :preventOverflow, :preventWheel, :readOnly, :readOnlyCellClassName, :renderAllColumns, :renderAllRows, :renderer, :rowHeaderWidth, :rowHeaders, :rowHeights, :search, :selectOptions, :selectedCells, :selectionMode, :settings, :skipColumnOnPaste, :skipRowOnPaste, :sortByRelevance, :source, :startCols, :startRows, :stretchH, :strict, :style, :tabMoves, :tabNavigation, :tableClassName, :title, :trimDropdown, :trimRows, :trimWhitespace, :type, :uncheckedTemplate, :undo, :validator, :viewportColumnRenderingOffset, :viewportRowRenderingOffset, :visibleRows, :width, :wordWrap]
+        available_props = Symbol[:children, :id, :activeHeaderClassName, :afterAddChild, :afterAutofill, :afterBeginEditing, :afterCellMetaReset, :afterChange, :afterColumnCollapse, :afterColumnExpand, :afterColumnFreeze, :afterColumnMove, :afterColumnResize, :afterColumnSequenceChange, :afterColumnSort, :afterColumnUnfreeze, :afterContextMenuDefaultOptions, :afterContextMenuHide, :afterContextMenuShow, :afterCopy, :afterCopyLimit, :afterCreateCol, :afterCreateRow, :afterCut, :afterDeselect, :afterDestroy, :afterDetachChild, :afterDocumentKeyDown, :afterDrawSelection, :afterDropdownMenuDefaultOptions, :afterDropdownMenuHide, :afterDropdownMenuShow, :afterFilter, :afterFormulasValuesUpdate, :afterGetCellMeta, :afterGetColHeader, :afterGetColumnHeaderRenderers, :afterGetRowHeader, :afterGetRowHeaderRenderers, :afterHideColumns, :afterHideRows, :afterInit, :afterLanguageChange, :afterListen, :afterLoadData, :afterMergeCells, :afterModifyTransformEnd, :afterModifyTransformFocus, :afterModifyTransformStart, :afterMomentumScroll, :afterNamedExpressionAdded, :afterNamedExpressionRemoved, :afterOnCellContextMenu, :afterOnCellCornerDblClick, :afterOnCellCornerMouseDown, :afterOnCellMouseDown, :afterOnCellMouseOut, :afterOnCellMouseOver, :afterOnCellMouseUp, :afterPaste, :afterPluginsInitialized, :afterRedo, :afterRedoStackChange, :afterRefreshDimensions, :afterRemoveCellMeta, :afterRemoveCol, :afterRemoveRow, :afterRender, :afterRenderer, :afterRowMove, :afterRowResize, :afterRowSequenceChange, :afterScroll, :afterScrollHorizontally, :afterScrollVertically, :afterSelectColumns, :afterSelectRows, :afterSelection, :afterSelectionByProp, :afterSelectionEnd, :afterSelectionEndByProp, :afterSelectionFocusSet, :afterSetCellMeta, :afterSetDataAtCell, :afterSetDataAtRowProp, :afterSetSourceDataAtCell, :afterSheetAdded, :afterSheetRemoved, :afterSheetRenamed, :afterTrimRow, :afterUndo, :afterUndoStackChange, :afterUnhideColumns, :afterUnhideRows, :afterUnlisten, :afterUnmergeCells, :afterUntrimRow, :afterUpdateData, :afterUpdateSettings, :afterValidate, :afterViewRender, :afterViewportColumnCalculatorOverride, :afterViewportRowCalculatorOverride, :allowEmpty, :allowHtml, :allowInsertColumn, :allowInsertRow, :allowInvalid, :allowRemoveColumn, :allowRemoveRow, :ariaTags, :autoColumnSize, :autoRowSize, :autoWrapCol, :autoWrapRow, :beforeAddChild, :beforeAutofill, :beforeBeginEditing, :beforeCellAlignment, :beforeChange, :beforeChangeRender, :beforeColumnCollapse, :beforeColumnExpand, :beforeColumnFreeze, :beforeColumnMove, :beforeColumnResize, :beforeColumnSort, :beforeColumnUnfreeze, :beforeColumnWrap, :beforeContextMenuSetItems, :beforeContextMenuShow, :beforeCopy, :beforeCreateCol, :beforeCreateRow, :beforeCut, :beforeDetachChild, :beforeDrawBorders, :beforeDropdownMenuSetItems, :beforeDropdownMenuShow, :beforeFilter, :beforeGetCellMeta, :beforeHideColumns, :beforeHideRows, :beforeHighlightingColumnHeader, :beforeHighlightingRowHeader, :beforeInit, :beforeInitWalkontable, :beforeKeyDown, :beforeLanguageChange, :beforeLoadData, :beforeMergeCells, :beforeOnCellContextMenu, :beforeOnCellMouseDown, :beforeOnCellMouseOut, :beforeOnCellMouseOver, :beforeOnCellMouseUp, :beforePaste, :beforeRedo, :beforeRedoStackChange, :beforeRefreshDimensions, :beforeRemoveCellClassNames, :beforeRemoveCellMeta, :beforeRemoveCol, :beforeRemoveRow, :beforeRender, :beforeRenderer, :beforeRowMove, :beforeRowResize, :beforeRowWrap, :beforeSelectColumns, :beforeSelectRows, :beforeSelectionFocusSet, :beforeSelectionHighlightSet, :beforeSetCellMeta, :beforeSetRangeEnd, :beforeSetRangeStart, :beforeSetRangeStartOnly, :beforeStretchingColumnWidth, :beforeTouchScroll, :beforeTrimRow, :beforeUndo, :beforeUndoStackChange, :beforeUnhideColumns, :beforeUnhideRows, :beforeUnmergeCells, :beforeUntrimRow, :beforeUpdateData, :beforeValidate, :beforeValueRender, :beforeViewRender, :beforeViewportScroll, :beforeViewportScrollHorizontally, :beforeViewportScrollVertically, :bindRowsWithHeaders, :cell, :cells, :checkedTemplate, :className, :colHeaders, :colWidths, :collapsibleColumns, :columnHeaderHeight, :columnSorting, :columnSummary, :columns, :commentedCellClassName, :comments, :construct, :contextMenu, :copyPaste, :copyable, :correctFormat, :currentColClassName, :currentHeaderClassName, :currentRowClassName, :customBorders, :data, :dataDotNotation, :dataSchema, :dateFormat, :datePickerConfig, :defaultDate, :disableVisualSelection, :dragToScroll, :dropdownMenu, :editor, :enterBeginsEditing, :enterMoves, :exportData, :exportDataParams, :fillHandle, :filter, :filteringCaseSensitive, :filters, :fixedColumnsLeft, :fixedColumnsStart, :fixedRowsBottom, :fixedRowsTop, :formulas, :fragmentSelection, :globalBucket, :height, :hiddenColumns, :hiddenRows, :imeFastEdit, :init, :invalidCellClassName, :isEmptyCol, :isEmptyRow, :label, :language, :layoutDirection, :licenseKey, :locale, :manualColumnFreeze, :manualColumnMove, :manualColumnResize, :manualRowMove, :manualRowResize, :maxCols, :maxRows, :mergeCells, :minCols, :minRows, :minSpareCols, :minSpareRows, :modifyAutoColumnSizeSeed, :modifyAutofillRange, :modifyColHeader, :modifyColWidth, :modifyColumnHeaderHeight, :modifyColumnHeaderValue, :modifyCopyableRange, :modifyData, :modifyFiltersMultiSelectValue, :modifyFocusOnTabNavigation, :modifyFocusedElement, :modifyGetCellCoords, :modifyRowData, :modifyRowHeader, :modifyRowHeaderWidth, :modifyRowHeight, :modifySourceData, :modifyTransformEnd, :modifyTransformFocus, :modifyTransformStart, :multiColumnSorting, :navigableHeaders, :nestedHeaders, :nestedRows, :noWordWrapClassName, :numericFormat, :observeDOMVisibility, :outsideClickDeselects, :persistentState, :persistentStateLoad, :persistentStateReset, :persistentStateSave, :placeholder, :placeholderCellClassName, :preventOverflow, :preventWheel, :readOnly, :readOnlyCellClassName, :renderAllColumns, :renderAllRows, :renderer, :rowHeaderWidth, :rowHeaders, :rowHeights, :search, :selectOptions, :selectionMode, :settings, :skipColumnOnPaste, :skipRowOnPaste, :sortByRelevance, :source, :startCols, :startRows, :stretchH, :strict, :style, :tabMoves, :tabNavigation, :tableClassName, :title, :trimDropdown, :trimRows, :trimWhitespace, :type, :uncheckedTemplate, :undo, :validator, :viewportColumnRenderingOffset, :viewportRowRenderingOffset, :visibleRows, :width, :wordWrap]
         wild_props = Symbol[]
         return Component("''_hottable", "HotTable", "dash_handsontable", available_props, wild_props; kwargs...)
 end

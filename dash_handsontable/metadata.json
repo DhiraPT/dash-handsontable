@@ -3771,11 +3771,11 @@
               "name": "enum",
               "value": [
                 {
-                  "value": "'loose'",
+                  "value": "'strict'",
                   "computed": false
                 },
                 {
-                  "value": "'strict'",
+                  "value": "'loose'",
                   "computed": false
                 },
                 {
@@ -10753,11 +10753,11 @@
               "name": "enum",
               "value": [
                 {
-                  "value": "'loose'",
+                  "value": "'strict'",
                   "computed": false
                 },
                 {
-                  "value": "'strict'",
+                  "value": "'loose'",
                   "computed": false
                 },
                 {
@@ -12639,11 +12639,11 @@
               "name": "enum",
               "value": [
                 {
-                  "value": "'loose'",
+                  "value": "'strict'",
                   "computed": false
                 },
                 {
-                  "value": "'strict'",
+                  "value": "'loose'",
                   "computed": false
                 },
                 {
@@ -14727,11 +14727,11 @@
               "name": "enum",
               "value": [
                 {
-                  "value": "'loose'",
+                  "value": "'strict'",
                   "computed": false
                 },
                 {
-                  "value": "'strict'",
+                  "value": "'loose'",
                   "computed": false
                 },
                 {
@@ -17192,6 +17192,12 @@
                 }
               ],
               "raw": "any[][] | RowObject[]"
+            },
+            "dataDotNotation": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
             },
             "dataSchema": {
               "description": "",
@@ -30486,7 +30492,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4742": {
+                    "__@toPrimitive@5513": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -30780,7 +30786,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4742": {
+                    "__@toPrimitive@5513": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -31062,7 +31068,7 @@
                       "name": "func",
                       "raw": "() => VarDate"
                     },
-                    "__@toPrimitive@4742": {
+                    "__@toPrimitive@5513": {
                       "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                       "required": true,
                       "name": "shape",
@@ -31423,6 +31429,346 @@
                   "required": false,
                   "name": "string",
                   "raw": "string"
+                },
+                "namedExpressions": {
+                  "description": "",
+                  "required": false,
+                  "name": "arrayOf",
+                  "value": {
+                    "name": "shape",
+                    "value": {
+                      "name": {
+                        "description": "",
+                        "required": true,
+                        "name": "string",
+                        "raw": "string"
+                      },
+                      "expression": {
+                        "description": "",
+                        "required": true,
+                        "name": "union",
+                        "value": [
+                          {
+                            "name": "string",
+                            "raw": "string"
+                          },
+                          {
+                            "name": "number",
+                            "raw": "number"
+                          },
+                          {
+                            "name": "shape",
+                            "value": {
+                              "toString": {
+                                "description": "Returns a string representation of a date. The format of the string depends on the locale.",
+                                "required": false,
+                                "name": "func",
+                                "raw": "() => string"
+                              },
+                              "toDateString": {
+                                "description": "Returns a date as a string value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => string"
+                              },
+                              "toTimeString": {
+                                "description": "Returns a time as a string value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => string"
+                              },
+                              "toLocaleString": {
+                                "description": "Returns a value as a string value appropriate to the host environment's current locale.\n\n\nConverts a date and time to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                                "required": false,
+                                "name": "shape",
+                                "value": {},
+                                "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                              },
+                              "toLocaleDateString": {
+                                "description": "Returns a date as a string value appropriate to the host environment's current locale.\n\n\nConverts a date to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                                "required": true,
+                                "name": "shape",
+                                "value": {},
+                                "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                              },
+                              "toLocaleTimeString": {
+                                "description": "Returns a time as a string value appropriate to the host environment's current locale.\n\n\nConverts a time to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                                "required": true,
+                                "name": "shape",
+                                "value": {},
+                                "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                              },
+                              "valueOf": {
+                                "description": "Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.",
+                                "required": false,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getTime": {
+                                "description": "Gets the time value in milliseconds.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getFullYear": {
+                                "description": "Gets the year, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCFullYear": {
+                                "description": "Gets the year using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getMonth": {
+                                "description": "Gets the month, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCMonth": {
+                                "description": "Gets the month of a Date object using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getDate": {
+                                "description": "Gets the day-of-the-month, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCDate": {
+                                "description": "Gets the day-of-the-month, using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getDay": {
+                                "description": "Gets the day of the week, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCDay": {
+                                "description": "Gets the day of the week using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getHours": {
+                                "description": "Gets the hours in a date, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCHours": {
+                                "description": "Gets the hours value in a Date object using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getMinutes": {
+                                "description": "Gets the minutes of a Date object, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCMinutes": {
+                                "description": "Gets the minutes of a Date object using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getSeconds": {
+                                "description": "Gets the seconds of a Date object, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCSeconds": {
+                                "description": "Gets the seconds of a Date object using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getMilliseconds": {
+                                "description": "Gets the milliseconds of a Date, using local time.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getUTCMilliseconds": {
+                                "description": "Gets the milliseconds of a Date object using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "getTimezoneOffset": {
+                                "description": "Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => number"
+                              },
+                              "setTime": {
+                                "description": "Sets the date and time value in the Date object.\n@,param,time, ,A numeric value representing the number of elapsed milliseconds since midnight, January 1, 1970 GMT.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(time: number) => number"
+                              },
+                              "setMilliseconds": {
+                                "description": "Sets the milliseconds value in the Date object using local time.\n@,param,ms, ,A numeric value equal to the millisecond value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(ms: number) => number"
+                              },
+                              "setUTCMilliseconds": {
+                                "description": "Sets the milliseconds value in the Date object using Universal Coordinated Time (UTC).\n@,param,ms, ,A numeric value equal to the millisecond value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(ms: number) => number"
+                              },
+                              "setSeconds": {
+                                "description": "Sets the seconds value in the Date object using local time.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(sec: number, ms?: number) => number"
+                              },
+                              "setUTCSeconds": {
+                                "description": "Sets the seconds value in the Date object using Universal Coordinated Time (UTC).\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(sec: number, ms?: number) => number"
+                              },
+                              "setMinutes": {
+                                "description": "Sets the minutes value in the Date object using local time.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(min: number, sec?: number, ms?: number) => number"
+                              },
+                              "setUTCMinutes": {
+                                "description": "Sets the minutes value in the Date object using Universal Coordinated Time (UTC).\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(min: number, sec?: number, ms?: number) => number"
+                              },
+                              "setHours": {
+                                "description": "Sets the hour value in the Date object using local time.\n@,param,hours, ,A numeric value equal to the hours value.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(hours: number, min?: number, sec?: number, ms?: number) => number"
+                              },
+                              "setUTCHours": {
+                                "description": "Sets the hours value in the Date object using Universal Coordinated Time (UTC).\n@,param,hours, ,A numeric value equal to the hours value.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(hours: number, min?: number, sec?: number, ms?: number) => number"
+                              },
+                              "setDate": {
+                                "description": "Sets the numeric day-of-the-month value of the Date object using local time.\n@,param,date, ,A numeric value equal to the day of the month.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(date: number) => number"
+                              },
+                              "setUTCDate": {
+                                "description": "Sets the numeric day of the month in the Date object using Universal Coordinated Time (UTC).\n@,param,date, ,A numeric value equal to the day of the month.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(date: number) => number"
+                              },
+                              "setMonth": {
+                                "description": "Sets the month value in the Date object using local time.\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.\n@,param,date, ,A numeric value representing the day of the month. If this value is not supplied, the value from a call to the getDate method is used.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(month: number, date?: number) => number"
+                              },
+                              "setUTCMonth": {
+                                "description": "Sets the month value in the Date object using Universal Coordinated Time (UTC).\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.\n@,param,date, ,A numeric value representing the day of the month. If it is not supplied, the value from a call to the getUTCDate method is used.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(month: number, date?: number) => number"
+                              },
+                              "setFullYear": {
+                                "description": "Sets the year of the Date object using local time.\n@,param,year, ,A numeric value for the year.\n@,param,month, ,A zero-based numeric value for the month (0 for January, 11 for December). Must be specified if numDate is specified.\n@,param,date, ,A numeric value equal for the day of the month.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(year: number, month?: number, date?: number) => number"
+                              },
+                              "setUTCFullYear": {
+                                "description": "Sets the year value in the Date object using Universal Coordinated Time (UTC).\n@,param,year, ,A numeric value equal to the year.\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively. Must be supplied if numDate is supplied.\n@,param,date, ,A numeric value equal to the day of the month.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(year: number, month?: number, date?: number) => number"
+                              },
+                              "toUTCString": {
+                                "description": "Returns a date converted to a string using Universal Coordinated Time (UTC).",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => string"
+                              },
+                              "toISOString": {
+                                "description": "Returns a date as a string value in ISO format.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => string"
+                              },
+                              "toJSON": {
+                                "description": "Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.",
+                                "required": true,
+                                "name": "func",
+                                "raw": "(key?: any) => string"
+                              },
+                              "getVarDate": {
+                                "description": "",
+                                "required": true,
+                                "name": "func",
+                                "raw": "() => VarDate"
+                              },
+                              "__@toPrimitive@5513": {
+                                "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
+                                "required": true,
+                                "name": "shape",
+                                "value": {},
+                                "raw": "{ (hint: \"default\"): string; (hint: \"string\"): string; (hint: \"number\"): number; (hint: string): string | number; }"
+                              }
+                            },
+                            "raw": "Date"
+                          }
+                        ],
+                        "raw": "RawCellContent"
+                      },
+                      "scope": {
+                        "description": "",
+                        "required": false,
+                        "name": "number",
+                        "raw": "number"
+                      },
+                      "options": {
+                        "description": "",
+                        "required": false,
+                        "name": "objectOf",
+                        "value": {
+                          "name": "union",
+                          "value": [
+                            {
+                              "name": "string",
+                              "raw": "string"
+                            },
+                            {
+                              "name": "number",
+                              "raw": "number"
+                            }
+                          ],
+                          "raw": "string | number | boolean"
+                        },
+                        "raw": "NamedExpressionOptions"
+                      }
+                    },
+                    "raw": "NamedExpressions"
+                  },
+                  "raw": "NamedExpressions[]"
                 }
               },
               "raw": "DetailedSettings"
@@ -32855,7 +33201,7 @@
               "description": "",
               "required": false,
               "name": "func",
-              "raw": "(row: number, column: number, initialValue: any, event: MouseEvent | KeyboardEvent, fullEditMode: boolean) => boolean | void"
+              "raw": "(row: number, column: number, initialValue: any, event: KeyboardEvent | MouseEvent, fullEditMode: boolean) => boolean | void"
             },
             "beforeCellAlignment": {
               "description": "",
@@ -33377,7 +33723,7 @@
               "description": "",
               "required": false,
               "name": "func",
-              "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"set\" | \"get\") => void"
+              "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"get\" | \"set\") => void"
             },
             "modifyFocusOnTabNavigation": {
               "description": "",
@@ -33419,7 +33765,7 @@
               "description": "",
               "required": false,
               "name": "func",
-              "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"set\" | \"get\") => void"
+              "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"get\" | \"set\") => void"
             },
             "modifyTransformEnd": {
               "description": "",
@@ -33595,14 +33941,6 @@
             "raw": "CellSettings"
           },
           "raw": "CellSettings[]"
-        }
-      },
-      "cells": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(this: CellProperties, row: number, column: number, prop: string | number) => CellMeta"
         }
       },
       "checkedTemplate": {
@@ -33849,6 +34187,14 @@
             }
           ],
           "raw": "any[][] | RowObject[]"
+        }
+      },
+      "dataDotNotation": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
         }
       },
       "dataSchema": {
@@ -47149,7 +47495,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4742": {
+                "__@toPrimitive@5513": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -47443,7 +47789,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4742": {
+                "__@toPrimitive@5513": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -47725,7 +48071,7 @@
                   "name": "func",
                   "raw": "() => VarDate"
                 },
-                "__@toPrimitive@4742": {
+                "__@toPrimitive@5513": {
                   "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
                   "required": true,
                   "name": "shape",
@@ -48120,6 +48466,346 @@
               "required": false,
               "name": "string",
               "raw": "string"
+            },
+            "namedExpressions": {
+              "description": "",
+              "required": false,
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "name": {
+                    "description": "",
+                    "required": true,
+                    "name": "string",
+                    "raw": "string"
+                  },
+                  "expression": {
+                    "description": "",
+                    "required": true,
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string",
+                        "raw": "string"
+                      },
+                      {
+                        "name": "number",
+                        "raw": "number"
+                      },
+                      {
+                        "name": "shape",
+                        "value": {
+                          "toString": {
+                            "description": "Returns a string representation of a date. The format of the string depends on the locale.",
+                            "required": false,
+                            "name": "func",
+                            "raw": "() => string"
+                          },
+                          "toDateString": {
+                            "description": "Returns a date as a string value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => string"
+                          },
+                          "toTimeString": {
+                            "description": "Returns a time as a string value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => string"
+                          },
+                          "toLocaleString": {
+                            "description": "Returns a value as a string value appropriate to the host environment's current locale.\n\n\nConverts a date and time to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                            "required": false,
+                            "name": "shape",
+                            "value": {},
+                            "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                          },
+                          "toLocaleDateString": {
+                            "description": "Returns a date as a string value appropriate to the host environment's current locale.\n\n\nConverts a date to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                            "required": true,
+                            "name": "shape",
+                            "value": {},
+                            "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                          },
+                          "toLocaleTimeString": {
+                            "description": "Returns a time as a string value appropriate to the host environment's current locale.\n\n\nConverts a time to a string by using the current or specified locale.\n@,param,locales, ,A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.\n@,param,locales, ,A locale string, array of locale strings, Intl.Locale object, or array of Intl.Locale objects that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used.\n@,param,options, ,An object that contains one or more properties that specify comparison options.",
+                            "required": true,
+                            "name": "shape",
+                            "value": {},
+                            "raw": "{ (): string; (locales?: string | string[], options?: DateTimeFormatOptions): string; (locales?: LocalesArgument, options?: DateTimeFormatOptions): string; }"
+                          },
+                          "valueOf": {
+                            "description": "Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.",
+                            "required": false,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getTime": {
+                            "description": "Gets the time value in milliseconds.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getFullYear": {
+                            "description": "Gets the year, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCFullYear": {
+                            "description": "Gets the year using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getMonth": {
+                            "description": "Gets the month, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCMonth": {
+                            "description": "Gets the month of a Date object using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getDate": {
+                            "description": "Gets the day-of-the-month, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCDate": {
+                            "description": "Gets the day-of-the-month, using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getDay": {
+                            "description": "Gets the day of the week, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCDay": {
+                            "description": "Gets the day of the week using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getHours": {
+                            "description": "Gets the hours in a date, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCHours": {
+                            "description": "Gets the hours value in a Date object using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getMinutes": {
+                            "description": "Gets the minutes of a Date object, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCMinutes": {
+                            "description": "Gets the minutes of a Date object using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getSeconds": {
+                            "description": "Gets the seconds of a Date object, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCSeconds": {
+                            "description": "Gets the seconds of a Date object using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getMilliseconds": {
+                            "description": "Gets the milliseconds of a Date, using local time.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getUTCMilliseconds": {
+                            "description": "Gets the milliseconds of a Date object using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "getTimezoneOffset": {
+                            "description": "Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => number"
+                          },
+                          "setTime": {
+                            "description": "Sets the date and time value in the Date object.\n@,param,time, ,A numeric value representing the number of elapsed milliseconds since midnight, January 1, 1970 GMT.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(time: number) => number"
+                          },
+                          "setMilliseconds": {
+                            "description": "Sets the milliseconds value in the Date object using local time.\n@,param,ms, ,A numeric value equal to the millisecond value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(ms: number) => number"
+                          },
+                          "setUTCMilliseconds": {
+                            "description": "Sets the milliseconds value in the Date object using Universal Coordinated Time (UTC).\n@,param,ms, ,A numeric value equal to the millisecond value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(ms: number) => number"
+                          },
+                          "setSeconds": {
+                            "description": "Sets the seconds value in the Date object using local time.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(sec: number, ms?: number) => number"
+                          },
+                          "setUTCSeconds": {
+                            "description": "Sets the seconds value in the Date object using Universal Coordinated Time (UTC).\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(sec: number, ms?: number) => number"
+                          },
+                          "setMinutes": {
+                            "description": "Sets the minutes value in the Date object using local time.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(min: number, sec?: number, ms?: number) => number"
+                          },
+                          "setUTCMinutes": {
+                            "description": "Sets the minutes value in the Date object using Universal Coordinated Time (UTC).\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(min: number, sec?: number, ms?: number) => number"
+                          },
+                          "setHours": {
+                            "description": "Sets the hour value in the Date object using local time.\n@,param,hours, ,A numeric value equal to the hours value.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(hours: number, min?: number, sec?: number, ms?: number) => number"
+                          },
+                          "setUTCHours": {
+                            "description": "Sets the hours value in the Date object using Universal Coordinated Time (UTC).\n@,param,hours, ,A numeric value equal to the hours value.\n@,param,min, ,A numeric value equal to the minutes value.\n@,param,sec, ,A numeric value equal to the seconds value.\n@,param,ms, ,A numeric value equal to the milliseconds value.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(hours: number, min?: number, sec?: number, ms?: number) => number"
+                          },
+                          "setDate": {
+                            "description": "Sets the numeric day-of-the-month value of the Date object using local time.\n@,param,date, ,A numeric value equal to the day of the month.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(date: number) => number"
+                          },
+                          "setUTCDate": {
+                            "description": "Sets the numeric day of the month in the Date object using Universal Coordinated Time (UTC).\n@,param,date, ,A numeric value equal to the day of the month.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(date: number) => number"
+                          },
+                          "setMonth": {
+                            "description": "Sets the month value in the Date object using local time.\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.\n@,param,date, ,A numeric value representing the day of the month. If this value is not supplied, the value from a call to the getDate method is used.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(month: number, date?: number) => number"
+                          },
+                          "setUTCMonth": {
+                            "description": "Sets the month value in the Date object using Universal Coordinated Time (UTC).\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.\n@,param,date, ,A numeric value representing the day of the month. If it is not supplied, the value from a call to the getUTCDate method is used.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(month: number, date?: number) => number"
+                          },
+                          "setFullYear": {
+                            "description": "Sets the year of the Date object using local time.\n@,param,year, ,A numeric value for the year.\n@,param,month, ,A zero-based numeric value for the month (0 for January, 11 for December). Must be specified if numDate is specified.\n@,param,date, ,A numeric value equal for the day of the month.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(year: number, month?: number, date?: number) => number"
+                          },
+                          "setUTCFullYear": {
+                            "description": "Sets the year value in the Date object using Universal Coordinated Time (UTC).\n@,param,year, ,A numeric value equal to the year.\n@,param,month, ,A numeric value equal to the month. The value for January is 0, and other month values follow consecutively. Must be supplied if numDate is supplied.\n@,param,date, ,A numeric value equal to the day of the month.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(year: number, month?: number, date?: number) => number"
+                          },
+                          "toUTCString": {
+                            "description": "Returns a date converted to a string using Universal Coordinated Time (UTC).",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => string"
+                          },
+                          "toISOString": {
+                            "description": "Returns a date as a string value in ISO format.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => string"
+                          },
+                          "toJSON": {
+                            "description": "Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.",
+                            "required": true,
+                            "name": "func",
+                            "raw": "(key?: any) => string"
+                          },
+                          "getVarDate": {
+                            "description": "",
+                            "required": true,
+                            "name": "func",
+                            "raw": "() => VarDate"
+                          },
+                          "__@toPrimitive@5513": {
+                            "description": "Converts a Date object to a string.\n\n\nConverts a Date object to a number.\n\n\nConverts a Date object to a string or number.\n@,param,hint, ,The strings \"number\", \"string\", or \"default\" to specify what primitive to return.\n@,throws,{TypeError} If 'hint' was given something other than \"number\", \"string\", or \"default\".\n@,returns,A number if 'hint' was \"number\", a string if 'hint' was \"string\" or \"default\".",
+                            "required": true,
+                            "name": "shape",
+                            "value": {},
+                            "raw": "{ (hint: \"default\"): string; (hint: \"string\"): string; (hint: \"number\"): number; (hint: string): string | number; }"
+                          }
+                        },
+                        "raw": "Date"
+                      }
+                    ],
+                    "raw": "RawCellContent"
+                  },
+                  "scope": {
+                    "description": "",
+                    "required": false,
+                    "name": "number",
+                    "raw": "number"
+                  },
+                  "options": {
+                    "description": "",
+                    "required": false,
+                    "name": "objectOf",
+                    "value": {
+                      "name": "union",
+                      "value": [
+                        {
+                          "name": "string",
+                          "raw": "string"
+                        },
+                        {
+                          "name": "number",
+                          "raw": "number"
+                        }
+                      ],
+                      "raw": "string | number | boolean"
+                    },
+                    "raw": "NamedExpressionOptions"
+                  }
+                },
+                "raw": "NamedExpressions"
+              },
+              "raw": "NamedExpressions[]"
             }
           },
           "raw": "DetailedSettings"
@@ -48185,22 +48871,6 @@
         "type": {
           "name": "bool",
           "raw": "boolean"
-        }
-      },
-      "isEmptyCol": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(this: Core, column: number) => boolean"
-        }
-      },
-      "isEmptyRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(this: Core, row: number) => boolean"
         }
       },
       "label": {
@@ -49075,1644 +49745,12 @@
           "raw": "boolean"
         }
       },
-      "afterAddChild": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(parent: RowObject, element: RowObject, index: number) => void"
-        }
-      },
-      "afterAutofill": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(fillData: any[][], sourceRange: CellRange, targetRange: CellRange, direction: \"left\" | \"right\" | \"up\" | \"down\") => void"
-        }
-      },
-      "afterBeginEditing": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number) => void"
-        }
-      },
-      "afterCellMetaReset": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source: ChangeSource) => void"
-        }
-      },
       "afterChangesObserved": {
         "description": "",
         "required": false,
         "type": {
           "name": "func",
           "raw": "() => void"
-        }
-      },
-      "afterColumnCollapse": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentCollapsedColumns: number[], destinationCollapsedColumns: number[], collapsePossible: boolean, successfullyCollapsed: boolean) => void"
-        }
-      },
-      "afterColumnExpand": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentCollapsedColumns: number[], destinationCollapsedColumns: number[], expandPossible: boolean, successfullyExpanded: boolean) => void"
-        }
-      },
-      "afterColumnFreeze": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(columnIndex: number, isFreezingPerformed: boolean) => void"
-        }
-      },
-      "afterColumnMove": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(movedColumns: number[], finalIndex: number, dropIndex: number, movePossible: boolean, orderChanged: boolean) => void"
-        }
-      },
-      "afterColumnResize": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(newSize: number, column: number, isDoubleClick: boolean) => void"
-        }
-      },
-      "afterColumnSequenceChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(source: \"init\" | \"move\" | \"insert\" | \"remove\" | \"update\") => void"
-        }
-      },
-      "afterColumnSort": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentSortConfig: Config[], destinationSortConfigs: Config[]) => void"
-        }
-      },
-      "afterColumnUnfreeze": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(columnIndex: number, isUnfreezingPerformed: boolean) => void"
-        }
-      },
-      "afterContextMenuDefaultOptions": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(predefinedItems: (PredefinedMenuItemKey | MenuItemConfig)[]) => void"
-        }
-      },
-      "afterContextMenuHide": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(context: ContextMenu) => void"
-        }
-      },
-      "afterContextMenuShow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(context: ContextMenu) => void"
-        }
-      },
-      "afterCopy": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[], copiedHeadersCount: { columnHeadersCount: number; }) => void"
-        }
-      },
-      "afterCopyLimit": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(selectedRows: number, selectedColumns: number, copyRowsLimit: number, copyColumnsLimit: number) => void"
-        }
-      },
-      "afterCreateCol": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, source?: ChangeSource) => void"
-        }
-      },
-      "afterCreateRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, source?: ChangeSource) => void"
-        }
-      },
-      "afterCut": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[]) => void"
-        }
-      },
-      "afterDeselect": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterDestroy": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterDetachChild": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(parent: RowObject, element: RowObject) => void"
-        }
-      },
-      "afterDocumentKeyDown": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: KeyboardEvent) => void"
-        }
-      },
-      "afterDrawSelection": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentRow: number, currentColumn: number, cornersOfSelection: number[], layerLevel?: number) => string | void"
-        }
-      },
-      "afterDropdownMenuDefaultOptions": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(predefinedItems: (PredefinedMenuItemKey | MenuItemConfig)[]) => void"
-        }
-      },
-      "afterDropdownMenuHide": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(instance: DropdownMenu) => void"
-        }
-      },
-      "afterDropdownMenuShow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(instance: DropdownMenu) => void"
-        }
-      },
-      "afterFilter": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(conditionsStack: ColumnConditions[]) => void"
-        }
-      },
-      "afterFormulasValuesUpdate": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: ExportedChange[]) => void"
-        }
-      },
-      "afterGetCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, cellProperties: CellProperties) => void"
-        }
-      },
-      "afterGetColHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(column: number, TH: HTMLTableHeaderCellElement, headerLevel: number) => void"
-        }
-      },
-      "afterGetColumnHeaderRenderers": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(renderers: ((column: number, TH: HTMLTableHeaderCellElement) => void)[]) => void"
-        }
-      },
-      "afterGetRowHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, TH: HTMLTableHeaderCellElement) => void"
-        }
-      },
-      "afterGetRowHeaderRenderers": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(renderers: ((row: number, TH: HTMLTableHeaderCellElement) => void)[]) => void"
-        }
-      },
-      "afterHideColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterHideRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterInit": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterLanguageChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(languageCode: string) => void"
-        }
-      },
-      "afterListen": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterLoadData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(sourceData: any[], initialLoad: boolean, source: string) => void"
-        }
-      },
-      "afterMergeCells": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(cellRange: CellRange, mergeParent: Settings, auto: boolean) => void"
-        }
-      },
-      "afterModifyTransformEnd": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords, rowTransformDir: 0 | -1, colTransformDir: 0 | -1) => void"
-        }
-      },
-      "afterModifyTransformFocus": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords, rowTransformDir: 0 | -1, colTransformDir: 0 | -1) => void"
-        }
-      },
-      "afterModifyTransformStart": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords, rowTransformDir: 0 | -1, colTransformDir: 0 | -1) => void"
-        }
-      },
-      "afterMomentumScroll": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterNamedExpressionAdded": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(namedExpressionName: string, changes: ExportedChange[]) => void"
-        }
-      },
-      "afterNamedExpressionRemoved": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(namedExpressionName: string, changes: ExportedChange[]) => void"
-        }
-      },
-      "afterOnCellContextMenu": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "afterOnCellCornerDblClick": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent) => void"
-        }
-      },
-      "afterOnCellCornerMouseDown": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent) => void"
-        }
-      },
-      "afterOnCellMouseDown": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "afterOnCellMouseOut": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "afterOnCellMouseOver": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "afterOnCellMouseUp": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "afterPaste": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[]) => void"
-        }
-      },
-      "afterPluginsInitialized": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterRedo": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(action: Action) => void"
-        }
-      },
-      "afterRedoStackChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(undoneActionsBefore: Action[], undoneActionsAfter: Action[]) => void"
-        }
-      },
-      "afterRefreshDimensions": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(previousDimensions: { width: number; height: number; }, currentDimensions: { width: number; height: number; }, stateChanged: boolean) => void"
-        }
-      },
-      "afterRemoveCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, key: string, value: any) => void"
-        }
-      },
-      "afterRemoveCol": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, physicalColumns: number[], source?: ChangeSource) => void"
-        }
-      },
-      "afterRemoveRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, physicalRows: number[], source?: ChangeSource) => void"
-        }
-      },
-      "afterRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isForced: boolean) => void"
-        }
-      },
-      "afterRenderer": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(TD: HTMLTableCellElement, row: number, column: number, prop: string | number, value: string, cellProperties: CellProperties) => void"
-        }
-      },
-      "afterRowMove": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(movedRows: number[], finalIndex: number, dropIndex: number, movePossible: boolean, orderChanged: boolean) => void"
-        }
-      },
-      "afterRowResize": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(newSize: number, row: number, isDoubleClick: boolean) => void"
-        }
-      },
-      "afterRowSequenceChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(source: \"init\" | \"move\" | \"insert\" | \"remove\" | \"update\") => void"
-        }
-      },
-      "afterScrollHorizontally": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterScrollVertically": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterScroll": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterSelectColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(from: CellCoords, to: CellCoords, highlight: CellCoords) => void"
-        }
-      },
-      "afterSelection": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, row2: number, column2: number, preventScrolling: { value: boolean; }, selectionLayerLevel: number) => void"
-        }
-      },
-      "afterSelectionByProp": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, prop: string, row2: number, prop2: string, preventScrolling: { value: boolean; }, selectionLayerLevel: number) => void"
-        }
-      },
-      "afterSelectionEnd": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, row2: number, column2: number, selectionLayerLevel: number) => void"
-        }
-      },
-      "afterSelectionEndByProp": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, prop: string, row2: number, prop2: string, selectionLayerLevel: number) => void"
-        }
-      },
-      "afterSelectionFocusSet": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, preventScrolling: { value: boolean; }) => void"
-        }
-      },
-      "afterSelectRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(from: CellCoords, to: CellCoords, highlight: CellCoords) => void"
-        }
-      },
-      "afterSetCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, key: string, value: any) => void"
-        }
-      },
-      "afterSetDataAtCell": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source?: ChangeSource) => void"
-        }
-      },
-      "afterSetDataAtRowProp": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source?: ChangeSource) => void"
-        }
-      },
-      "afterSetSourceDataAtCell": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source?: ChangeSource) => void"
-        }
-      },
-      "afterSheetAdded": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(addedSheetDisplayName: string) => void"
-        }
-      },
-      "afterSheetRemoved": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(removedSheetDisplayName: string, changes: ExportedChange[]) => void"
-        }
-      },
-      "afterSheetRenamed": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(oldDisplayName: string, newDisplayName: string) => void"
-        }
-      },
-      "afterTrimRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentTrimConfig: number[], destinationTrimConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterUndo": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(action: Action) => void"
-        }
-      },
-      "afterUndoStackChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(doneActionsBefore: Action[], doneActionsAfter: Action[]) => void"
-        }
-      },
-      "afterUnhideColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterUnhideRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterUnlisten": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "afterUnmergeCells": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(cellRange: CellRange, auto: boolean) => void"
-        }
-      },
-      "afterUntrimRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentTrimConfig: number[], destinationTrimConfig: number[], actionPossible: boolean, stateChanged: boolean) => void"
-        }
-      },
-      "afterUpdateData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(sourceData: any[], initialLoad: boolean, source: string) => void"
-        }
-      },
-      "afterUpdateSettings": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(newSettings: GridSettings) => void"
-        }
-      },
-      "afterValidate": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isValid: boolean, value: any, row: number, prop: string | number, source: ChangeSource) => boolean | void"
-        }
-      },
-      "afterViewportColumnCalculatorOverride": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(calc: ViewportColumnsCalculator) => void"
-        }
-      },
-      "afterViewportRowCalculatorOverride": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(calc: ViewportColumnsCalculator) => void"
-        }
-      },
-      "afterViewRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isForced: boolean) => void"
-        }
-      },
-      "beforeAddChild": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(parent: RowObject, element?: RowObject, index?: number) => void"
-        }
-      },
-      "beforeAutofill": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(selectionData: any[][], sourceRange: CellRange, targetRange: CellRange, direction: \"left\" | \"right\" | \"up\" | \"down\") => boolean | void | any[][]"
-        }
-      },
-      "beforeBeginEditing": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, initialValue: any, event: MouseEvent | KeyboardEvent, fullEditMode: boolean) => boolean | void"
-        }
-      },
-      "beforeCellAlignment": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(stateBefore: { [row: number]: string[]; }, range: CellRange[], type: \"vertical\" | \"horizontal\", alignmentClass: \"htLeft\" | \"htCenter\" | \"htRight\" | \"htJustify\" | \"htTop\" | \"htMiddle\" | \"htBottom\") => void"
-        }
-      },
-      "beforeChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source: ChangeSource) => boolean | void"
-        }
-      },
-      "beforeChangeRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(changes: CellChange[], source: ChangeSource) => void"
-        }
-      },
-      "beforeColumnCollapse": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentCollapsedColumn: number[], destinationCollapsedColumns: number[], collapsePossible: boolean) => boolean | void"
-        }
-      },
-      "beforeColumnExpand": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentCollapsedColumn: number[], destinationCollapsedColumns: number[], expandPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeColumnFreeze": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(columnIndex: number, isFreezingPerformed: boolean) => boolean | void"
-        }
-      },
-      "beforeColumnMove": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(movedColumns: number[], finalIndex: number, dropIndex: number, movePossible: boolean) => boolean | void"
-        }
-      },
-      "beforeColumnResize": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(newSize: number, column: number, isDoubleClick: boolean) => number | void"
-        }
-      },
-      "beforeColumnSort": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentSortConfig: Config[], destinationSortConfigs: Config[]) => boolean | void"
-        }
-      },
-      "beforeColumnWrap": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isActionInterrupted: { value: boolean; }, newCoords: CellCoords, isColumnFlipped: boolean) => void"
-        }
-      },
-      "beforeColumnUnfreeze": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(columnIndex: number, isUnfreezingPerformed: boolean) => boolean | void"
-        }
-      },
-      "beforeContextMenuSetItems": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(menuItems: MenuItemConfig[]) => void"
-        }
-      },
-      "beforeContextMenuShow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(context: ContextMenu) => void"
-        }
-      },
-      "beforeCopy": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[], copiedHeadersCount: { columnHeadersCount: number; }) => boolean | void"
-        }
-      },
-      "beforeCreateCol": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, source?: ChangeSource) => boolean | void"
-        }
-      },
-      "beforeCreateRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, source?: ChangeSource) => boolean | void"
-        }
-      },
-      "beforeCut": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[]) => boolean | void"
-        }
-      },
-      "beforeDetachChild": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(parent: RowObject, element: RowObject) => void"
-        }
-      },
-      "beforeDrawBorders": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(corners: number[], borderClassName: \"current\" | \"area\" | \"highlight\") => void"
-        }
-      },
-      "beforeDropdownMenuSetItems": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(menuItems: MenuItemConfig[]) => void"
-        }
-      },
-      "beforeDropdownMenuShow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(instance: DropdownMenu) => void"
-        }
-      },
-      "beforeFilter": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(conditionsStack: ColumnConditions[]) => boolean | void"
-        }
-      },
-      "beforeGetCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, cellProperties: CellProperties) => void"
-        }
-      },
-      "beforeHideColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeHideRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeHighlightingColumnHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(column: number, headerLevel: number, highlightMeta: HookHighlightColumnHeaderMeta) => number | void"
-        }
-      },
-      "beforeHighlightingRowHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, headerLevel: number, highlightMeta: HookHighlightRowHeaderMeta) => number | void"
-        }
-      },
-      "beforeInit": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "beforeInitWalkontable": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(walkontableConfig: object) => void"
-        }
-      },
-      "beforeKeyDown": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: KeyboardEvent) => void"
-        }
-      },
-      "beforeLanguageChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(languageCode: string) => void"
-        }
-      },
-      "beforeLoadData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(sourceData: any[], initialLoad: boolean, source: string) => void"
-        }
-      },
-      "beforeMergeCells": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(cellRange: CellRange, auto: boolean) => void"
-        }
-      },
-      "beforeOnCellContextMenu": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "beforeOnCellMouseDown": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement, controller: SelectionController) => void"
-        }
-      },
-      "beforeOnCellMouseOut": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "beforeOnCellMouseOver": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement, controller: SelectionController) => void"
-        }
-      },
-      "beforeOnCellMouseUp": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(event: MouseEvent, coords: CellCoords, TD: HTMLTableCellElement) => void"
-        }
-      },
-      "beforePaste": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(data: any[][], coords: RangeType[]) => boolean | void"
-        }
-      },
-      "beforeRedo": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(action: Action) => void"
-        }
-      },
-      "beforeRedoStackChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(undoneActions: Action[]) => void"
-        }
-      },
-      "beforeRefreshDimensions": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(previousDimensions: { width: number; height: number; }, currentDimensions: { width: number; height: number; }, actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeRemoveCellClassNames": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void | string[]"
-        }
-      },
-      "beforeRemoveCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, key: string, value: any) => void"
-        }
-      },
-      "beforeRemoveCol": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, physicalColumns: number[], source?: ChangeSource) => void"
-        }
-      },
-      "beforeRemoveRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(index: number, amount: number, physicalColumns: number[], source?: ChangeSource) => void"
-        }
-      },
-      "beforeRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isForced: boolean) => void"
-        }
-      },
-      "beforeRenderer": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(TD: HTMLTableCellElement, row: number, column: number, prop: string | number, value: any, cellProperties: CellProperties) => void"
-        }
-      },
-      "beforeRowMove": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(movedRows: number[], finalIndex: number, dropIndex: number, movePossible: boolean) => void"
-        }
-      },
-      "beforeRowResize": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(newSize: number, row: number, isDoubleClick: boolean) => number | void"
-        }
-      },
-      "beforeRowWrap": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isActionInterrupted: { value: boolean; }, newCoords: CellCoords, isRowFlipped: boolean) => void"
-        }
-      },
-      "beforeSelectColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(from: CellCoords, to: CellCoords, highlight: CellCoords) => void"
-        }
-      },
-      "beforeSelectionFocusSet": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords) => void"
-        }
-      },
-      "beforeSelectionHighlightSet": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "beforeSelectRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(from: CellCoords, to: CellCoords, highlight: CellCoords) => void"
-        }
-      },
-      "beforeSetCellMeta": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, key: string, value: any) => boolean | void"
-        }
-      },
-      "beforeSetRangeEnd": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords) => void"
-        }
-      },
-      "beforeSetRangeStart": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords) => void"
-        }
-      },
-      "beforeSetRangeStartOnly": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(coords: CellCoords) => void"
-        }
-      },
-      "beforeStretchingColumnWidth": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(stretchedWidth: number, column: number) => number | void"
-        }
-      },
-      "beforeTouchScroll": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "beforeTrimRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentTrimConfig: number[], destinationTrimConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeUndo": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(action: Action) => void"
-        }
-      },
-      "beforeUndoStackChange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(doneActions: Action[], source?: string) => void"
-        }
-      },
-      "beforeUnhideColumns": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeUnhideRows": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentHideConfig: number[], destinationHideConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeUnmergeCells": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(cellRange: CellRange, auto: boolean) => void"
-        }
-      },
-      "beforeUntrimRow": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(currentTrimConfig: number[], destinationTrimConfig: number[], actionPossible: boolean) => boolean | void"
-        }
-      },
-      "beforeUpdateData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(sourceData: any[], initialLoad: boolean, source: string) => void"
-        }
-      },
-      "beforeValidate": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(value: any, row: number, prop: string | number, source?: ChangeSource) => void"
-        }
-      },
-      "beforeValueRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(value: any, cellProperties: CellProperties) => void"
-        }
-      },
-      "beforeViewportScrollVertically": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(visualRow: number) => number | boolean"
-        }
-      },
-      "beforeViewportScrollHorizontally": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(visualColumn: number) => number | boolean"
-        }
-      },
-      "beforeViewportScroll": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "beforeViewRender": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(isForced: boolean, skipRender: { skipRender?: boolean; }) => void"
-        }
-      },
-      "construct": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "init": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "modifyAutoColumnSizeSeed": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(seed: string, cellProperties: CellProperties, cellValue: any) => string | void"
-        }
-      },
-      "modifyAutofillRange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(startArea: [number, number, number, number][], entireArea: [number, number, number, number][]) => void"
-        }
-      },
-      "modifyColHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(column: number) => void"
-        }
-      },
-      "modifyColumnHeaderHeight": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "() => void"
-        }
-      },
-      "modifyColumnHeaderValue": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(headerValue: string, visualColumnIndex: number, headerLevel: number) => string | void"
-        }
-      },
-      "modifyColWidth": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(width: number, column: number) => void"
-        }
-      },
-      "modifyCopyableRange": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(copyableRanges: RangeType[]) => void"
-        }
-      },
-      "modifyFiltersMultiSelectValue": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(value: string, meta: CellProperties) => any"
-        }
-      },
-      "modifyFocusedElement": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, focusedElement: HTMLElement) => void | HTMLElement"
-        }
-      },
-      "modifyData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"set\" | \"get\") => void"
-        }
-      },
-      "modifyFocusOnTabNavigation": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(tabActivationDir: \"from_above\" | \"from_below\", visualCoords: CellCoords) => void"
-        }
-      },
-      "modifyGetCellCoords": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, topmost: boolean) => void | [number, number, number, number] | [number, number]"
-        }
-      },
-      "modifyRowData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number) => void"
-        }
-      },
-      "modifyRowHeader": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number) => void"
-        }
-      },
-      "modifyRowHeaderWidth": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(rowHeaderWidth: number) => void"
-        }
-      },
-      "modifyRowHeight": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(height: number, row: number) => void"
-        }
-      },
-      "modifySourceData": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(row: number, column: number, valueHolder: { value: any; }, ioMode: \"set\" | \"get\") => void"
-        }
-      },
-      "modifyTransformEnd": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(delta: CellCoords) => void"
-        }
-      },
-      "modifyTransformFocus": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(delta: CellCoords) => void"
-        }
-      },
-      "modifyTransformStart": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(delta: CellCoords) => void"
-        }
-      },
-      "persistentStateLoad": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(key: string, valuePlaceholder: { value: any; }) => void"
-        }
-      },
-      "persistentStateReset": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(key: string) => void"
-        }
-      },
-      "persistentStateSave": {
-        "description": "",
-        "required": false,
-        "type": {
-          "name": "func",
-          "raw": "(key: string, value: any) => void"
-        }
-      },
-      "setProps": {
-        "description": "Update props to trigger callbacks.",
-        "required": true,
-        "type": {
-          "name": "func",
-          "raw": "(props: Record<string, any>) => void"
         }
       },
       "exportData": {
@@ -50737,164 +49775,1748 @@
         "type": {
           "name": "shape",
           "value": {
+            "mimeType": {
+              "description": "",
+              "required": false,
+              "name": "string",
+              "raw": "string"
+            },
+            "fileExtension": {
+              "description": "",
+              "required": false,
+              "name": "string",
+              "raw": "string"
+            },
             "filename": {
               "description": "",
               "required": false,
               "name": "string",
               "raw": "string"
-            }
-          },
-          "raw": "{ filename?: string; }"
-        }
-      },
-      "getData": {
-        "description": "",
-        "required": false,
-        "defaultValue": {
-          "value": "false",
-          "computed": false
-        },
-        "type": {
-          "name": "union",
-          "value": [
-            {
-              "name": "shape",
-              "value": {
-                "row": {
-                  "description": "",
-                  "required": false,
-                  "name": "number",
-                  "raw": "number"
-                },
-                "col": {
-                  "description": "",
-                  "required": false,
-                  "name": "number",
-                  "raw": "number"
-                },
-                "row2": {
-                  "description": "",
-                  "required": false,
-                  "name": "number",
-                  "raw": "number"
-                },
-                "col2": {
-                  "description": "",
-                  "required": false,
-                  "name": "number",
-                  "raw": "number"
-                }
-              },
-              "raw": "{ row?: number; col?: number; row2?: number; col2?: number; }"
-            }
-          ],
-          "raw": "false | { row?: number; col?: number; row2?: number; col2?: number; }"
-        }
-      },
-      "currentData": {
-        "description": "",
-        "required": false,
-        "defaultValue": {
-          "value": "[]",
-          "computed": false
-        },
-        "type": {
-          "name": "arrayOf",
-          "value": {
-            "name": "arrayOf",
-            "value": {
-              "name": "any",
-              "raw": "any"
             },
-            "raw": "any[]"
-          },
-          "raw": "any[][]"
-        }
-      },
-      "getDataAtRow": {
-        "description": "",
-        "required": false,
-        "defaultValue": {
-          "value": "false",
-          "computed": false
-        },
-        "type": {
-          "name": "union",
-          "value": [
-            {
-              "name": "shape",
-              "value": {
-                "row": {
-                  "description": "",
-                  "required": true,
-                  "name": "number",
-                  "raw": "number"
-                },
-                "prop": {
-                  "description": "",
-                  "required": false,
-                  "name": "string",
-                  "raw": "string"
-                }
-              },
-              "raw": "{ row: number; prop?: string; }"
-            }
-          ],
-          "raw": "false | { row: number; prop?: string; }"
-        }
-      },
-      "currentDataAtRow": {
-        "description": "",
-        "required": false,
-        "defaultValue": {
-          "value": "[]",
-          "computed": false
-        },
-        "type": {
-          "name": "arrayOf",
-          "value": {
-            "name": "any",
-            "raw": "any"
-          },
-          "raw": "any[]"
-        }
-      },
-      "selectedCells": {
-        "description": "",
-        "required": false,
-        "defaultValue": {
-          "value": "null",
-          "computed": false
-        },
-        "type": {
-          "name": "arrayOf",
-          "value": {
-            "name": "arrayOf",
-            "value": {
-              "name": "tuple",
-              "elements": [
-                {
-                  "name": "number",
-                  "raw": "number"
-                },
-                {
-                  "name": "number",
-                  "raw": "number"
-                },
-                {
-                  "name": "number",
-                  "raw": "number"
-                },
-                {
-                  "name": "number",
-                  "raw": "number"
-                }
-              ],
-              "raw": "[number, number, number, number]"
+            "encoding": {
+              "description": "",
+              "required": false,
+              "name": "string",
+              "raw": "string"
             },
-            "raw": "[number, number, number, number][]"
+            "bom": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "columnDelimiter": {
+              "description": "",
+              "required": false,
+              "name": "string",
+              "raw": "string"
+            },
+            "rowDelimiter": {
+              "description": "",
+              "required": false,
+              "name": "string",
+              "raw": "string"
+            },
+            "columnHeaders": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "rowHeaders": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "exportHiddenColumns": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "exportHiddenRows": {
+              "description": "",
+              "required": false,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "range": {
+              "description": "",
+              "required": false,
+              "name": "arrayOf",
+              "value": {
+                "name": "number",
+                "raw": "number"
+              },
+              "raw": "number[]"
+            }
           },
-          "raw": "[number, number, number, number][][]"
+          "raw": "ExportOptions"
+        }
+      },
+      "cells": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "isEmptyCol": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "isEmptyRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterAddChild": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterAutofill": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterBeginEditing": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCellMetaReset": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnCollapse": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnExpand": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnFreeze": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnMove": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnResize": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnSequenceChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnSort": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterColumnUnfreeze": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterContextMenuDefaultOptions": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterContextMenuHide": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterContextMenuShow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCopy": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCopyLimit": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCreateCol": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCreateRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterCut": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDeselect": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDestroy": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDetachChild": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDocumentKeyDown": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDrawSelection": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDropdownMenuDefaultOptions": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDropdownMenuHide": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterDropdownMenuShow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterFilter": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterFormulasValuesUpdate": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterGetCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterGetColHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterGetColumnHeaderRenderers": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterGetRowHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterGetRowHeaderRenderers": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterHideColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterHideRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterInit": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterLanguageChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterListen": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterLoadData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterMergeCells": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterModifyTransformEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterModifyTransformFocus": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterModifyTransformStart": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterMomentumScroll": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterNamedExpressionAdded": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterNamedExpressionRemoved": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellContextMenu": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellCornerDblClick": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellCornerMouseDown": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellMouseDown": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellMouseOut": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellMouseOver": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterOnCellMouseUp": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterPaste": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterPluginsInitialized": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRedo": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRedoStackChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRefreshDimensions": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRemoveCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRemoveCol": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRemoveRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRenderer": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRowMove": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRowResize": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterRowSequenceChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterScroll": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterScrollHorizontally": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterScrollVertically": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelection": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectionByProp": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectionEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectionEndByProp": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectionFocusSet": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSelectRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSetCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSetDataAtCell": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSetDataAtRowProp": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSetSourceDataAtCell": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSheetAdded": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSheetRemoved": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterSheetRenamed": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterTrimRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUndo": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUndoStackChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUnhideColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUnhideRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUnlisten": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUnmergeCells": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUntrimRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUpdateData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterUpdateSettings": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterValidate": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterViewportColumnCalculatorOverride": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterViewportRowCalculatorOverride": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "afterViewRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeAddChild": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeAutofill": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeBeginEditing": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeCellAlignment": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeChangeRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnCollapse": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnExpand": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnFreeze": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnMove": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnResize": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnSort": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnUnfreeze": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeColumnWrap": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeContextMenuSetItems": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeContextMenuShow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeCopy": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeCreateCol": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeCreateRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeCut": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeDetachChild": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeDrawBorders": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeDropdownMenuSetItems": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeDropdownMenuShow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeFilter": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeGetCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeHideColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeHideRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeHighlightingColumnHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeHighlightingRowHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeInit": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeInitWalkontable": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeKeyDown": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeLanguageChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeLoadData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeMergeCells": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeOnCellContextMenu": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeOnCellMouseDown": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeOnCellMouseOut": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeOnCellMouseOver": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeOnCellMouseUp": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforePaste": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRedo": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRedoStackChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRefreshDimensions": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRemoveCellClassNames": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRemoveCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRemoveCol": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRemoveRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRenderer": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRowMove": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRowResize": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeRowWrap": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSelectColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSelectionFocusSet": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSelectionHighlightSet": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSelectRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSetCellMeta": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSetRangeEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSetRangeStart": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeSetRangeStartOnly": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeStretchingColumnWidth": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeTouchScroll": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeTrimRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUndo": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUndoStackChange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUnhideColumns": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUnhideRows": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUnmergeCells": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUntrimRow": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeUpdateData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeValidate": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeValueRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeViewportScroll": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeViewportScrollHorizontally": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeViewportScrollVertically": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "beforeViewRender": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "construct": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "globalBucket": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "init": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyAutoColumnSizeSeed": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyAutofillRange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyColHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyColumnHeaderHeight": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyColumnHeaderValue": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyColWidth": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyCopyableRange": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyFiltersMultiSelectValue": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyFocusedElement": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyFocusOnTabNavigation": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyGetCellCoords": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyRowData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyRowHeader": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyRowHeaderWidth": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyRowHeight": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifySourceData": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyTransformEnd": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyTransformFocus": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "modifyTransformStart": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "persistentStateLoad": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "persistentStateReset": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "persistentStateSave": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
         }
       }
     },

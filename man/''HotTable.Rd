@@ -116,20 +116,20 @@ columnSummary=NULL, columns=NULL,
 commentedCellClassName=NULL, comments=NULL, construct=NULL,
 contextMenu=NULL, copyPaste=NULL, copyable=NULL,
 correctFormat=NULL, currentColClassName=NULL,
-currentData=NULL, currentDataAtRow=NULL,
 currentHeaderClassName=NULL, currentRowClassName=NULL,
-customBorders=NULL, data=NULL, dataSchema=NULL,
-dateFormat=NULL, datePickerConfig=NULL, defaultDate=NULL,
-disableVisualSelection=NULL, dragToScroll=NULL,
-dropdownMenu=NULL, editor=NULL, enterBeginsEditing=NULL,
-enterMoves=NULL, exportData=NULL, exportDataParams=NULL,
-fillHandle=NULL, filter=NULL, filteringCaseSensitive=NULL,
-filters=NULL, fixedColumnsLeft=NULL, fixedColumnsStart=NULL,
+customBorders=NULL, data=NULL, dataDotNotation=NULL,
+dataSchema=NULL, dateFormat=NULL, datePickerConfig=NULL,
+defaultDate=NULL, disableVisualSelection=NULL,
+dragToScroll=NULL, dropdownMenu=NULL, editor=NULL,
+enterBeginsEditing=NULL, enterMoves=NULL, exportData=NULL,
+exportDataParams=NULL, fillHandle=NULL, filter=NULL,
+filteringCaseSensitive=NULL, filters=NULL,
+fixedColumnsLeft=NULL, fixedColumnsStart=NULL,
 fixedRowsBottom=NULL, fixedRowsTop=NULL, formulas=NULL,
-fragmentSelection=NULL, getData=NULL, getDataAtRow=NULL,
-height=NULL, hiddenColumns=NULL, hiddenRows=NULL,
-imeFastEdit=NULL, init=NULL, invalidCellClassName=NULL,
-isEmptyCol=NULL, isEmptyRow=NULL, label=NULL, language=NULL,
+fragmentSelection=NULL, globalBucket=NULL, height=NULL,
+hiddenColumns=NULL, hiddenRows=NULL, imeFastEdit=NULL,
+init=NULL, invalidCellClassName=NULL, isEmptyCol=NULL,
+isEmptyRow=NULL, label=NULL, language=NULL,
 layoutDirection=NULL, licenseKey=NULL, locale=NULL,
 manualColumnFreeze=NULL, manualColumnMove=NULL,
 manualColumnResize=NULL, manualRowMove=NULL,
@@ -157,8 +157,8 @@ preventOverflow=NULL, preventWheel=NULL, readOnly=NULL,
 readOnlyCellClassName=NULL, renderAllColumns=NULL,
 renderAllRows=NULL, renderer=NULL, rowHeaderWidth=NULL,
 rowHeaders=NULL, rowHeights=NULL, search=NULL,
-selectOptions=NULL, selectedCells=NULL, selectionMode=NULL,
-settings=NULL, skipColumnOnPaste=NULL, skipRowOnPaste=NULL,
+selectOptions=NULL, selectionMode=NULL, settings=NULL,
+skipColumnOnPaste=NULL, skipRowOnPaste=NULL,
 sortByRelevance=NULL, source=NULL, startCols=NULL,
 startRows=NULL, stretchH=NULL, strict=NULL, style=NULL,
 tabMoves=NULL, tabNavigation=NULL, tableClassName=NULL,
@@ -177,207 +177,207 @@ width=NULL, wordWrap=NULL)
 
 \item{activeHeaderClassName}{Character. }
 
-\item{afterAddChild}{}
+\item{afterAddChild}{Character. }
 
-\item{afterAutofill}{}
+\item{afterAutofill}{Character. }
 
-\item{afterBeginEditing}{}
+\item{afterBeginEditing}{Character. }
 
-\item{afterCellMetaReset}{}
+\item{afterCellMetaReset}{Character. }
 
-\item{afterChange}{}
+\item{afterChange}{Character. }
 
 \item{afterChangesObserved}{}
 
-\item{afterColumnCollapse}{}
+\item{afterColumnCollapse}{Character. }
 
-\item{afterColumnExpand}{}
+\item{afterColumnExpand}{Character. }
 
-\item{afterColumnFreeze}{}
+\item{afterColumnFreeze}{Character. }
 
-\item{afterColumnMove}{}
+\item{afterColumnMove}{Character. }
 
-\item{afterColumnResize}{}
+\item{afterColumnResize}{Character. }
 
-\item{afterColumnSequenceChange}{}
+\item{afterColumnSequenceChange}{Character. }
 
-\item{afterColumnSort}{}
+\item{afterColumnSort}{Character. }
 
-\item{afterColumnUnfreeze}{}
+\item{afterColumnUnfreeze}{Character. }
 
-\item{afterContextMenuDefaultOptions}{}
+\item{afterContextMenuDefaultOptions}{Character. }
 
-\item{afterContextMenuHide}{}
+\item{afterContextMenuHide}{Character. }
 
-\item{afterContextMenuShow}{}
+\item{afterContextMenuShow}{Character. }
 
-\item{afterCopy}{}
+\item{afterCopy}{Character. }
 
-\item{afterCopyLimit}{}
+\item{afterCopyLimit}{Character. }
 
-\item{afterCreateCol}{}
+\item{afterCreateCol}{Character. }
 
-\item{afterCreateRow}{}
+\item{afterCreateRow}{Character. }
 
-\item{afterCut}{}
+\item{afterCut}{Character. }
 
-\item{afterDeselect}{}
+\item{afterDeselect}{Character. }
 
-\item{afterDestroy}{}
+\item{afterDestroy}{Character. }
 
-\item{afterDetachChild}{}
+\item{afterDetachChild}{Character. }
 
-\item{afterDocumentKeyDown}{}
+\item{afterDocumentKeyDown}{Character. }
 
-\item{afterDrawSelection}{}
+\item{afterDrawSelection}{Character. }
 
-\item{afterDropdownMenuDefaultOptions}{}
+\item{afterDropdownMenuDefaultOptions}{Character. }
 
-\item{afterDropdownMenuHide}{}
+\item{afterDropdownMenuHide}{Character. }
 
-\item{afterDropdownMenuShow}{}
+\item{afterDropdownMenuShow}{Character. }
 
-\item{afterFilter}{}
+\item{afterFilter}{Character. }
 
-\item{afterFormulasValuesUpdate}{}
+\item{afterFormulasValuesUpdate}{Character. }
 
-\item{afterGetCellMeta}{}
+\item{afterGetCellMeta}{Character. }
 
-\item{afterGetColHeader}{}
+\item{afterGetColHeader}{Character. }
 
-\item{afterGetColumnHeaderRenderers}{}
+\item{afterGetColumnHeaderRenderers}{Character. }
 
-\item{afterGetRowHeader}{}
+\item{afterGetRowHeader}{Character. }
 
-\item{afterGetRowHeaderRenderers}{}
+\item{afterGetRowHeaderRenderers}{Character. }
 
-\item{afterHideColumns}{}
+\item{afterHideColumns}{Character. }
 
-\item{afterHideRows}{}
+\item{afterHideRows}{Character. }
 
-\item{afterInit}{}
+\item{afterInit}{Character. }
 
-\item{afterLanguageChange}{}
+\item{afterLanguageChange}{Character. }
 
-\item{afterListen}{}
+\item{afterListen}{Character. }
 
-\item{afterLoadData}{}
+\item{afterLoadData}{Character. }
 
-\item{afterMergeCells}{}
+\item{afterMergeCells}{Character. }
 
-\item{afterModifyTransformEnd}{}
+\item{afterModifyTransformEnd}{Character. }
 
-\item{afterModifyTransformFocus}{}
+\item{afterModifyTransformFocus}{Character. }
 
-\item{afterModifyTransformStart}{}
+\item{afterModifyTransformStart}{Character. }
 
-\item{afterMomentumScroll}{}
+\item{afterMomentumScroll}{Character. }
 
-\item{afterNamedExpressionAdded}{}
+\item{afterNamedExpressionAdded}{Character. }
 
-\item{afterNamedExpressionRemoved}{}
+\item{afterNamedExpressionRemoved}{Character. }
 
-\item{afterOnCellContextMenu}{}
+\item{afterOnCellContextMenu}{Character. }
 
-\item{afterOnCellCornerDblClick}{}
+\item{afterOnCellCornerDblClick}{Character. }
 
-\item{afterOnCellCornerMouseDown}{}
+\item{afterOnCellCornerMouseDown}{Character. }
 
-\item{afterOnCellMouseDown}{}
+\item{afterOnCellMouseDown}{Character. }
 
-\item{afterOnCellMouseOut}{}
+\item{afterOnCellMouseOut}{Character. }
 
-\item{afterOnCellMouseOver}{}
+\item{afterOnCellMouseOver}{Character. }
 
-\item{afterOnCellMouseUp}{}
+\item{afterOnCellMouseUp}{Character. }
 
-\item{afterPaste}{}
+\item{afterPaste}{Character. }
 
-\item{afterPluginsInitialized}{}
+\item{afterPluginsInitialized}{Character. }
 
-\item{afterRedo}{}
+\item{afterRedo}{Character. }
 
-\item{afterRedoStackChange}{}
+\item{afterRedoStackChange}{Character. }
 
-\item{afterRefreshDimensions}{}
+\item{afterRefreshDimensions}{Character. }
 
-\item{afterRemoveCellMeta}{}
+\item{afterRemoveCellMeta}{Character. }
 
-\item{afterRemoveCol}{}
+\item{afterRemoveCol}{Character. }
 
-\item{afterRemoveRow}{}
+\item{afterRemoveRow}{Character. }
 
-\item{afterRender}{}
+\item{afterRender}{Character. }
 
-\item{afterRenderer}{}
+\item{afterRenderer}{Character. }
 
-\item{afterRowMove}{}
+\item{afterRowMove}{Character. }
 
-\item{afterRowResize}{}
+\item{afterRowResize}{Character. }
 
-\item{afterRowSequenceChange}{}
+\item{afterRowSequenceChange}{Character. }
 
-\item{afterScroll}{}
+\item{afterScroll}{Character. }
 
-\item{afterScrollHorizontally}{}
+\item{afterScrollHorizontally}{Character. }
 
-\item{afterScrollVertically}{}
+\item{afterScrollVertically}{Character. }
 
-\item{afterSelectColumns}{}
+\item{afterSelectColumns}{Character. }
 
-\item{afterSelectRows}{}
+\item{afterSelectRows}{Character. }
 
-\item{afterSelection}{}
+\item{afterSelection}{Character. }
 
-\item{afterSelectionByProp}{}
+\item{afterSelectionByProp}{Character. }
 
-\item{afterSelectionEnd}{}
+\item{afterSelectionEnd}{Character. }
 
-\item{afterSelectionEndByProp}{}
+\item{afterSelectionEndByProp}{Character. }
 
-\item{afterSelectionFocusSet}{}
+\item{afterSelectionFocusSet}{Character. }
 
-\item{afterSetCellMeta}{}
+\item{afterSetCellMeta}{Character. }
 
-\item{afterSetDataAtCell}{}
+\item{afterSetDataAtCell}{Character. }
 
-\item{afterSetDataAtRowProp}{}
+\item{afterSetDataAtRowProp}{Character. }
 
-\item{afterSetSourceDataAtCell}{}
+\item{afterSetSourceDataAtCell}{Character. }
 
-\item{afterSheetAdded}{}
+\item{afterSheetAdded}{Character. }
 
-\item{afterSheetRemoved}{}
+\item{afterSheetRemoved}{Character. }
 
-\item{afterSheetRenamed}{}
+\item{afterSheetRenamed}{Character. }
 
-\item{afterTrimRow}{}
+\item{afterTrimRow}{Character. }
 
-\item{afterUndo}{}
+\item{afterUndo}{Character. }
 
-\item{afterUndoStackChange}{}
+\item{afterUndoStackChange}{Character. }
 
-\item{afterUnhideColumns}{}
+\item{afterUnhideColumns}{Character. }
 
-\item{afterUnhideRows}{}
+\item{afterUnhideRows}{Character. }
 
-\item{afterUnlisten}{}
+\item{afterUnlisten}{Character. }
 
-\item{afterUnmergeCells}{}
+\item{afterUnmergeCells}{Character. }
 
-\item{afterUntrimRow}{}
+\item{afterUntrimRow}{Character. }
 
-\item{afterUpdateData}{}
+\item{afterUpdateData}{Character. }
 
-\item{afterUpdateSettings}{}
+\item{afterUpdateSettings}{Character. }
 
-\item{afterValidate}{}
+\item{afterValidate}{Character. }
 
-\item{afterViewRender}{}
+\item{afterViewRender}{Character. }
 
-\item{afterViewportColumnCalculatorOverride}{}
+\item{afterViewportColumnCalculatorOverride}{Character. }
 
-\item{afterViewportRowCalculatorOverride}{}
+\item{afterViewportRowCalculatorOverride}{Character. }
 
 \item{allowEmpty}{Logical. }
 
@@ -403,167 +403,167 @@ width=NULL, wordWrap=NULL)
 
 \item{autoWrapRow}{Logical. }
 
-\item{beforeAddChild}{}
+\item{beforeAddChild}{Character. }
 
-\item{beforeAutofill}{}
+\item{beforeAutofill}{Character. }
 
-\item{beforeBeginEditing}{}
+\item{beforeBeginEditing}{Character. }
 
-\item{beforeCellAlignment}{}
+\item{beforeCellAlignment}{Character. }
 
-\item{beforeChange}{}
+\item{beforeChange}{Character. }
 
-\item{beforeChangeRender}{}
+\item{beforeChangeRender}{Character. }
 
-\item{beforeColumnCollapse}{}
+\item{beforeColumnCollapse}{Character. }
 
-\item{beforeColumnExpand}{}
+\item{beforeColumnExpand}{Character. }
 
-\item{beforeColumnFreeze}{}
+\item{beforeColumnFreeze}{Character. }
 
-\item{beforeColumnMove}{}
+\item{beforeColumnMove}{Character. }
 
-\item{beforeColumnResize}{}
+\item{beforeColumnResize}{Character. }
 
-\item{beforeColumnSort}{}
+\item{beforeColumnSort}{Character. }
 
-\item{beforeColumnUnfreeze}{}
+\item{beforeColumnUnfreeze}{Character. }
 
-\item{beforeColumnWrap}{}
+\item{beforeColumnWrap}{Character. }
 
-\item{beforeContextMenuSetItems}{}
+\item{beforeContextMenuSetItems}{Character. }
 
-\item{beforeContextMenuShow}{}
+\item{beforeContextMenuShow}{Character. }
 
-\item{beforeCopy}{}
+\item{beforeCopy}{Character. }
 
-\item{beforeCreateCol}{}
+\item{beforeCreateCol}{Character. }
 
-\item{beforeCreateRow}{}
+\item{beforeCreateRow}{Character. }
 
-\item{beforeCut}{}
+\item{beforeCut}{Character. }
 
-\item{beforeDetachChild}{}
+\item{beforeDetachChild}{Character. }
 
-\item{beforeDrawBorders}{}
+\item{beforeDrawBorders}{Character. }
 
-\item{beforeDropdownMenuSetItems}{}
+\item{beforeDropdownMenuSetItems}{Character. }
 
-\item{beforeDropdownMenuShow}{}
+\item{beforeDropdownMenuShow}{Character. }
 
-\item{beforeFilter}{}
+\item{beforeFilter}{Character. }
 
-\item{beforeGetCellMeta}{}
+\item{beforeGetCellMeta}{Character. }
 
-\item{beforeHideColumns}{}
+\item{beforeHideColumns}{Character. }
 
-\item{beforeHideRows}{}
+\item{beforeHideRows}{Character. }
 
-\item{beforeHighlightingColumnHeader}{}
+\item{beforeHighlightingColumnHeader}{Character. }
 
-\item{beforeHighlightingRowHeader}{}
+\item{beforeHighlightingRowHeader}{Character. }
 
-\item{beforeInit}{}
+\item{beforeInit}{Character. }
 
-\item{beforeInitWalkontable}{}
+\item{beforeInitWalkontable}{Character. }
 
-\item{beforeKeyDown}{}
+\item{beforeKeyDown}{Character. }
 
-\item{beforeLanguageChange}{}
+\item{beforeLanguageChange}{Character. }
 
-\item{beforeLoadData}{}
+\item{beforeLoadData}{Character. }
 
-\item{beforeMergeCells}{}
+\item{beforeMergeCells}{Character. }
 
-\item{beforeOnCellContextMenu}{}
+\item{beforeOnCellContextMenu}{Character. }
 
-\item{beforeOnCellMouseDown}{}
+\item{beforeOnCellMouseDown}{Character. }
 
-\item{beforeOnCellMouseOut}{}
+\item{beforeOnCellMouseOut}{Character. }
 
-\item{beforeOnCellMouseOver}{}
+\item{beforeOnCellMouseOver}{Character. }
 
-\item{beforeOnCellMouseUp}{}
+\item{beforeOnCellMouseUp}{Character. }
 
-\item{beforePaste}{}
+\item{beforePaste}{Character. }
 
-\item{beforeRedo}{}
+\item{beforeRedo}{Character. }
 
-\item{beforeRedoStackChange}{}
+\item{beforeRedoStackChange}{Character. }
 
-\item{beforeRefreshDimensions}{}
+\item{beforeRefreshDimensions}{Character. }
 
-\item{beforeRemoveCellClassNames}{}
+\item{beforeRemoveCellClassNames}{Character. }
 
-\item{beforeRemoveCellMeta}{}
+\item{beforeRemoveCellMeta}{Character. }
 
-\item{beforeRemoveCol}{}
+\item{beforeRemoveCol}{Character. }
 
-\item{beforeRemoveRow}{}
+\item{beforeRemoveRow}{Character. }
 
-\item{beforeRender}{}
+\item{beforeRender}{Character. }
 
-\item{beforeRenderer}{}
+\item{beforeRenderer}{Character. }
 
-\item{beforeRowMove}{}
+\item{beforeRowMove}{Character. }
 
-\item{beforeRowResize}{}
+\item{beforeRowResize}{Character. }
 
-\item{beforeRowWrap}{}
+\item{beforeRowWrap}{Character. }
 
-\item{beforeSelectColumns}{}
+\item{beforeSelectColumns}{Character. }
 
-\item{beforeSelectRows}{}
+\item{beforeSelectRows}{Character. }
 
-\item{beforeSelectionFocusSet}{}
+\item{beforeSelectionFocusSet}{Character. }
 
-\item{beforeSelectionHighlightSet}{}
+\item{beforeSelectionHighlightSet}{Character. }
 
-\item{beforeSetCellMeta}{}
+\item{beforeSetCellMeta}{Character. }
 
-\item{beforeSetRangeEnd}{}
+\item{beforeSetRangeEnd}{Character. }
 
-\item{beforeSetRangeStart}{}
+\item{beforeSetRangeStart}{Character. }
 
-\item{beforeSetRangeStartOnly}{}
+\item{beforeSetRangeStartOnly}{Character. }
 
-\item{beforeStretchingColumnWidth}{}
+\item{beforeStretchingColumnWidth}{Character. }
 
-\item{beforeTouchScroll}{}
+\item{beforeTouchScroll}{Character. }
 
-\item{beforeTrimRow}{}
+\item{beforeTrimRow}{Character. }
 
-\item{beforeUndo}{}
+\item{beforeUndo}{Character. }
 
-\item{beforeUndoStackChange}{}
+\item{beforeUndoStackChange}{Character. }
 
-\item{beforeUnhideColumns}{}
+\item{beforeUnhideColumns}{Character. }
 
-\item{beforeUnhideRows}{}
+\item{beforeUnhideRows}{Character. }
 
-\item{beforeUnmergeCells}{}
+\item{beforeUnmergeCells}{Character. }
 
-\item{beforeUntrimRow}{}
+\item{beforeUntrimRow}{Character. }
 
-\item{beforeUpdateData}{}
+\item{beforeUpdateData}{Character. }
 
-\item{beforeValidate}{}
+\item{beforeValidate}{Character. }
 
-\item{beforeValueRender}{}
+\item{beforeValueRender}{Character. }
 
-\item{beforeViewRender}{}
+\item{beforeViewRender}{Character. }
 
-\item{beforeViewportScroll}{}
+\item{beforeViewportScroll}{Character. }
 
-\item{beforeViewportScrollHorizontally}{}
+\item{beforeViewportScrollHorizontally}{Character. }
 
-\item{beforeViewportScrollVertically}{}
+\item{beforeViewportScrollVertically}{Character. }
 
 \item{bindRowsWithHeaders}{Logical | numeric | character | named list | unnamed list. }
 
 \item{cell}{List of list with named elements and values of type logical | numeric | character | named list | unnamed lists. }
 
-\item{cells}{}
+\item{cells}{Character. }
 
 \item{checkedTemplate}{Character | numeric. }
 
@@ -587,7 +587,7 @@ width=NULL, wordWrap=NULL)
 
 \item{comments}{Logical | numeric | character | named list | unnamed list. }
 
-\item{construct}{}
+\item{construct}{Character. }
 
 \item{contextMenu}{Logical | numeric | character | named list | unnamed list. }
 
@@ -599,10 +599,6 @@ width=NULL, wordWrap=NULL)
 
 \item{currentColClassName}{Character. }
 
-\item{currentData}{List of list of logical | numeric | character | named list | unnamed listss. }
-
-\item{currentDataAtRow}{List of logical | numeric | character | named list | unnamed lists. }
-
 \item{currentHeaderClassName}{Character. }
 
 \item{currentRowClassName}{Character. }
@@ -610,6 +606,8 @@ width=NULL, wordWrap=NULL)
 \item{customBorders}{Logical | numeric | character | named list | unnamed list. }
 
 \item{data}{List of list of logical | numeric | character | named list | unnamed listss. }
+
+\item{dataDotNotation}{Logical. }
 
 \item{dataSchema}{List of logical | numeric | character | named list | unnamed lists. }
 
@@ -3308,7 +3306,7 @@ those elements have the following types:
   - tabindex (numeric; required)
   - blur (required)
   - focus (required)
-  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3414,7 +3412,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3423,13 +3421,13 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - setdefaultdate (logical; optional): make the defaultdate the initial selected value.
   - firstday (numeric; optional): first day of the week (0: sunday, 1: monday, etc).
   - mindate (optional): the earliest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3535,7 +3533,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3544,11 +3542,11 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - maxdate (optional): the latest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -3654,7 +3652,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -3663,7 +3661,7 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - disableweekends (logical; optional): disallow selection of saturdays and sundays.
@@ -3723,9 +3721,20 @@ those elements have the following types:
 
 \item{exportData}{Logical. }
 
-\item{exportDataParams}{Lists containing elements 'filename'.
+\item{exportDataParams}{Lists containing elements 'mimetype', 'fileextension', 'filename', 'encoding', 'bom', 'columndelimiter', 'rowdelimiter', 'columnheaders', 'rowheaders', 'exporthiddencolumns', 'exporthiddenrows', 'range'.
 those elements have the following types:
-  - filename (character; optional). }
+  - mimetype (character; optional)
+  - fileextension (character; optional)
+  - filename (character; optional)
+  - encoding (character; optional)
+  - bom (logical; optional)
+  - columndelimiter (character; optional)
+  - rowdelimiter (character; optional)
+  - columnheaders (logical; optional)
+  - rowheaders (logical; optional)
+  - exporthiddencolumns (logical; optional)
+  - exporthiddenrows (logical; optional)
+  - range (list of numerics; optional). }
 
 \item{fillHandle}{Logical | numeric | character | named list | unnamed list. }
 
@@ -3743,24 +3752,137 @@ those elements have the following types:
 
 \item{fixedRowsTop}{Numeric. }
 
-\item{formulas}{Lists containing elements 'engine', 'sheetname'.
+\item{formulas}{Lists containing elements 'engine', 'sheetname', 'namedexpressions'.
 those elements have the following types:
   - engine (logical | numeric | character | named list | unnamed list; required)
-  - sheetname (character; optional). }
+  - sheetname (character; optional)
+  - namedexpressions (optional): . namedexpressions has the following type: list of lists containing elements 'name', 'expression', 'scope', 'options'.
+those elements have the following types:
+  - name (character; required)
+  - expression (required): . expression has the following type: character | numeric | lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
+those elements have the following types:
+  - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
+  - todatestring (required): returns a date as a string value.
+  - totimestring (required): returns a time as a string value.
+  - tolocalestring (optional): returns a value as a string value appropriate to the host environment's current locale.
+
+
+converts a date and time to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocalestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - tolocaledatestring (required): returns a date as a string value appropriate to the host environment's current locale.
+
+
+converts a date to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocaledatestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - tolocaletimestring (required): returns a time as a string value appropriate to the host environment's current locale.
+
+
+converts a time to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocaletimestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - valueof (optional): returns the stored time value in milliseconds since midnight, january 1, 1970 utc.
+  - gettime (required): gets the time value in milliseconds.
+  - getfullyear (required): gets the year, using local time.
+  - getutcfullyear (required): gets the year using universal coordinated time (utc).
+  - getmonth (required): gets the month, using local time.
+  - getutcmonth (required): gets the month of a date object using universal coordinated time (utc).
+  - getdate (required): gets the day-of-the-month, using local time.
+  - getutcdate (required): gets the day-of-the-month, using universal coordinated time (utc).
+  - getday (required): gets the day of the week, using local time.
+  - getutcday (required): gets the day of the week using universal coordinated time (utc).
+  - gethours (required): gets the hours in a date, using local time.
+  - getutchours (required): gets the hours value in a date object using universal coordinated time (utc).
+  - getminutes (required): gets the minutes of a date object, using local time.
+  - getutcminutes (required): gets the minutes of a date object using universal coordinated time (utc).
+  - getseconds (required): gets the seconds of a date object, using local time.
+  - getutcseconds (required): gets the seconds of a date object using universal coordinated time (utc).
+  - getmilliseconds (required): gets the milliseconds of a date, using local time.
+  - getutcmilliseconds (required): gets the milliseconds of a date object using universal coordinated time (utc).
+  - gettimezoneoffset (required): gets the difference in minutes between the time on the local computer and universal coordinated time (utc).
+  - settime (required): sets the date and time value in the date object.
+@,param,time, ,a numeric value representing the number of elapsed milliseconds since midnight, january 1, 1970 gmt.
+  - setmilliseconds (required): sets the milliseconds value in the date object using local time.
+@,param,ms, ,a numeric value equal to the millisecond value.
+  - setutcmilliseconds (required): sets the milliseconds value in the date object using universal coordinated time (utc).
+@,param,ms, ,a numeric value equal to the millisecond value.
+  - setseconds (required): sets the seconds value in the date object using local time.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutcseconds (required): sets the seconds value in the date object using universal coordinated time (utc).
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setminutes (required): sets the minutes value in the date object using local time.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutcminutes (required): sets the minutes value in the date object using universal coordinated time (utc).
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - sethours (required): sets the hour value in the date object using local time.
+@,param,hours, ,a numeric value equal to the hours value.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutchours (required): sets the hours value in the date object using universal coordinated time (utc).
+@,param,hours, ,a numeric value equal to the hours value.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setdate (required): sets the numeric day-of-the-month value of the date object using local time.
+@,param,date, ,a numeric value equal to the day of the month.
+  - setutcdate (required): sets the numeric day of the month in the date object using universal coordinated time (utc).
+@,param,date, ,a numeric value equal to the day of the month.
+  - setmonth (required): sets the month value in the date object using local time.
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively.
+@,param,date, ,a numeric value representing the day of the month. if this value is not supplied, the value from a call to the getdate method is used.
+  - setutcmonth (required): sets the month value in the date object using universal coordinated time (utc).
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively.
+@,param,date, ,a numeric value representing the day of the month. if it is not supplied, the value from a call to the getutcdate method is used.
+  - setfullyear (required): sets the year of the date object using local time.
+@,param,year, ,a numeric value for the year.
+@,param,month, ,a zero-based numeric value for the month (0 for january, 11 for december). must be specified if numdate is specified.
+@,param,date, ,a numeric value equal for the day of the month.
+  - setutcfullyear (required): sets the year value in the date object using universal coordinated time (utc).
+@,param,year, ,a numeric value equal to the year.
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively. must be supplied if numdate is supplied.
+@,param,date, ,a numeric value equal to the day of the month.
+  - toutcstring (required): returns a date converted to a string using universal coordinated time (utc).
+  - toisostring (required): returns a date as a string value in iso format.
+  - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
+  - getvardate (required)
+  - __@toprimitive@5513 (required): converts a date object to a string.
+
+
+converts a date object to a number.
+
+
+converts a date object to a string or number.
+@,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
+@,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
+those elements have the following types:
+
+  - scope (numeric; optional)
+  - options (list with named elements and values of type character | numeric; optional)s. }
 
 \item{fragmentSelection}{Logical | numeric | character | named list | unnamed list. }
 
-\item{getData}{Lists containing elements 'row', 'col', 'row2', 'col2'.
-those elements have the following types:
-  - row (numeric; optional)
-  - col (numeric; optional)
-  - row2 (numeric; optional)
-  - col2 (numeric; optional). }
-
-\item{getDataAtRow}{Lists containing elements 'row', 'prop'.
-those elements have the following types:
-  - row (numeric; required)
-  - prop (character; optional). }
+\item{globalBucket}{Character. }
 
 \item{height}{Character | numeric. }
 
@@ -3770,13 +3892,13 @@ those elements have the following types:
 
 \item{imeFastEdit}{Logical. }
 
-\item{init}{}
+\item{init}{Character. }
 
 \item{invalidCellClassName}{Character. }
 
-\item{isEmptyCol}{}
+\item{isEmptyCol}{Character. }
 
-\item{isEmptyRow}{}
+\item{isEmptyRow}{Character. }
 
 \item{label}{Lists containing elements 'property', 'position', 'value'.
 those elements have the following types:
@@ -3816,45 +3938,45 @@ those elements have the following types:
 
 \item{minSpareRows}{Numeric. }
 
-\item{modifyAutoColumnSizeSeed}{}
+\item{modifyAutoColumnSizeSeed}{Character. }
 
-\item{modifyAutofillRange}{}
+\item{modifyAutofillRange}{Character. }
 
-\item{modifyColHeader}{}
+\item{modifyColHeader}{Character. }
 
-\item{modifyColWidth}{}
+\item{modifyColWidth}{Character. }
 
-\item{modifyColumnHeaderHeight}{}
+\item{modifyColumnHeaderHeight}{Character. }
 
-\item{modifyColumnHeaderValue}{}
+\item{modifyColumnHeaderValue}{Character. }
 
-\item{modifyCopyableRange}{}
+\item{modifyCopyableRange}{Character. }
 
-\item{modifyData}{}
+\item{modifyData}{Character. }
 
-\item{modifyFiltersMultiSelectValue}{}
+\item{modifyFiltersMultiSelectValue}{Character. }
 
-\item{modifyFocusOnTabNavigation}{}
+\item{modifyFocusOnTabNavigation}{Character. }
 
-\item{modifyFocusedElement}{}
+\item{modifyFocusedElement}{Character. }
 
-\item{modifyGetCellCoords}{}
+\item{modifyGetCellCoords}{Character. }
 
-\item{modifyRowData}{}
+\item{modifyRowData}{Character. }
 
-\item{modifyRowHeader}{}
+\item{modifyRowHeader}{Character. }
 
-\item{modifyRowHeaderWidth}{}
+\item{modifyRowHeaderWidth}{Character. }
 
-\item{modifyRowHeight}{}
+\item{modifyRowHeight}{Character. }
 
-\item{modifySourceData}{}
+\item{modifySourceData}{Character. }
 
-\item{modifyTransformEnd}{}
+\item{modifyTransformEnd}{Character. }
 
-\item{modifyTransformFocus}{}
+\item{modifyTransformFocus}{Character. }
 
-\item{modifyTransformStart}{}
+\item{modifyTransformStart}{Character. }
 
 \item{multiColumnSorting}{Logical | numeric | character | named list | unnamed list. }
 
@@ -3877,11 +3999,11 @@ those elements have the following types:
 
 \item{persistentState}{Logical. }
 
-\item{persistentStateLoad}{}
+\item{persistentStateLoad}{Character. }
 
-\item{persistentStateReset}{}
+\item{persistentStateReset}{Character. }
 
-\item{persistentStateSave}{}
+\item{persistentStateSave}{Character. }
 
 \item{placeholder}{Character. }
 
@@ -3911,11 +4033,9 @@ those elements have the following types:
 
 \item{selectOptions}{List of characters. }
 
-\item{selectedCells}{List of lists. }
-
 \item{selectionMode}{A value equal to: 'single', 'range', 'multiple'. }
 
-\item{settings}{Lists containing elements 'activeheaderclassname', 'allowempty', 'allowhtml', 'allowinsertcolumn', 'allowinsertrow', 'allowinvalid', 'allowremovecolumn', 'allowremoverow', 'ariatags', 'autocolumnsize', 'autorowsize', 'autowrapcol', 'autowraprow', 'bindrowswithheaders', 'cell', 'cells', 'checkedtemplate', 'classname', 'colheaders', 'collapsiblecolumns', 'columnheaderheight', 'columns', 'columnsorting', 'columnsummary', 'colwidths', 'commentedcellclassname', 'comments', 'contextmenu', 'copyable', 'copypaste', 'correctformat', 'currentcolclassname', 'currentheaderclassname', 'currentrowclassname', 'customborders', 'data', 'dataschema', 'dateformat', 'datepickerconfig', 'defaultdate', 'tabnavigation', 'disablevisualselection', 'dragtoscroll', 'dropdownmenu', 'editor', 'enterbeginsediting', 'entermoves', 'fillhandle', 'filter', 'filteringcasesensitive', 'filters', 'fixedcolumnsleft', 'fixedcolumnsstart', 'fixedrowsbottom', 'fixedrowstop', 'formulas', 'fragmentselection', 'height', 'hiddencolumns', 'hiddenrows', 'invalidcellclassname', 'imefastedit', 'isemptycol', 'isemptyrow', 'label', 'language', 'locale', 'layoutdirection', 'licensekey', 'manualcolumnfreeze', 'manualcolumnmove', 'manualcolumnresize', 'manualrowmove', 'manualrowresize', 'maxcols', 'maxrows', 'mergecells', 'mincols', 'minrows', 'minsparecols', 'minsparerows', 'multicolumnsorting', 'navigableheaders', 'nestedheaders', 'nestedrows', 'nowordwrapclassname', 'numericformat', 'observedomvisibility', 'outsideclickdeselects', 'persistentstate', 'placeholder', 'placeholdercellclassname', 'preventoverflow', 'preventwheel', 'readonly', 'readonlycellclassname', 'renderallcolumns', 'renderallrows', 'renderer', 'rowheaders', 'rowheaderwidth', 'rowheights', 'search', 'selectionmode', 'selectoptions', 'skipcolumnonpaste', 'skiprowonpaste', 'sortbyrelevance', 'source', 'startcols', 'startrows', 'stretchh', 'strict', 'tableclassname', 'tabmoves', 'title', 'trimdropdown', 'trimrows', 'trimwhitespace', 'type', 'uncheckedtemplate', 'undo', 'validator', 'viewportcolumnrenderingoffset', 'viewportrowrenderingoffset', 'visiblerows', 'width', 'wordwrap', 'afteraddchild', 'afterautofill', 'afterbeginediting', 'aftercellmetareset', 'afterchange', 'afterchangesobserved', 'aftercolumncollapse', 'aftercolumnexpand', 'aftercolumnfreeze', 'aftercolumnmove', 'aftercolumnresize', 'aftercolumnsequencechange', 'aftercolumnsort', 'aftercolumnunfreeze', 'aftercontextmenudefaultoptions', 'aftercontextmenuhide', 'aftercontextmenushow', 'aftercopy', 'aftercopylimit', 'aftercreatecol', 'aftercreaterow', 'aftercut', 'afterdeselect', 'afterdestroy', 'afterdetachchild', 'afterdocumentkeydown', 'afterdrawselection', 'afterdropdownmenudefaultoptions', 'afterdropdownmenuhide', 'afterdropdownmenushow', 'afterfilter', 'afterformulasvaluesupdate', 'aftergetcellmeta', 'aftergetcolheader', 'aftergetcolumnheaderrenderers', 'aftergetrowheader', 'aftergetrowheaderrenderers', 'afterhidecolumns', 'afterhiderows', 'afterinit', 'afterlanguagechange', 'afterlisten', 'afterloaddata', 'aftermergecells', 'aftermodifytransformend', 'aftermodifytransformfocus', 'aftermodifytransformstart', 'aftermomentumscroll', 'afternamedexpressionadded', 'afternamedexpressionremoved', 'afteroncellcontextmenu', 'afteroncellcornerdblclick', 'afteroncellcornermousedown', 'afteroncellmousedown', 'afteroncellmouseout', 'afteroncellmouseover', 'afteroncellmouseup', 'afterpaste', 'afterpluginsinitialized', 'afterredo', 'afterredostackchange', 'afterrefreshdimensions', 'afterremovecellmeta', 'afterremovecol', 'afterremoverow', 'afterrender', 'afterrenderer', 'afterrowmove', 'afterrowresize', 'afterrowsequencechange', 'afterscrollhorizontally', 'afterscrollvertically', 'afterscroll', 'afterselectcolumns', 'afterselection', 'afterselectionbyprop', 'afterselectionend', 'afterselectionendbyprop', 'afterselectionfocusset', 'afterselectrows', 'aftersetcellmeta', 'aftersetdataatcell', 'aftersetdataatrowprop', 'aftersetsourcedataatcell', 'aftersheetadded', 'aftersheetremoved', 'aftersheetrenamed', 'aftertrimrow', 'afterundo', 'afterundostackchange', 'afterunhidecolumns', 'afterunhiderows', 'afterunlisten', 'afterunmergecells', 'afteruntrimrow', 'afterupdatedata', 'afterupdatesettings', 'aftervalidate', 'afterviewportcolumncalculatoroverride', 'afterviewportrowcalculatoroverride', 'afterviewrender', 'beforeaddchild', 'beforeautofill', 'beforebeginediting', 'beforecellalignment', 'beforechange', 'beforechangerender', 'beforecolumncollapse', 'beforecolumnexpand', 'beforecolumnfreeze', 'beforecolumnmove', 'beforecolumnresize', 'beforecolumnsort', 'beforecolumnwrap', 'beforecolumnunfreeze', 'beforecontextmenusetitems', 'beforecontextmenushow', 'beforecopy', 'beforecreatecol', 'beforecreaterow', 'beforecut', 'beforedetachchild', 'beforedrawborders', 'beforedropdownmenusetitems', 'beforedropdownmenushow', 'beforefilter', 'beforegetcellmeta', 'beforehidecolumns', 'beforehiderows', 'beforehighlightingcolumnheader', 'beforehighlightingrowheader', 'beforeinit', 'beforeinitwalkontable', 'beforekeydown', 'beforelanguagechange', 'beforeloaddata', 'beforemergecells', 'beforeoncellcontextmenu', 'beforeoncellmousedown', 'beforeoncellmouseout', 'beforeoncellmouseover', 'beforeoncellmouseup', 'beforepaste', 'beforeredo', 'beforeredostackchange', 'beforerefreshdimensions', 'beforeremovecellclassnames', 'beforeremovecellmeta', 'beforeremovecol', 'beforeremoverow', 'beforerender', 'beforerenderer', 'beforerowmove', 'beforerowresize', 'beforerowwrap', 'beforeselectcolumns', 'beforeselectionfocusset', 'beforeselectionhighlightset', 'beforeselectrows', 'beforesetcellmeta', 'beforesetrangeend', 'beforesetrangestart', 'beforesetrangestartonly', 'beforestretchingcolumnwidth', 'beforetouchscroll', 'beforetrimrow', 'beforeundo', 'beforeundostackchange', 'beforeunhidecolumns', 'beforeunhiderows', 'beforeunmergecells', 'beforeuntrimrow', 'beforeupdatedata', 'beforevalidate', 'beforevaluerender', 'beforeviewportscrollvertically', 'beforeviewportscrollhorizontally', 'beforeviewportscroll', 'beforeviewrender', 'construct', 'init', 'modifyautocolumnsizeseed', 'modifyautofillrange', 'modifycolheader', 'modifycolumnheaderheight', 'modifycolumnheadervalue', 'modifycolwidth', 'modifycopyablerange', 'modifyfiltersmultiselectvalue', 'modifyfocusedelement', 'modifydata', 'modifyfocusontabnavigation', 'modifygetcellcoords', 'modifyrowdata', 'modifyrowheader', 'modifyrowheaderwidth', 'modifyrowheight', 'modifysourcedata', 'modifytransformend', 'modifytransformfocus', 'modifytransformstart', 'persistentstateload', 'persistentstatereset', 'persistentstatesave'.
+\item{settings}{Lists containing elements 'activeheaderclassname', 'allowempty', 'allowhtml', 'allowinsertcolumn', 'allowinsertrow', 'allowinvalid', 'allowremovecolumn', 'allowremoverow', 'ariatags', 'autocolumnsize', 'autorowsize', 'autowrapcol', 'autowraprow', 'bindrowswithheaders', 'cell', 'cells', 'checkedtemplate', 'classname', 'colheaders', 'collapsiblecolumns', 'columnheaderheight', 'columns', 'columnsorting', 'columnsummary', 'colwidths', 'commentedcellclassname', 'comments', 'contextmenu', 'copyable', 'copypaste', 'correctformat', 'currentcolclassname', 'currentheaderclassname', 'currentrowclassname', 'customborders', 'data', 'datadotnotation', 'dataschema', 'dateformat', 'datepickerconfig', 'defaultdate', 'tabnavigation', 'disablevisualselection', 'dragtoscroll', 'dropdownmenu', 'editor', 'enterbeginsediting', 'entermoves', 'fillhandle', 'filter', 'filteringcasesensitive', 'filters', 'fixedcolumnsleft', 'fixedcolumnsstart', 'fixedrowsbottom', 'fixedrowstop', 'formulas', 'fragmentselection', 'height', 'hiddencolumns', 'hiddenrows', 'invalidcellclassname', 'imefastedit', 'isemptycol', 'isemptyrow', 'label', 'language', 'locale', 'layoutdirection', 'licensekey', 'manualcolumnfreeze', 'manualcolumnmove', 'manualcolumnresize', 'manualrowmove', 'manualrowresize', 'maxcols', 'maxrows', 'mergecells', 'mincols', 'minrows', 'minsparecols', 'minsparerows', 'multicolumnsorting', 'navigableheaders', 'nestedheaders', 'nestedrows', 'nowordwrapclassname', 'numericformat', 'observedomvisibility', 'outsideclickdeselects', 'persistentstate', 'placeholder', 'placeholdercellclassname', 'preventoverflow', 'preventwheel', 'readonly', 'readonlycellclassname', 'renderallcolumns', 'renderallrows', 'renderer', 'rowheaders', 'rowheaderwidth', 'rowheights', 'search', 'selectionmode', 'selectoptions', 'skipcolumnonpaste', 'skiprowonpaste', 'sortbyrelevance', 'source', 'startcols', 'startrows', 'stretchh', 'strict', 'tableclassname', 'tabmoves', 'title', 'trimdropdown', 'trimrows', 'trimwhitespace', 'type', 'uncheckedtemplate', 'undo', 'validator', 'viewportcolumnrenderingoffset', 'viewportrowrenderingoffset', 'visiblerows', 'width', 'wordwrap', 'afteraddchild', 'afterautofill', 'afterbeginediting', 'aftercellmetareset', 'afterchange', 'afterchangesobserved', 'aftercolumncollapse', 'aftercolumnexpand', 'aftercolumnfreeze', 'aftercolumnmove', 'aftercolumnresize', 'aftercolumnsequencechange', 'aftercolumnsort', 'aftercolumnunfreeze', 'aftercontextmenudefaultoptions', 'aftercontextmenuhide', 'aftercontextmenushow', 'aftercopy', 'aftercopylimit', 'aftercreatecol', 'aftercreaterow', 'aftercut', 'afterdeselect', 'afterdestroy', 'afterdetachchild', 'afterdocumentkeydown', 'afterdrawselection', 'afterdropdownmenudefaultoptions', 'afterdropdownmenuhide', 'afterdropdownmenushow', 'afterfilter', 'afterformulasvaluesupdate', 'aftergetcellmeta', 'aftergetcolheader', 'aftergetcolumnheaderrenderers', 'aftergetrowheader', 'aftergetrowheaderrenderers', 'afterhidecolumns', 'afterhiderows', 'afterinit', 'afterlanguagechange', 'afterlisten', 'afterloaddata', 'aftermergecells', 'aftermodifytransformend', 'aftermodifytransformfocus', 'aftermodifytransformstart', 'aftermomentumscroll', 'afternamedexpressionadded', 'afternamedexpressionremoved', 'afteroncellcontextmenu', 'afteroncellcornerdblclick', 'afteroncellcornermousedown', 'afteroncellmousedown', 'afteroncellmouseout', 'afteroncellmouseover', 'afteroncellmouseup', 'afterpaste', 'afterpluginsinitialized', 'afterredo', 'afterredostackchange', 'afterrefreshdimensions', 'afterremovecellmeta', 'afterremovecol', 'afterremoverow', 'afterrender', 'afterrenderer', 'afterrowmove', 'afterrowresize', 'afterrowsequencechange', 'afterscrollhorizontally', 'afterscrollvertically', 'afterscroll', 'afterselectcolumns', 'afterselection', 'afterselectionbyprop', 'afterselectionend', 'afterselectionendbyprop', 'afterselectionfocusset', 'afterselectrows', 'aftersetcellmeta', 'aftersetdataatcell', 'aftersetdataatrowprop', 'aftersetsourcedataatcell', 'aftersheetadded', 'aftersheetremoved', 'aftersheetrenamed', 'aftertrimrow', 'afterundo', 'afterundostackchange', 'afterunhidecolumns', 'afterunhiderows', 'afterunlisten', 'afterunmergecells', 'afteruntrimrow', 'afterupdatedata', 'afterupdatesettings', 'aftervalidate', 'afterviewportcolumncalculatoroverride', 'afterviewportrowcalculatoroverride', 'afterviewrender', 'beforeaddchild', 'beforeautofill', 'beforebeginediting', 'beforecellalignment', 'beforechange', 'beforechangerender', 'beforecolumncollapse', 'beforecolumnexpand', 'beforecolumnfreeze', 'beforecolumnmove', 'beforecolumnresize', 'beforecolumnsort', 'beforecolumnwrap', 'beforecolumnunfreeze', 'beforecontextmenusetitems', 'beforecontextmenushow', 'beforecopy', 'beforecreatecol', 'beforecreaterow', 'beforecut', 'beforedetachchild', 'beforedrawborders', 'beforedropdownmenusetitems', 'beforedropdownmenushow', 'beforefilter', 'beforegetcellmeta', 'beforehidecolumns', 'beforehiderows', 'beforehighlightingcolumnheader', 'beforehighlightingrowheader', 'beforeinit', 'beforeinitwalkontable', 'beforekeydown', 'beforelanguagechange', 'beforeloaddata', 'beforemergecells', 'beforeoncellcontextmenu', 'beforeoncellmousedown', 'beforeoncellmouseout', 'beforeoncellmouseover', 'beforeoncellmouseup', 'beforepaste', 'beforeredo', 'beforeredostackchange', 'beforerefreshdimensions', 'beforeremovecellclassnames', 'beforeremovecellmeta', 'beforeremovecol', 'beforeremoverow', 'beforerender', 'beforerenderer', 'beforerowmove', 'beforerowresize', 'beforerowwrap', 'beforeselectcolumns', 'beforeselectionfocusset', 'beforeselectionhighlightset', 'beforeselectrows', 'beforesetcellmeta', 'beforesetrangeend', 'beforesetrangestart', 'beforesetrangestartonly', 'beforestretchingcolumnwidth', 'beforetouchscroll', 'beforetrimrow', 'beforeundo', 'beforeundostackchange', 'beforeunhidecolumns', 'beforeunhiderows', 'beforeunmergecells', 'beforeuntrimrow', 'beforeupdatedata', 'beforevalidate', 'beforevaluerender', 'beforeviewportscrollvertically', 'beforeviewportscrollhorizontally', 'beforeviewportscroll', 'beforeviewrender', 'construct', 'init', 'modifyautocolumnsizeseed', 'modifyautofillrange', 'modifycolheader', 'modifycolumnheaderheight', 'modifycolumnheadervalue', 'modifycolwidth', 'modifycopyablerange', 'modifyfiltersmultiselectvalue', 'modifyfocusedelement', 'modifydata', 'modifyfocusontabnavigation', 'modifygetcellcoords', 'modifyrowdata', 'modifyrowheader', 'modifyrowheaderwidth', 'modifyrowheight', 'modifysourcedata', 'modifytransformend', 'modifytransformfocus', 'modifytransformstart', 'persistentstateload', 'persistentstatereset', 'persistentstatesave'.
 those elements have the following types:
   - activeheaderclassname (character; optional)
   - allowempty (logical; optional)
@@ -3953,6 +4073,7 @@ those elements have the following types:
   - currentrowclassname (character; optional)
   - customborders (logical | numeric | character | named list | unnamed list; optional)
   - data (list of list of logical | numeric | character | named list | unnamed listss; optional)
+  - datadotnotation (logical; optional)
   - dataschema (list of logical | numeric | character | named list | unnamed lists; optional)
   - dateformat (character; optional)
   - datepickerconfig (optional): . datepickerconfig has the following type: lists containing elements 'field', 'format', 'trigger', 'bound', 'arialabel', 'position', 'reposition', 'container', 'defaultdate', 'setdefaultdate', 'firstday', 'mindate', 'maxdate', 'disableweekends', 'disabledayfn', 'yearrange', 'showweeknumber', 'pickwholeweek', 'isrtl', 'i18n', 'yearsuffix', 'showmonthafteryear', 'showdaysinnextandpreviousmonths', 'enableselectiondaysinnextandpreviousmonths', 'numberofmonths', 'maincalendar', 'events', 'theme', 'blurfieldonselect', 'formatstrict', 'tostring', 'parse', 'onselect', 'onopen', 'onclose', 'ondraw', 'keyboardinput'.
@@ -6648,7 +6769,7 @@ those elements have the following types:
   - tabindex (numeric; required)
   - blur (required)
   - focus (required)
-  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+  - defaultdate (optional): the initial date to view when first opened.. defaultdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6754,7 +6875,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -6763,13 +6884,13 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - setdefaultdate (logical; optional): make the defaultdate the initial selected value.
   - firstday (numeric; optional): first day of the week (0: sunday, 1: monday, etc).
   - mindate (optional): the earliest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+date object - e.g. new date() or moment().todate()).. mindate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6875,7 +6996,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -6884,11 +7005,11 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - maxdate (optional): the latest date that can be selected (this should be a native
-date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@4742'.
+date object - e.g. new date() or moment().todate()).. maxdate has the following type: lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
 those elements have the following types:
   - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
   - todatestring (required): returns a date as a string value.
@@ -6994,7 +7115,7 @@ those elements have the following types:
   - toisostring (required): returns a date as a string value in iso format.
   - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
   - getvardate (required)
-  - __@toprimitive@4742 (required): converts a date object to a string.
+  - __@toprimitive@5513 (required): converts a date object to a string.
 
 
 converts a date object to a number.
@@ -7003,7 +7124,7 @@ converts a date object to a number.
 converts a date object to a string or number.
 @,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
 @,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
-@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@4742 has the following type: lists containing elements .
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
 those elements have the following types:
 
   - disableweekends (logical; optional): disallow selection of saturdays and sundays.
@@ -7062,10 +7183,133 @@ those elements have the following types:
   - fixedcolumnsstart (numeric; optional)
   - fixedrowsbottom (numeric; optional)
   - fixedrowstop (numeric; optional)
-  - formulas (optional): . formulas has the following type: lists containing elements 'engine', 'sheetname'.
+  - formulas (optional): . formulas has the following type: lists containing elements 'engine', 'sheetname', 'namedexpressions'.
 those elements have the following types:
   - engine (logical | numeric | character | named list | unnamed list; required)
   - sheetname (character; optional)
+  - namedexpressions (optional): . namedexpressions has the following type: list of lists containing elements 'name', 'expression', 'scope', 'options'.
+those elements have the following types:
+  - name (character; required)
+  - expression (required): . expression has the following type: character | numeric | lists containing elements 'tostring', 'todatestring', 'totimestring', 'tolocalestring', 'tolocaledatestring', 'tolocaletimestring', 'valueof', 'gettime', 'getfullyear', 'getutcfullyear', 'getmonth', 'getutcmonth', 'getdate', 'getutcdate', 'getday', 'getutcday', 'gethours', 'getutchours', 'getminutes', 'getutcminutes', 'getseconds', 'getutcseconds', 'getmilliseconds', 'getutcmilliseconds', 'gettimezoneoffset', 'settime', 'setmilliseconds', 'setutcmilliseconds', 'setseconds', 'setutcseconds', 'setminutes', 'setutcminutes', 'sethours', 'setutchours', 'setdate', 'setutcdate', 'setmonth', 'setutcmonth', 'setfullyear', 'setutcfullyear', 'toutcstring', 'toisostring', 'tojson', 'getvardate', '__@toprimitive@5513'.
+those elements have the following types:
+  - tostring (optional): returns a string representation of a date. the format of the string depends on the locale.
+  - todatestring (required): returns a date as a string value.
+  - totimestring (required): returns a time as a string value.
+  - tolocalestring (optional): returns a value as a string value appropriate to the host environment's current locale.
+
+
+converts a date and time to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocalestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - tolocaledatestring (required): returns a date as a string value appropriate to the host environment's current locale.
+
+
+converts a date to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocaledatestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - tolocaletimestring (required): returns a time as a string value appropriate to the host environment's current locale.
+
+
+converts a time to a string by using the current or specified locale.
+@,param,locales, ,a locale string or array of locale strings that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.
+@,param,locales, ,a locale string, array of locale strings, intl.locale object, or array of intl.locale objects that contain one or more language or locale tags. if you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. if you omit this parameter, the default locale of the javascript runtime is used.
+@,param,options, ,an object that contains one or more properties that specify comparison options.. tolocaletimestring has the following type: lists containing elements .
+those elements have the following types:
+
+  - valueof (optional): returns the stored time value in milliseconds since midnight, january 1, 1970 utc.
+  - gettime (required): gets the time value in milliseconds.
+  - getfullyear (required): gets the year, using local time.
+  - getutcfullyear (required): gets the year using universal coordinated time (utc).
+  - getmonth (required): gets the month, using local time.
+  - getutcmonth (required): gets the month of a date object using universal coordinated time (utc).
+  - getdate (required): gets the day-of-the-month, using local time.
+  - getutcdate (required): gets the day-of-the-month, using universal coordinated time (utc).
+  - getday (required): gets the day of the week, using local time.
+  - getutcday (required): gets the day of the week using universal coordinated time (utc).
+  - gethours (required): gets the hours in a date, using local time.
+  - getutchours (required): gets the hours value in a date object using universal coordinated time (utc).
+  - getminutes (required): gets the minutes of a date object, using local time.
+  - getutcminutes (required): gets the minutes of a date object using universal coordinated time (utc).
+  - getseconds (required): gets the seconds of a date object, using local time.
+  - getutcseconds (required): gets the seconds of a date object using universal coordinated time (utc).
+  - getmilliseconds (required): gets the milliseconds of a date, using local time.
+  - getutcmilliseconds (required): gets the milliseconds of a date object using universal coordinated time (utc).
+  - gettimezoneoffset (required): gets the difference in minutes between the time on the local computer and universal coordinated time (utc).
+  - settime (required): sets the date and time value in the date object.
+@,param,time, ,a numeric value representing the number of elapsed milliseconds since midnight, january 1, 1970 gmt.
+  - setmilliseconds (required): sets the milliseconds value in the date object using local time.
+@,param,ms, ,a numeric value equal to the millisecond value.
+  - setutcmilliseconds (required): sets the milliseconds value in the date object using universal coordinated time (utc).
+@,param,ms, ,a numeric value equal to the millisecond value.
+  - setseconds (required): sets the seconds value in the date object using local time.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutcseconds (required): sets the seconds value in the date object using universal coordinated time (utc).
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setminutes (required): sets the minutes value in the date object using local time.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutcminutes (required): sets the minutes value in the date object using universal coordinated time (utc).
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - sethours (required): sets the hour value in the date object using local time.
+@,param,hours, ,a numeric value equal to the hours value.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setutchours (required): sets the hours value in the date object using universal coordinated time (utc).
+@,param,hours, ,a numeric value equal to the hours value.
+@,param,min, ,a numeric value equal to the minutes value.
+@,param,sec, ,a numeric value equal to the seconds value.
+@,param,ms, ,a numeric value equal to the milliseconds value.
+  - setdate (required): sets the numeric day-of-the-month value of the date object using local time.
+@,param,date, ,a numeric value equal to the day of the month.
+  - setutcdate (required): sets the numeric day of the month in the date object using universal coordinated time (utc).
+@,param,date, ,a numeric value equal to the day of the month.
+  - setmonth (required): sets the month value in the date object using local time.
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively.
+@,param,date, ,a numeric value representing the day of the month. if this value is not supplied, the value from a call to the getdate method is used.
+  - setutcmonth (required): sets the month value in the date object using universal coordinated time (utc).
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively.
+@,param,date, ,a numeric value representing the day of the month. if it is not supplied, the value from a call to the getutcdate method is used.
+  - setfullyear (required): sets the year of the date object using local time.
+@,param,year, ,a numeric value for the year.
+@,param,month, ,a zero-based numeric value for the month (0 for january, 11 for december). must be specified if numdate is specified.
+@,param,date, ,a numeric value equal for the day of the month.
+  - setutcfullyear (required): sets the year value in the date object using universal coordinated time (utc).
+@,param,year, ,a numeric value equal to the year.
+@,param,month, ,a numeric value equal to the month. the value for january is 0, and other month values follow consecutively. must be supplied if numdate is supplied.
+@,param,date, ,a numeric value equal to the day of the month.
+  - toutcstring (required): returns a date converted to a string using universal coordinated time (utc).
+  - toisostring (required): returns a date as a string value in iso format.
+  - tojson (required): used by the json.stringify method to enable the transformation of an object's data for javascript object notation (json) serialization.
+  - getvardate (required)
+  - __@toprimitive@5513 (required): converts a date object to a string.
+
+
+converts a date object to a number.
+
+
+converts a date object to a string or number.
+@,param,hint, ,the strings "number", "string", or "default" to specify what primitive to return.
+@,throws,{typeerror} if 'hint' was given something other than "number", "string", or "default".
+@,returns,a number if 'hint' was "number", a string if 'hint' was "string" or "default".. __@toprimitive@5513 has the following type: lists containing elements .
+those elements have the following types:
+
+  - scope (numeric; optional)
+  - options (list with named elements and values of type character | numeric; optional)s
   - fragmentselection (logical | numeric | character | named list | unnamed list; optional)
   - height (character | numeric; optional)
   - hiddencolumns (logical | numeric | character | named list | unnamed list; optional)
@@ -9217,7 +9461,7 @@ those elements have the following types:
 | :----: | :-----: | :----: | :----: | :---: |
 | **1**  |  **1**  | **1**  | **12** | **4** |
 @,see,https,://developer.mozilla.org/docs/web/css/letter-spacing
-  - linebreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
+  - linebreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
 
 **syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -12063,7 +12307,7 @@ those elements have the following types:
 **syntax**: `auto | after`
 
 **initial value**: `auto`
-  - mslinebreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
+  - mslinebreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
 
 **syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -12512,7 +12756,7 @@ those elements have the following types:
 **syntax**: `normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]`
 
 **initial value**: `normal`
-  - webkitlinebreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
+  - webkitlinebreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
 
 **syntax**: `auto | loose | normal | strict | anywhere`
 
@@ -13073,7 +13317,7 @@ those elements have the following types:
 
 **initial value**: `start`
 @,deprecated
-  - khtmllinebreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
+  - khtmllinebreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional): the **`line-break`** css property sets how to break lines of chinese, japanese, or korean (cjk) text when working with punctuation and symbols.
 
 **syntax**: `auto | loose | normal | strict | anywhere`
 

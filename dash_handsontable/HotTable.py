@@ -16,6 +16,206 @@ Keyword arguments:
 
 - activeHeaderClassName (string; optional)
 
+- afterAddChild (string; optional)
+
+- afterAutofill (string; optional)
+
+- afterBeginEditing (string; optional)
+
+- afterCellMetaReset (string; optional)
+
+- afterChange (string; optional)
+
+- afterColumnCollapse (string; optional)
+
+- afterColumnExpand (string; optional)
+
+- afterColumnFreeze (string; optional)
+
+- afterColumnMove (string; optional)
+
+- afterColumnResize (string; optional)
+
+- afterColumnSequenceChange (string; optional)
+
+- afterColumnSort (string; optional)
+
+- afterColumnUnfreeze (string; optional)
+
+- afterContextMenuDefaultOptions (string; optional)
+
+- afterContextMenuHide (string; optional)
+
+- afterContextMenuShow (string; optional)
+
+- afterCopy (string; optional)
+
+- afterCopyLimit (string; optional)
+
+- afterCreateCol (string; optional)
+
+- afterCreateRow (string; optional)
+
+- afterCut (string; optional)
+
+- afterDeselect (string; optional)
+
+- afterDestroy (string; optional)
+
+- afterDetachChild (string; optional)
+
+- afterDocumentKeyDown (string; optional)
+
+- afterDrawSelection (string; optional)
+
+- afterDropdownMenuDefaultOptions (string; optional)
+
+- afterDropdownMenuHide (string; optional)
+
+- afterDropdownMenuShow (string; optional)
+
+- afterFilter (string; optional)
+
+- afterFormulasValuesUpdate (string; optional)
+
+- afterGetCellMeta (string; optional)
+
+- afterGetColHeader (string; optional)
+
+- afterGetColumnHeaderRenderers (string; optional)
+
+- afterGetRowHeader (string; optional)
+
+- afterGetRowHeaderRenderers (string; optional)
+
+- afterHideColumns (string; optional)
+
+- afterHideRows (string; optional)
+
+- afterInit (string; optional)
+
+- afterLanguageChange (string; optional)
+
+- afterListen (string; optional)
+
+- afterLoadData (string; optional)
+
+- afterMergeCells (string; optional)
+
+- afterModifyTransformEnd (string; optional)
+
+- afterModifyTransformFocus (string; optional)
+
+- afterModifyTransformStart (string; optional)
+
+- afterMomentumScroll (string; optional)
+
+- afterNamedExpressionAdded (string; optional)
+
+- afterNamedExpressionRemoved (string; optional)
+
+- afterOnCellContextMenu (string; optional)
+
+- afterOnCellCornerDblClick (string; optional)
+
+- afterOnCellCornerMouseDown (string; optional)
+
+- afterOnCellMouseDown (string; optional)
+
+- afterOnCellMouseOut (string; optional)
+
+- afterOnCellMouseOver (string; optional)
+
+- afterOnCellMouseUp (string; optional)
+
+- afterPaste (string; optional)
+
+- afterPluginsInitialized (string; optional)
+
+- afterRedo (string; optional)
+
+- afterRedoStackChange (string; optional)
+
+- afterRefreshDimensions (string; optional)
+
+- afterRemoveCellMeta (string; optional)
+
+- afterRemoveCol (string; optional)
+
+- afterRemoveRow (string; optional)
+
+- afterRender (string; optional)
+
+- afterRenderer (string; optional)
+
+- afterRowMove (string; optional)
+
+- afterRowResize (string; optional)
+
+- afterRowSequenceChange (string; optional)
+
+- afterScroll (string; optional)
+
+- afterScrollHorizontally (string; optional)
+
+- afterScrollVertically (string; optional)
+
+- afterSelectColumns (string; optional)
+
+- afterSelectRows (string; optional)
+
+- afterSelection (string; optional)
+
+- afterSelectionByProp (string; optional)
+
+- afterSelectionEnd (string; optional)
+
+- afterSelectionEndByProp (string; optional)
+
+- afterSelectionFocusSet (string; optional)
+
+- afterSetCellMeta (string; optional)
+
+- afterSetDataAtCell (string; optional)
+
+- afterSetDataAtRowProp (string; optional)
+
+- afterSetSourceDataAtCell (string; optional)
+
+- afterSheetAdded (string; optional)
+
+- afterSheetRemoved (string; optional)
+
+- afterSheetRenamed (string; optional)
+
+- afterTrimRow (string; optional)
+
+- afterUndo (string; optional)
+
+- afterUndoStackChange (string; optional)
+
+- afterUnhideColumns (string; optional)
+
+- afterUnhideRows (string; optional)
+
+- afterUnlisten (string; optional)
+
+- afterUnmergeCells (string; optional)
+
+- afterUntrimRow (string; optional)
+
+- afterUpdateData (string; optional)
+
+- afterUpdateSettings (string; optional)
+
+- afterValidate (string; optional)
+
+- afterViewRender (string; optional)
+
+- afterViewportColumnCalculatorOverride (string; optional)
+
+- afterViewportRowCalculatorOverride (string; optional)
+
 - allowEmpty (boolean; optional)
 
 - allowHtml (boolean; optional)
@@ -40,9 +240,167 @@ Keyword arguments:
 
 - autoWrapRow (boolean; optional)
 
+- beforeAddChild (string; optional)
+
+- beforeAutofill (string; optional)
+
+- beforeBeginEditing (string; optional)
+
+- beforeCellAlignment (string; optional)
+
+- beforeChange (string; optional)
+
+- beforeChangeRender (string; optional)
+
+- beforeColumnCollapse (string; optional)
+
+- beforeColumnExpand (string; optional)
+
+- beforeColumnFreeze (string; optional)
+
+- beforeColumnMove (string; optional)
+
+- beforeColumnResize (string; optional)
+
+- beforeColumnSort (string; optional)
+
+- beforeColumnUnfreeze (string; optional)
+
+- beforeColumnWrap (string; optional)
+
+- beforeContextMenuSetItems (string; optional)
+
+- beforeContextMenuShow (string; optional)
+
+- beforeCopy (string; optional)
+
+- beforeCreateCol (string; optional)
+
+- beforeCreateRow (string; optional)
+
+- beforeCut (string; optional)
+
+- beforeDetachChild (string; optional)
+
+- beforeDrawBorders (string; optional)
+
+- beforeDropdownMenuSetItems (string; optional)
+
+- beforeDropdownMenuShow (string; optional)
+
+- beforeFilter (string; optional)
+
+- beforeGetCellMeta (string; optional)
+
+- beforeHideColumns (string; optional)
+
+- beforeHideRows (string; optional)
+
+- beforeHighlightingColumnHeader (string; optional)
+
+- beforeHighlightingRowHeader (string; optional)
+
+- beforeInit (string; optional)
+
+- beforeInitWalkontable (string; optional)
+
+- beforeKeyDown (string; optional)
+
+- beforeLanguageChange (string; optional)
+
+- beforeLoadData (string; optional)
+
+- beforeMergeCells (string; optional)
+
+- beforeOnCellContextMenu (string; optional)
+
+- beforeOnCellMouseDown (string; optional)
+
+- beforeOnCellMouseOut (string; optional)
+
+- beforeOnCellMouseOver (string; optional)
+
+- beforeOnCellMouseUp (string; optional)
+
+- beforePaste (string; optional)
+
+- beforeRedo (string; optional)
+
+- beforeRedoStackChange (string; optional)
+
+- beforeRefreshDimensions (string; optional)
+
+- beforeRemoveCellClassNames (string; optional)
+
+- beforeRemoveCellMeta (string; optional)
+
+- beforeRemoveCol (string; optional)
+
+- beforeRemoveRow (string; optional)
+
+- beforeRender (string; optional)
+
+- beforeRenderer (string; optional)
+
+- beforeRowMove (string; optional)
+
+- beforeRowResize (string; optional)
+
+- beforeRowWrap (string; optional)
+
+- beforeSelectColumns (string; optional)
+
+- beforeSelectRows (string; optional)
+
+- beforeSelectionFocusSet (string; optional)
+
+- beforeSelectionHighlightSet (string; optional)
+
+- beforeSetCellMeta (string; optional)
+
+- beforeSetRangeEnd (string; optional)
+
+- beforeSetRangeStart (string; optional)
+
+- beforeSetRangeStartOnly (string; optional)
+
+- beforeStretchingColumnWidth (string; optional)
+
+- beforeTouchScroll (string; optional)
+
+- beforeTrimRow (string; optional)
+
+- beforeUndo (string; optional)
+
+- beforeUndoStackChange (string; optional)
+
+- beforeUnhideColumns (string; optional)
+
+- beforeUnhideRows (string; optional)
+
+- beforeUnmergeCells (string; optional)
+
+- beforeUntrimRow (string; optional)
+
+- beforeUpdateData (string; optional)
+
+- beforeValidate (string; optional)
+
+- beforeValueRender (string; optional)
+
+- beforeViewRender (string; optional)
+
+- beforeViewportScroll (string; optional)
+
+- beforeViewportScrollHorizontally (string; optional)
+
+- beforeViewportScrollVertically (string; optional)
+
 - bindRowsWithHeaders (boolean | number | string | dict | list; optional)
 
 - cell (list of dicts with strings as keys and values of type boolean | number | string | dict | list; optional)
+
+- cells (string; optional)
 
 - checkedTemplate (string | number; optional)
 
@@ -66,6 +424,8 @@ Keyword arguments:
 
 - comments (boolean | number | string | dict | list; optional)
 
+- construct (string; optional)
+
 - contextMenu (boolean | number | string | dict | list; optional)
 
 - copyPaste (boolean | number | string | dict | list; optional)
@@ -76,10 +436,6 @@ Keyword arguments:
 
 - currentColClassName (string; optional)
 
-- currentData (list of list of boolean | number | string | dict | listss; optional)
-
-- currentDataAtRow (list of boolean | number | string | dict | lists; optional)
-
 - currentHeaderClassName (string; optional)
 
 - currentRowClassName (string; optional)
@@ -87,6 +443,8 @@ Keyword arguments:
 - customBorders (boolean | number | string | dict | list; optional)
 
 - data (list of list of boolean | number | string | dict | listss; optional)
+
+- dataDotNotation (boolean; optional)
 
 - dataSchema (list of boolean | number | string | dict | lists; optional)
 
@@ -2186,7 +2544,7 @@ Keyword arguments:
 
         `defaultDate` is a dict with keys:
 
-        - __@toPrimitive@4742 (dict; required):
+        - __@toPrimitive@5513 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -2196,7 +2554,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4742` is a dict with keys:
+            `__@toPrimitive@5513` is a dict with keys:
 
 
         - getDate (required):
@@ -4598,7 +4956,7 @@ Keyword arguments:
 
         `maxDate` is a dict with keys:
 
-        - __@toPrimitive@4742 (dict; required):
+        - __@toPrimitive@5513 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -4608,7 +4966,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4742` is a dict with keys:
+            `__@toPrimitive@5513` is a dict with keys:
 
 
         - getDate (required):
@@ -4883,7 +5241,7 @@ Keyword arguments:
 
         `minDate` is a dict with keys:
 
-        - __@toPrimitive@4742 (dict; required):
+        - __@toPrimitive@5513 (dict; required):
             Converts a Date object to a string.   Converts a Date
             object to a number.   Converts a Date object to a string
             or number. @,param,hint, ,The strings \"number\",
@@ -4893,7 +5251,7 @@ Keyword arguments:
             @,returns,A number if 'hint' was \"number\", a string if
             'hint' was \"string\" or \"default\".
 
-            `__@toPrimitive@4742` is a dict with keys:
+            `__@toPrimitive@5513` is a dict with keys:
 
 
         - getDate (required):
@@ -7324,7 +7682,29 @@ Keyword arguments:
 
     `exportDataParams` is a dict with keys:
 
+    - bom (boolean; optional)
+
+    - columnDelimiter (string; optional)
+
+    - columnHeaders (boolean; optional)
+
+    - encoding (string; optional)
+
+    - exportHiddenColumns (boolean; optional)
+
+    - exportHiddenRows (boolean; optional)
+
+    - fileExtension (string; optional)
+
     - filename (string; optional)
+
+    - mimeType (string; optional)
+
+    - range (list of numbers; optional)
+
+    - rowDelimiter (string; optional)
+
+    - rowHeaders (boolean; optional)
 
 - fillHandle (boolean | number | string | dict | list; optional)
 
@@ -7346,31 +7726,461 @@ Keyword arguments:
 
     `formulas` is a dict with keys:
 
-    - engine (boolean | number | string | dict | list; required)
+    - engine (boolean
+
+      Or number | string | dict | list; required)
+
+    - namedExpressions (list of dicts; optional)
+
+        `namedExpressions` is a list of dicts with keys:
+
+        - expression (dict; required)
+
+            `expression` is a string
+
+              Or number | dict with keys:
+
+            - __@toPrimitive@5513 (dict; required):
+
+                Converts a Date object to a string.   Converts a Date object
+
+                to a number.   Converts a Date object to a string or number.
+
+                @,param,hint, ,The strings \"number\", \"string\", or
+
+                \"default\" to specify what primitive to return.
+
+                @,throws,{TypeError} If 'hint' was given something other than
+
+                \"number\", \"string\", or \"default\". @,returns,A number if
+
+                'hint' was \"number\", a string if 'hint' was \"string\" or
+
+                \"default\".
+
+                `__@toPrimitive@5513` is a dict with keys:
+
+            - getDate (required):
+
+                Gets the day-of-the-month, using local time.
+
+            - getDay (required):
+
+                Gets the day of the week, using local time.
+
+            - getFullYear (required):
+
+                Gets the year, using local time.
+
+            - getHours (required):
+
+                Gets the hours in a date, using local time.
+
+            - getMilliseconds (required):
+
+                Gets the milliseconds of a Date, using local time.
+
+            - getMinutes (required):
+
+                Gets the minutes of a Date object, using local time.
+
+            - getMonth (required):
+
+                Gets the month, using local time.
+
+            - getSeconds (required):
+
+                Gets the seconds of a Date object, using local time.
+
+            - getTime (required):
+
+                Gets the time value in milliseconds.
+
+            - getTimezoneOffset (required):
+
+                Gets the difference in minutes between the time on the local
+
+                computer and Universal Coordinated Time (UTC).
+
+            - getUTCDate (required):
+
+                Gets the day-of-the-month, using Universal Coordinated Time
+
+                (UTC).
+
+            - getUTCDay (required):
+
+                Gets the day of the week using Universal Coordinated Time
+
+                (UTC).
+
+            - getUTCFullYear (required):
+
+                Gets the year using Universal Coordinated Time (UTC).
+
+            - getUTCHours (required):
+
+                Gets the hours value in a Date object using Universal
+
+                Coordinated Time (UTC).
+
+            - getUTCMilliseconds (required):
+
+                Gets the milliseconds of a Date object using Universal
+
+                Coordinated Time (UTC).
+
+            - getUTCMinutes (required):
+
+                Gets the minutes of a Date object using Universal Coordinated
+
+                Time (UTC).
+
+            - getUTCMonth (required):
+
+                Gets the month of a Date object using Universal Coordinated
+
+                Time (UTC).
+
+            - getUTCSeconds (required):
+
+                Gets the seconds of a Date object using Universal Coordinated
+
+                Time (UTC).
+
+            - getVarDate (required)
+
+            - setDate (required):
+
+                Sets the numeric day-of-the-month value of the Date object
+
+                using local time. @,param,date, ,A numeric value equal to the
+
+                day of the month.
+
+            - setFullYear (required):
+
+                Sets the year of the Date object using local time.
+
+                @,param,year, ,A numeric value for the year. @,param,month, ,A
+
+                zero-based numeric value for the month (0 for January, 11 for
+
+                December). Must be specified if numDate is specified.
+
+                @,param,date, ,A numeric value equal for the day of the month.
+
+            - setHours (required):
+
+                Sets the hour value in the Date object using local time.
+
+                @,param,hours, ,A numeric value equal to the hours value.
+
+                @,param,min, ,A numeric value equal to the minutes value.
+
+                @,param,sec, ,A numeric value equal to the seconds value.
+
+                @,param,ms, ,A numeric value equal to the milliseconds value.
+
+            - setMilliseconds (required):
+
+                Sets the milliseconds value in the Date object using local
+
+                time. @,param,ms, ,A numeric value equal to the millisecond
+
+                value.
+
+            - setMinutes (required):
+
+                Sets the minutes value in the Date object using local time.
+
+                @,param,min, ,A numeric value equal to the minutes value.
+
+                @,param,sec, ,A numeric value equal to the seconds value.
+
+                @,param,ms, ,A numeric value equal to the milliseconds value.
+
+            - setMonth (required):
+
+                Sets the month value in the Date object using local time.
+
+                @,param,month, ,A numeric value equal to the month. The value
+
+                for January is 0, and other month values follow consecutively.
+
+                @,param,date, ,A numeric value representing the day of the
+
+                month. If this value is not supplied, the value from a call to
+
+                the getDate method is used.
+
+            - setSeconds (required):
+
+                Sets the seconds value in the Date object using local time.
+
+                @,param,sec, ,A numeric value equal to the seconds value.
+
+                @,param,ms, ,A numeric value equal to the milliseconds value.
+
+            - setTime (required):
+
+                Sets the date and time value in the Date object. @,param,time,
+
+                ,A numeric value representing the number of elapsed
+
+                milliseconds since midnight, January 1, 1970 GMT.
+
+            - setUTCDate (required):
+
+                Sets the numeric day of the month in the Date object using
+
+                Universal Coordinated Time (UTC). @,param,date, ,A numeric
+
+                value equal to the day of the month.
+
+            - setUTCFullYear (required):
+
+                Sets the year value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,year, ,A numeric value equal
+
+                to the year. @,param,month, ,A numeric value equal to the
+
+                month. The value for January is 0, and other month values
+
+                follow consecutively. Must be supplied if numDate is supplied.
+
+                @,param,date, ,A numeric value equal to the day of the month.
+
+            - setUTCHours (required):
+
+                Sets the hours value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,hours, ,A numeric value equal
+
+                to the hours value. @,param,min, ,A numeric value equal to the
+
+                minutes value. @,param,sec, ,A numeric value equal to the
+
+                seconds value. @,param,ms, ,A numeric value equal to the
+
+                milliseconds value.
+
+            - setUTCMilliseconds (required):
+
+                Sets the milliseconds value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,ms, ,A numeric value equal to
+
+                the millisecond value.
+
+            - setUTCMinutes (required):
+
+                Sets the minutes value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,min, ,A numeric value equal to
+
+                the minutes value. @,param,sec, ,A numeric value equal to the
+
+                seconds value. @,param,ms, ,A numeric value equal to the
+
+                milliseconds value.
+
+            - setUTCMonth (required):
+
+                Sets the month value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,month, ,A numeric value equal
+
+                to the month. The value for January is 0, and other month
+
+                values follow consecutively. @,param,date, ,A numeric value
+
+                representing the day of the month. If it is not supplied, the
+
+                value from a call to the getUTCDate method is used.
+
+            - setUTCSeconds (required):
+
+                Sets the seconds value in the Date object using Universal
+
+                Coordinated Time (UTC). @,param,sec, ,A numeric value equal to
+
+                the seconds value. @,param,ms, ,A numeric value equal to the
+
+                milliseconds value.
+
+            - toDateString (required):
+
+                Returns a date as a string value.
+
+            - toISOString (required):
+
+                Returns a date as a string value in ISO format.
+
+            - toJSON (required):
+
+                Used by the JSON.stringify method to enable the transformation
+
+                of an object's data for JavaScript Object Notation (JSON)
+
+                serialization.
+
+            - toLocaleDateString (dict; required):
+
+                Returns a date as a string value appropriate to the host
+
+                environment's current locale.   Converts a date to a string by
+
+                using the current or specified locale. @,param,locales, ,A
+
+                locale string or array of locale strings that contain one or
+
+                more language or locale tags. If you include more than one
+
+                locale string, list them in descending order of priority so
+
+                that the first entry is the preferred locale. If you omit this
+
+                parameter, the default locale of the JavaScript runtime is
+
+                used. @,param,options, ,An object that contains one or more
+
+                properties that specify comparison options. @,param,locales,
+
+                ,A locale string, array of locale strings, Intl.Locale object,
+
+                or array of Intl.Locale objects that contain one or more
+
+                language or locale tags. If you include more than one locale
+
+                string, list them in descending order of priority so that the
+
+                first entry is the preferred locale. If you omit this
+
+                parameter, the default locale of the JavaScript runtime is
+
+                used. @,param,options, ,An object that contains one or more
+
+                properties that specify comparison options.
+
+                `toLocaleDateString` is a dict with keys:
+
+            - toLocaleString (dict; optional):
+
+                Returns a value as a string value appropriate to the host
+
+                environment's current locale.   Converts a date and time to a
+
+                string by using the current or specified locale.
+
+                @,param,locales, ,A locale string or array of locale strings
+
+                that contain one or more language or locale tags. If you
+
+                include more than one locale string, list them in descending
+
+                order of priority so that the first entry is the preferred
+
+                locale. If you omit this parameter, the default locale of the
+
+                JavaScript runtime is used. @,param,options, ,An object that
+
+                contains one or more properties that specify comparison
+
+                options. @,param,locales, ,A locale string, array of locale
+
+                strings, Intl.Locale object, or array of Intl.Locale objects
+
+                that contain one or more language or locale tags. If you
+
+                include more than one locale string, list them in descending
+
+                order of priority so that the first entry is the preferred
+
+                locale. If you omit this parameter, the default locale of the
+
+                JavaScript runtime is used. @,param,options, ,An object that
+
+                contains one or more properties that specify comparison
+
+                options.
+
+                `toLocaleString` is a dict with keys:
+
+            - toLocaleTimeString (dict; required):
+
+                Returns a time as a string value appropriate to the host
+
+                environment's current locale.   Converts a time to a string by
+
+                using the current or specified locale. @,param,locales, ,A
+
+                locale string or array of locale strings that contain one or
+
+                more language or locale tags. If you include more than one
+
+                locale string, list them in descending order of priority so
+
+                that the first entry is the preferred locale. If you omit this
+
+                parameter, the default locale of the JavaScript runtime is
+
+                used. @,param,options, ,An object that contains one or more
+
+                properties that specify comparison options. @,param,locales,
+
+                ,A locale string, array of locale strings, Intl.Locale object,
+
+                or array of Intl.Locale objects that contain one or more
+
+                language or locale tags. If you include more than one locale
+
+                string, list them in descending order of priority so that the
+
+                first entry is the preferred locale. If you omit this
+
+                parameter, the default locale of the JavaScript runtime is
+
+                used. @,param,options, ,An object that contains one or more
+
+                properties that specify comparison options.
+
+                `toLocaleTimeString` is a dict with keys:
+
+            - toString (optional):
+
+                Returns a string representation of a date. The format of the
+
+                string depends on the locale.
+
+            - toTimeString (required):
+
+                Returns a time as a string value.
+
+            - toUTCString (required):
+
+                Returns a date converted to a string using Universal
+
+                Coordinated Time (UTC).
+
+            - valueOf (optional):
+
+                Returns the stored time value in milliseconds since midnight,
+
+                January 1, 1970 UTC.
+
+        - name (string; required)
+
+        - options (dict with strings as keys and values of type string | number; optional)
+
+        - scope (number; optional)
 
     - sheetName (string; optional)
 
 - fragmentSelection (boolean | number | string | dict | list; optional)
 
-- getData (dict; default False)
-
-    `getData` is a dict with keys:
-
-    - col (number; optional)
-
-    - col2 (number; optional)
-
-    - row (number; optional)
-
-    - row2 (number; optional)
-
-- getDataAtRow (dict; default False)
-
-    `getDataAtRow` is a dict with keys:
-
-    - prop (string; optional)
-
-    - row (number; required)
+- globalBucket (string; optional)
 
 - height (string | number; optional)
 
@@ -7380,7 +8190,13 @@ Keyword arguments:
 
 - imeFastEdit (boolean; optional)
 
+- init (string; optional)
+
 - invalidCellClassName (string; optional)
+
+- isEmptyCol (string; optional)
+
+- isEmptyRow (string; optional)
 
 - label (dict; optional)
 
@@ -7424,6 +8240,46 @@ Keyword arguments:
 
 - minSpareRows (number; optional)
 
+- modifyAutoColumnSizeSeed (string; optional)
+
+- modifyAutofillRange (string; optional)
+
+- modifyColHeader (string; optional)
+
+- modifyColWidth (string; optional)
+
+- modifyColumnHeaderHeight (string; optional)
+
+- modifyColumnHeaderValue (string; optional)
+
+- modifyCopyableRange (string; optional)
+
+- modifyData (string; optional)
+
+- modifyFiltersMultiSelectValue (string; optional)
+
+- modifyFocusOnTabNavigation (string; optional)
+
+- modifyFocusedElement (string; optional)
+
+- modifyGetCellCoords (string; optional)
+
+- modifyRowData (string; optional)
+
+- modifyRowHeader (string; optional)
+
+- modifyRowHeaderWidth (string; optional)
+
+- modifyRowHeight (string; optional)
+
+- modifySourceData (string; optional)
+
+- modifyTransformEnd (string; optional)
+
+- modifyTransformFocus (string; optional)
+
+- modifyTransformStart (string; optional)
+
 - multiColumnSorting (boolean | number | string | dict | list; optional)
 
 - navigableHeaders (boolean; optional)
@@ -7447,6 +8303,12 @@ Keyword arguments:
 - outsideClickDeselects (optional)
 
 - persistentState (boolean; optional)
+
+- persistentStateLoad (string; optional)
+
+- persistentStateReset (string; optional)
+
+- persistentStateSave (string; optional)
 
 - placeholder (string; optional)
 
@@ -7475,8 +8337,6 @@ Keyword arguments:
 - search (boolean | number | string | dict | list; optional)
 
 - selectOptions (list of strings; optional)
-
-- selectedCells (list of list of list of 4 elements: [number, number, number, number]ss; optional)
 
 - selectionMode (a value equal to: 'single', 'range', 'multiple'; optional)
 
@@ -7704,7 +8564,9 @@ Keyword arguments:
 
     - ariaTags (boolean; optional)
 
-    - autoColumnSize (boolean | number | string | dict | list; optional)
+    - autoColumnSize (boolean
+
+      Or number | string | dict | list; optional)
 
     - autoRowSize (boolean | number | string | dict | list; optional)
 
@@ -7915,6 +8777,8 @@ Keyword arguments:
     - customBorders (boolean | number | string | dict | list; optional)
 
     - data (list of list of boolean | number | string | dict | listss; optional)
+
+    - dataDotNotation (boolean; optional)
 
     - dataSchema (list of boolean | number | string | dict | lists; optional)
 
@@ -10036,7 +10900,7 @@ Keyword arguments:
 
             `defaultDate` is a dict with keys:
 
-            - __@toPrimitive@4742 (dict; required):
+            - __@toPrimitive@5513 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -10047,7 +10911,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4742` is a dict with keys:
+                `__@toPrimitive@5513` is a dict with keys:
 
 
             - getDate (required):
@@ -12482,7 +13346,7 @@ Keyword arguments:
 
             `maxDate` is a dict with keys:
 
-            - __@toPrimitive@4742 (dict; required):
+            - __@toPrimitive@5513 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -12493,7 +13357,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4742` is a dict with keys:
+                `__@toPrimitive@5513` is a dict with keys:
 
 
             - getDate (required):
@@ -12777,7 +13641,7 @@ Keyword arguments:
 
             `minDate` is a dict with keys:
 
-            - __@toPrimitive@4742 (dict; required):
+            - __@toPrimitive@5513 (dict; required):
                 Converts a Date object to a string.   Converts a Date
                 object to a number.   Converts a Date object to a
                 string or number. @,param,hint, ,The strings
@@ -12788,7 +13652,7 @@ Keyword arguments:
                 \"number\", a string if 'hint' was \"string\" or
                 \"default\".
 
-                `__@toPrimitive@4742` is a dict with keys:
+                `__@toPrimitive@5513` is a dict with keys:
 
 
             - getDate (required):
@@ -15265,7 +16129,455 @@ Keyword arguments:
 
         `formulas` is a dict with keys:
 
-        - engine (boolean | number | string | dict | list; required)
+        - engine (boolean
+
+          Or number | string | dict | list; required)
+
+        - namedExpressions (list of dicts; optional)
+
+            `namedExpressions` is a list of dicts with keys:
+
+    - expression (dict; required)
+
+        `expression` is a string
+
+              Or number | dict with keys:
+
+        - __@toPrimitive@5513 (dict; required):
+
+            Converts a Date object to a string.   Converts a Date object
+
+            to a number.   Converts a Date object to a string or number.
+
+            @,param,hint, ,The strings \"number\", \"string\", or
+
+            \"default\" to specify what primitive to return.
+
+            @,throws,{TypeError} If 'hint' was given something other than
+
+            \"number\", \"string\", or \"default\". @,returns,A number if
+
+            'hint' was \"number\", a string if 'hint' was \"string\" or
+
+            \"default\".
+
+            `__@toPrimitive@5513` is a dict with keys:
+
+        - getDate (required):
+
+            Gets the day-of-the-month, using local time.
+
+        - getDay (required):
+
+            Gets the day of the week, using local time.
+
+        - getFullYear (required):
+
+            Gets the year, using local time.
+
+        - getHours (required):
+
+            Gets the hours in a date, using local time.
+
+        - getMilliseconds (required):
+
+            Gets the milliseconds of a Date, using local time.
+
+        - getMinutes (required):
+
+            Gets the minutes of a Date object, using local time.
+
+        - getMonth (required):
+
+            Gets the month, using local time.
+
+        - getSeconds (required):
+
+            Gets the seconds of a Date object, using local time.
+
+        - getTime (required):
+
+            Gets the time value in milliseconds.
+
+        - getTimezoneOffset (required):
+
+            Gets the difference in minutes between the time on the local
+
+            computer and Universal Coordinated Time (UTC).
+
+        - getUTCDate (required):
+
+            Gets the day-of-the-month, using Universal Coordinated Time
+
+            (UTC).
+
+        - getUTCDay (required):
+
+            Gets the day of the week using Universal Coordinated Time
+
+            (UTC).
+
+        - getUTCFullYear (required):
+
+            Gets the year using Universal Coordinated Time (UTC).
+
+        - getUTCHours (required):
+
+            Gets the hours value in a Date object using Universal
+
+            Coordinated Time (UTC).
+
+        - getUTCMilliseconds (required):
+
+            Gets the milliseconds of a Date object using Universal
+
+            Coordinated Time (UTC).
+
+        - getUTCMinutes (required):
+
+            Gets the minutes of a Date object using Universal Coordinated
+
+            Time (UTC).
+
+        - getUTCMonth (required):
+
+            Gets the month of a Date object using Universal Coordinated
+
+            Time (UTC).
+
+        - getUTCSeconds (required):
+
+            Gets the seconds of a Date object using Universal Coordinated
+
+            Time (UTC).
+
+        - getVarDate (required)
+
+        - setDate (required):
+
+            Sets the numeric day-of-the-month value of the Date object
+
+            using local time. @,param,date, ,A numeric value equal to the
+
+            day of the month.
+
+        - setFullYear (required):
+
+            Sets the year of the Date object using local time.
+
+            @,param,year, ,A numeric value for the year. @,param,month, ,A
+
+            zero-based numeric value for the month (0 for January, 11 for
+
+            December). Must be specified if numDate is specified.
+
+            @,param,date, ,A numeric value equal for the day of the month.
+
+        - setHours (required):
+
+            Sets the hour value in the Date object using local time.
+
+            @,param,hours, ,A numeric value equal to the hours value.
+
+            @,param,min, ,A numeric value equal to the minutes value.
+
+            @,param,sec, ,A numeric value equal to the seconds value.
+
+            @,param,ms, ,A numeric value equal to the milliseconds value.
+
+        - setMilliseconds (required):
+
+            Sets the milliseconds value in the Date object using local
+
+            time. @,param,ms, ,A numeric value equal to the millisecond
+
+            value.
+
+        - setMinutes (required):
+
+            Sets the minutes value in the Date object using local time.
+
+            @,param,min, ,A numeric value equal to the minutes value.
+
+            @,param,sec, ,A numeric value equal to the seconds value.
+
+            @,param,ms, ,A numeric value equal to the milliseconds value.
+
+        - setMonth (required):
+
+            Sets the month value in the Date object using local time.
+
+            @,param,month, ,A numeric value equal to the month. The value
+
+            for January is 0, and other month values follow consecutively.
+
+            @,param,date, ,A numeric value representing the day of the
+
+            month. If this value is not supplied, the value from a call to
+
+            the getDate method is used.
+
+        - setSeconds (required):
+
+            Sets the seconds value in the Date object using local time.
+
+            @,param,sec, ,A numeric value equal to the seconds value.
+
+            @,param,ms, ,A numeric value equal to the milliseconds value.
+
+        - setTime (required):
+
+            Sets the date and time value in the Date object. @,param,time,
+
+            ,A numeric value representing the number of elapsed
+
+            milliseconds since midnight, January 1, 1970 GMT.
+
+        - setUTCDate (required):
+
+            Sets the numeric day of the month in the Date object using
+
+            Universal Coordinated Time (UTC). @,param,date, ,A numeric
+
+            value equal to the day of the month.
+
+        - setUTCFullYear (required):
+
+            Sets the year value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,year, ,A numeric value equal
+
+            to the year. @,param,month, ,A numeric value equal to the
+
+            month. The value for January is 0, and other month values
+
+            follow consecutively. Must be supplied if numDate is supplied.
+
+            @,param,date, ,A numeric value equal to the day of the month.
+
+        - setUTCHours (required):
+
+            Sets the hours value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,hours, ,A numeric value equal
+
+            to the hours value. @,param,min, ,A numeric value equal to the
+
+            minutes value. @,param,sec, ,A numeric value equal to the
+
+            seconds value. @,param,ms, ,A numeric value equal to the
+
+            milliseconds value.
+
+        - setUTCMilliseconds (required):
+
+            Sets the milliseconds value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,ms, ,A numeric value equal to
+
+            the millisecond value.
+
+        - setUTCMinutes (required):
+
+            Sets the minutes value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,min, ,A numeric value equal to
+
+            the minutes value. @,param,sec, ,A numeric value equal to the
+
+            seconds value. @,param,ms, ,A numeric value equal to the
+
+            milliseconds value.
+
+        - setUTCMonth (required):
+
+            Sets the month value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,month, ,A numeric value equal
+
+            to the month. The value for January is 0, and other month
+
+            values follow consecutively. @,param,date, ,A numeric value
+
+            representing the day of the month. If it is not supplied, the
+
+            value from a call to the getUTCDate method is used.
+
+        - setUTCSeconds (required):
+
+            Sets the seconds value in the Date object using Universal
+
+            Coordinated Time (UTC). @,param,sec, ,A numeric value equal to
+
+            the seconds value. @,param,ms, ,A numeric value equal to the
+
+            milliseconds value.
+
+        - toDateString (required):
+
+            Returns a date as a string value.
+
+        - toISOString (required):
+
+            Returns a date as a string value in ISO format.
+
+        - toJSON (required):
+
+            Used by the JSON.stringify method to enable the transformation
+
+            of an object's data for JavaScript Object Notation (JSON)
+
+            serialization.
+
+        - toLocaleDateString (dict; required):
+
+            Returns a date as a string value appropriate to the host
+
+            environment's current locale.   Converts a date to a string by
+
+            using the current or specified locale. @,param,locales, ,A
+
+            locale string or array of locale strings that contain one or
+
+            more language or locale tags. If you include more than one
+
+            locale string, list them in descending order of priority so
+
+            that the first entry is the preferred locale. If you omit this
+
+            parameter, the default locale of the JavaScript runtime is
+
+            used. @,param,options, ,An object that contains one or more
+
+            properties that specify comparison options. @,param,locales,
+
+            ,A locale string, array of locale strings, Intl.Locale object,
+
+            or array of Intl.Locale objects that contain one or more
+
+            language or locale tags. If you include more than one locale
+
+            string, list them in descending order of priority so that the
+
+            first entry is the preferred locale. If you omit this
+
+            parameter, the default locale of the JavaScript runtime is
+
+            used. @,param,options, ,An object that contains one or more
+
+            properties that specify comparison options.
+
+            `toLocaleDateString` is a dict with keys:
+
+        - toLocaleString (dict; optional):
+
+            Returns a value as a string value appropriate to the host
+
+            environment's current locale.   Converts a date and time to a
+
+            string by using the current or specified locale.
+
+            @,param,locales, ,A locale string or array of locale strings
+
+            that contain one or more language or locale tags. If you
+
+            include more than one locale string, list them in descending
+
+            order of priority so that the first entry is the preferred
+
+            locale. If you omit this parameter, the default locale of the
+
+            JavaScript runtime is used. @,param,options, ,An object that
+
+            contains one or more properties that specify comparison
+
+            options. @,param,locales, ,A locale string, array of locale
+
+            strings, Intl.Locale object, or array of Intl.Locale objects
+
+            that contain one or more language or locale tags. If you
+
+            include more than one locale string, list them in descending
+
+            order of priority so that the first entry is the preferred
+
+            locale. If you omit this parameter, the default locale of the
+
+            JavaScript runtime is used. @,param,options, ,An object that
+
+            contains one or more properties that specify comparison
+
+            options.
+
+            `toLocaleString` is a dict with keys:
+
+        - toLocaleTimeString (dict; required):
+
+            Returns a time as a string value appropriate to the host
+
+            environment's current locale.   Converts a time to a string by
+
+            using the current or specified locale. @,param,locales, ,A
+
+            locale string or array of locale strings that contain one or
+
+            more language or locale tags. If you include more than one
+
+            locale string, list them in descending order of priority so
+
+            that the first entry is the preferred locale. If you omit this
+
+            parameter, the default locale of the JavaScript runtime is
+
+            used. @,param,options, ,An object that contains one or more
+
+            properties that specify comparison options. @,param,locales,
+
+            ,A locale string, array of locale strings, Intl.Locale object,
+
+            or array of Intl.Locale objects that contain one or more
+
+            language or locale tags. If you include more than one locale
+
+            string, list them in descending order of priority so that the
+
+            first entry is the preferred locale. If you omit this
+
+            parameter, the default locale of the JavaScript runtime is
+
+            used. @,param,options, ,An object that contains one or more
+
+            properties that specify comparison options.
+
+            `toLocaleTimeString` is a dict with keys:
+
+        - toString (optional):
+
+            Returns a string representation of a date. The format of the
+
+            string depends on the locale.
+
+        - toTimeString (required):
+
+            Returns a time as a string value.
+
+        - toUTCString (required):
+
+            Returns a date converted to a string using Universal
+
+            Coordinated Time (UTC).
+
+        - valueOf (optional):
+
+            Returns the stored time value in milliseconds since midnight,
+
+            January 1, 1970 UTC.
+
+    - name (string; required)
+
+    - options (dict with strings as keys and values of type string | number; optional)
+
+    - scope (number; optional)
 
         - sheetName (string; optional)
 
@@ -15557,7 +16869,7 @@ Keyword arguments:
         `start | center | end | justify`  **Initial value**: `start`
         @,deprecated.
 
-    - KhtmlLineBreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
+    - KhtmlLineBreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
         The **`line-break`** CSS property sets how to break lines of
         Chinese, Japanese, or Korean (CJK) text when working with
         punctuation and symbols.  **Syntax**: `auto | loose | normal |
@@ -16839,7 +18151,7 @@ Keyword arguments:
         <overflow-position>? [ <content-position> | left | right ]`
         **Initial value**: `normal`.
 
-    - WebkitLineBreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
+    - WebkitLineBreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
         The **`line-break`** CSS property sets how to break lines of
         Chinese, Japanese, or Korean (CJK) text when working with
         punctuation and symbols.  **Syntax**: `auto | loose | normal |
@@ -19766,7 +21078,7 @@ Keyword arguments:
 
     - lightingColor (boolean | number | string | dict | list; optional)
 
-    - lineBreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
+    - lineBreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
         The **`line-break`** CSS property sets how to break lines of
         Chinese, Japanese, or Korean (CJK) text when working with
         punctuation and symbols.  **Syntax**: `auto | loose | normal |
@@ -20515,7 +21827,7 @@ Keyword arguments:
         obsolete.  **Syntax**: `auto | normal | active | inactive |
         disabled`  **Initial value**: `auto` @,deprecated.
 
-    - msLineBreak (a value equal to: 'loose', 'strict', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
+    - msLineBreak (a value equal to: 'strict', 'loose', 'inherit', 'auto', '-moz-initial', 'initial', 'revert', 'revert-layer', 'unset', 'normal', 'anywhere'; optional):
         The **`line-break`** CSS property sets how to break lines of
         Chinese, Japanese, or Korean (CJK) text when working with
         punctuation and symbols.  **Syntax**: `auto | loose | normal |
@@ -22751,10 +24063,10 @@ they may still be used as keyword arguments."""
     _namespace = 'dash_handsontable'
     _type = 'HotTable'
     @_explicitize_args
-    def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, settings=Component.UNDEFINED, activeHeaderClassName=Component.UNDEFINED, allowEmpty=Component.UNDEFINED, allowHtml=Component.UNDEFINED, allowInsertColumn=Component.UNDEFINED, allowInsertRow=Component.UNDEFINED, allowInvalid=Component.UNDEFINED, allowRemoveColumn=Component.UNDEFINED, allowRemoveRow=Component.UNDEFINED, ariaTags=Component.UNDEFINED, autoColumnSize=Component.UNDEFINED, autoRowSize=Component.UNDEFINED, autoWrapCol=Component.UNDEFINED, autoWrapRow=Component.UNDEFINED, bindRowsWithHeaders=Component.UNDEFINED, cell=Component.UNDEFINED, cells=Component.UNDEFINED, checkedTemplate=Component.UNDEFINED, colHeaders=Component.UNDEFINED, collapsibleColumns=Component.UNDEFINED, columnHeaderHeight=Component.UNDEFINED, columns=Component.UNDEFINED, columnSorting=Component.UNDEFINED, columnSummary=Component.UNDEFINED, colWidths=Component.UNDEFINED, commentedCellClassName=Component.UNDEFINED, comments=Component.UNDEFINED, contextMenu=Component.UNDEFINED, copyable=Component.UNDEFINED, copyPaste=Component.UNDEFINED, correctFormat=Component.UNDEFINED, currentColClassName=Component.UNDEFINED, currentHeaderClassName=Component.UNDEFINED, currentRowClassName=Component.UNDEFINED, customBorders=Component.UNDEFINED, data=Component.UNDEFINED, dataSchema=Component.UNDEFINED, dateFormat=Component.UNDEFINED, datePickerConfig=Component.UNDEFINED, defaultDate=Component.UNDEFINED, tabNavigation=Component.UNDEFINED, disableVisualSelection=Component.UNDEFINED, dragToScroll=Component.UNDEFINED, dropdownMenu=Component.UNDEFINED, editor=Component.UNDEFINED, enterBeginsEditing=Component.UNDEFINED, enterMoves=Component.UNDEFINED, fillHandle=Component.UNDEFINED, filter=Component.UNDEFINED, filteringCaseSensitive=Component.UNDEFINED, filters=Component.UNDEFINED, fixedColumnsLeft=Component.UNDEFINED, fixedColumnsStart=Component.UNDEFINED, fixedRowsBottom=Component.UNDEFINED, fixedRowsTop=Component.UNDEFINED, formulas=Component.UNDEFINED, fragmentSelection=Component.UNDEFINED, height=Component.UNDEFINED, hiddenColumns=Component.UNDEFINED, hiddenRows=Component.UNDEFINED, invalidCellClassName=Component.UNDEFINED, imeFastEdit=Component.UNDEFINED, isEmptyCol=Component.UNDEFINED, isEmptyRow=Component.UNDEFINED, label=Component.UNDEFINED, language=Component.UNDEFINED, locale=Component.UNDEFINED, layoutDirection=Component.UNDEFINED, licenseKey=Component.UNDEFINED, manualColumnFreeze=Component.UNDEFINED, manualColumnMove=Component.UNDEFINED, manualColumnResize=Component.UNDEFINED, manualRowMove=Component.UNDEFINED, manualRowResize=Component.UNDEFINED, maxCols=Component.UNDEFINED, maxRows=Component.UNDEFINED, mergeCells=Component.UNDEFINED, minCols=Component.UNDEFINED, minRows=Component.UNDEFINED, minSpareCols=Component.UNDEFINED, minSpareRows=Component.UNDEFINED, multiColumnSorting=Component.UNDEFINED, navigableHeaders=Component.UNDEFINED, nestedHeaders=Component.UNDEFINED, nestedRows=Component.UNDEFINED, noWordWrapClassName=Component.UNDEFINED, numericFormat=Component.UNDEFINED, observeDOMVisibility=Component.UNDEFINED, outsideClickDeselects=Component.UNDEFINED, persistentState=Component.UNDEFINED, placeholder=Component.UNDEFINED, placeholderCellClassName=Component.UNDEFINED, preventOverflow=Component.UNDEFINED, preventWheel=Component.UNDEFINED, readOnly=Component.UNDEFINED, readOnlyCellClassName=Component.UNDEFINED, renderAllColumns=Component.UNDEFINED, renderAllRows=Component.UNDEFINED, renderer=Component.UNDEFINED, rowHeaders=Component.UNDEFINED, rowHeaderWidth=Component.UNDEFINED, rowHeights=Component.UNDEFINED, search=Component.UNDEFINED, selectionMode=Component.UNDEFINED, selectOptions=Component.UNDEFINED, skipColumnOnPaste=Component.UNDEFINED, skipRowOnPaste=Component.UNDEFINED, sortByRelevance=Component.UNDEFINED, source=Component.UNDEFINED, startCols=Component.UNDEFINED, startRows=Component.UNDEFINED, stretchH=Component.UNDEFINED, strict=Component.UNDEFINED, tableClassName=Component.UNDEFINED, tabMoves=Component.UNDEFINED, title=Component.UNDEFINED, trimDropdown=Component.UNDEFINED, trimRows=Component.UNDEFINED, trimWhitespace=Component.UNDEFINED, type=Component.UNDEFINED, uncheckedTemplate=Component.UNDEFINED, undo=Component.UNDEFINED, validator=Component.UNDEFINED, viewportColumnRenderingOffset=Component.UNDEFINED, viewportRowRenderingOffset=Component.UNDEFINED, visibleRows=Component.UNDEFINED, width=Component.UNDEFINED, wordWrap=Component.UNDEFINED, afterAddChild=Component.UNDEFINED, afterAutofill=Component.UNDEFINED, afterBeginEditing=Component.UNDEFINED, afterCellMetaReset=Component.UNDEFINED, afterChange=Component.UNDEFINED, afterChangesObserved=Component.UNDEFINED, afterColumnCollapse=Component.UNDEFINED, afterColumnExpand=Component.UNDEFINED, afterColumnFreeze=Component.UNDEFINED, afterColumnMove=Component.UNDEFINED, afterColumnResize=Component.UNDEFINED, afterColumnSequenceChange=Component.UNDEFINED, afterColumnSort=Component.UNDEFINED, afterColumnUnfreeze=Component.UNDEFINED, afterContextMenuDefaultOptions=Component.UNDEFINED, afterContextMenuHide=Component.UNDEFINED, afterContextMenuShow=Component.UNDEFINED, afterCopy=Component.UNDEFINED, afterCopyLimit=Component.UNDEFINED, afterCreateCol=Component.UNDEFINED, afterCreateRow=Component.UNDEFINED, afterCut=Component.UNDEFINED, afterDeselect=Component.UNDEFINED, afterDestroy=Component.UNDEFINED, afterDetachChild=Component.UNDEFINED, afterDocumentKeyDown=Component.UNDEFINED, afterDrawSelection=Component.UNDEFINED, afterDropdownMenuDefaultOptions=Component.UNDEFINED, afterDropdownMenuHide=Component.UNDEFINED, afterDropdownMenuShow=Component.UNDEFINED, afterFilter=Component.UNDEFINED, afterFormulasValuesUpdate=Component.UNDEFINED, afterGetCellMeta=Component.UNDEFINED, afterGetColHeader=Component.UNDEFINED, afterGetColumnHeaderRenderers=Component.UNDEFINED, afterGetRowHeader=Component.UNDEFINED, afterGetRowHeaderRenderers=Component.UNDEFINED, afterHideColumns=Component.UNDEFINED, afterHideRows=Component.UNDEFINED, afterInit=Component.UNDEFINED, afterLanguageChange=Component.UNDEFINED, afterListen=Component.UNDEFINED, afterLoadData=Component.UNDEFINED, afterMergeCells=Component.UNDEFINED, afterModifyTransformEnd=Component.UNDEFINED, afterModifyTransformFocus=Component.UNDEFINED, afterModifyTransformStart=Component.UNDEFINED, afterMomentumScroll=Component.UNDEFINED, afterNamedExpressionAdded=Component.UNDEFINED, afterNamedExpressionRemoved=Component.UNDEFINED, afterOnCellContextMenu=Component.UNDEFINED, afterOnCellCornerDblClick=Component.UNDEFINED, afterOnCellCornerMouseDown=Component.UNDEFINED, afterOnCellMouseDown=Component.UNDEFINED, afterOnCellMouseOut=Component.UNDEFINED, afterOnCellMouseOver=Component.UNDEFINED, afterOnCellMouseUp=Component.UNDEFINED, afterPaste=Component.UNDEFINED, afterPluginsInitialized=Component.UNDEFINED, afterRedo=Component.UNDEFINED, afterRedoStackChange=Component.UNDEFINED, afterRefreshDimensions=Component.UNDEFINED, afterRemoveCellMeta=Component.UNDEFINED, afterRemoveCol=Component.UNDEFINED, afterRemoveRow=Component.UNDEFINED, afterRender=Component.UNDEFINED, afterRenderer=Component.UNDEFINED, afterRowMove=Component.UNDEFINED, afterRowResize=Component.UNDEFINED, afterRowSequenceChange=Component.UNDEFINED, afterScrollHorizontally=Component.UNDEFINED, afterScrollVertically=Component.UNDEFINED, afterScroll=Component.UNDEFINED, afterSelectColumns=Component.UNDEFINED, afterSelection=Component.UNDEFINED, afterSelectionByProp=Component.UNDEFINED, afterSelectionEnd=Component.UNDEFINED, afterSelectionEndByProp=Component.UNDEFINED, afterSelectionFocusSet=Component.UNDEFINED, afterSelectRows=Component.UNDEFINED, afterSetCellMeta=Component.UNDEFINED, afterSetDataAtCell=Component.UNDEFINED, afterSetDataAtRowProp=Component.UNDEFINED, afterSetSourceDataAtCell=Component.UNDEFINED, afterSheetAdded=Component.UNDEFINED, afterSheetRemoved=Component.UNDEFINED, afterSheetRenamed=Component.UNDEFINED, afterTrimRow=Component.UNDEFINED, afterUndo=Component.UNDEFINED, afterUndoStackChange=Component.UNDEFINED, afterUnhideColumns=Component.UNDEFINED, afterUnhideRows=Component.UNDEFINED, afterUnlisten=Component.UNDEFINED, afterUnmergeCells=Component.UNDEFINED, afterUntrimRow=Component.UNDEFINED, afterUpdateData=Component.UNDEFINED, afterUpdateSettings=Component.UNDEFINED, afterValidate=Component.UNDEFINED, afterViewportColumnCalculatorOverride=Component.UNDEFINED, afterViewportRowCalculatorOverride=Component.UNDEFINED, afterViewRender=Component.UNDEFINED, beforeAddChild=Component.UNDEFINED, beforeAutofill=Component.UNDEFINED, beforeBeginEditing=Component.UNDEFINED, beforeCellAlignment=Component.UNDEFINED, beforeChange=Component.UNDEFINED, beforeChangeRender=Component.UNDEFINED, beforeColumnCollapse=Component.UNDEFINED, beforeColumnExpand=Component.UNDEFINED, beforeColumnFreeze=Component.UNDEFINED, beforeColumnMove=Component.UNDEFINED, beforeColumnResize=Component.UNDEFINED, beforeColumnSort=Component.UNDEFINED, beforeColumnWrap=Component.UNDEFINED, beforeColumnUnfreeze=Component.UNDEFINED, beforeContextMenuSetItems=Component.UNDEFINED, beforeContextMenuShow=Component.UNDEFINED, beforeCopy=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentData', 'currentDataAtRow', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'getData', 'getDataAtRow', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectedCells', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
+    def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, style=Component.UNDEFINED, settings=Component.UNDEFINED, activeHeaderClassName=Component.UNDEFINED, allowEmpty=Component.UNDEFINED, allowHtml=Component.UNDEFINED, allowInsertColumn=Component.UNDEFINED, allowInsertRow=Component.UNDEFINED, allowInvalid=Component.UNDEFINED, allowRemoveColumn=Component.UNDEFINED, allowRemoveRow=Component.UNDEFINED, ariaTags=Component.UNDEFINED, autoColumnSize=Component.UNDEFINED, autoRowSize=Component.UNDEFINED, autoWrapCol=Component.UNDEFINED, autoWrapRow=Component.UNDEFINED, bindRowsWithHeaders=Component.UNDEFINED, cell=Component.UNDEFINED, checkedTemplate=Component.UNDEFINED, colHeaders=Component.UNDEFINED, collapsibleColumns=Component.UNDEFINED, columnHeaderHeight=Component.UNDEFINED, columns=Component.UNDEFINED, columnSorting=Component.UNDEFINED, columnSummary=Component.UNDEFINED, colWidths=Component.UNDEFINED, commentedCellClassName=Component.UNDEFINED, comments=Component.UNDEFINED, contextMenu=Component.UNDEFINED, copyable=Component.UNDEFINED, copyPaste=Component.UNDEFINED, correctFormat=Component.UNDEFINED, currentColClassName=Component.UNDEFINED, currentHeaderClassName=Component.UNDEFINED, currentRowClassName=Component.UNDEFINED, customBorders=Component.UNDEFINED, data=Component.UNDEFINED, dataDotNotation=Component.UNDEFINED, dataSchema=Component.UNDEFINED, dateFormat=Component.UNDEFINED, datePickerConfig=Component.UNDEFINED, defaultDate=Component.UNDEFINED, tabNavigation=Component.UNDEFINED, disableVisualSelection=Component.UNDEFINED, dragToScroll=Component.UNDEFINED, dropdownMenu=Component.UNDEFINED, editor=Component.UNDEFINED, enterBeginsEditing=Component.UNDEFINED, enterMoves=Component.UNDEFINED, fillHandle=Component.UNDEFINED, filter=Component.UNDEFINED, filteringCaseSensitive=Component.UNDEFINED, filters=Component.UNDEFINED, fixedColumnsLeft=Component.UNDEFINED, fixedColumnsStart=Component.UNDEFINED, fixedRowsBottom=Component.UNDEFINED, fixedRowsTop=Component.UNDEFINED, formulas=Component.UNDEFINED, fragmentSelection=Component.UNDEFINED, height=Component.UNDEFINED, hiddenColumns=Component.UNDEFINED, hiddenRows=Component.UNDEFINED, invalidCellClassName=Component.UNDEFINED, imeFastEdit=Component.UNDEFINED, label=Component.UNDEFINED, language=Component.UNDEFINED, locale=Component.UNDEFINED, layoutDirection=Component.UNDEFINED, licenseKey=Component.UNDEFINED, manualColumnFreeze=Component.UNDEFINED, manualColumnMove=Component.UNDEFINED, manualColumnResize=Component.UNDEFINED, manualRowMove=Component.UNDEFINED, manualRowResize=Component.UNDEFINED, maxCols=Component.UNDEFINED, maxRows=Component.UNDEFINED, mergeCells=Component.UNDEFINED, minCols=Component.UNDEFINED, minRows=Component.UNDEFINED, minSpareCols=Component.UNDEFINED, minSpareRows=Component.UNDEFINED, multiColumnSorting=Component.UNDEFINED, navigableHeaders=Component.UNDEFINED, nestedHeaders=Component.UNDEFINED, nestedRows=Component.UNDEFINED, noWordWrapClassName=Component.UNDEFINED, numericFormat=Component.UNDEFINED, observeDOMVisibility=Component.UNDEFINED, outsideClickDeselects=Component.UNDEFINED, persistentState=Component.UNDEFINED, placeholder=Component.UNDEFINED, placeholderCellClassName=Component.UNDEFINED, preventOverflow=Component.UNDEFINED, preventWheel=Component.UNDEFINED, readOnly=Component.UNDEFINED, readOnlyCellClassName=Component.UNDEFINED, renderAllColumns=Component.UNDEFINED, renderAllRows=Component.UNDEFINED, renderer=Component.UNDEFINED, rowHeaders=Component.UNDEFINED, rowHeaderWidth=Component.UNDEFINED, rowHeights=Component.UNDEFINED, search=Component.UNDEFINED, selectionMode=Component.UNDEFINED, selectOptions=Component.UNDEFINED, skipColumnOnPaste=Component.UNDEFINED, skipRowOnPaste=Component.UNDEFINED, sortByRelevance=Component.UNDEFINED, source=Component.UNDEFINED, startCols=Component.UNDEFINED, startRows=Component.UNDEFINED, stretchH=Component.UNDEFINED, strict=Component.UNDEFINED, tableClassName=Component.UNDEFINED, tabMoves=Component.UNDEFINED, title=Component.UNDEFINED, trimDropdown=Component.UNDEFINED, trimRows=Component.UNDEFINED, trimWhitespace=Component.UNDEFINED, type=Component.UNDEFINED, uncheckedTemplate=Component.UNDEFINED, undo=Component.UNDEFINED, validator=Component.UNDEFINED, viewportColumnRenderingOffset=Component.UNDEFINED, viewportRowRenderingOffset=Component.UNDEFINED, visibleRows=Component.UNDEFINED, width=Component.UNDEFINED, wordWrap=Component.UNDEFINED, afterChangesObserved=Component.UNDEFINED, exportData=Component.UNDEFINED, exportDataParams=Component.UNDEFINED, cells=Component.UNDEFINED, isEmptyCol=Component.UNDEFINED, isEmptyRow=Component.UNDEFINED, afterAddChild=Component.UNDEFINED, afterAutofill=Component.UNDEFINED, afterBeginEditing=Component.UNDEFINED, afterCellMetaReset=Component.UNDEFINED, afterChange=Component.UNDEFINED, afterColumnCollapse=Component.UNDEFINED, afterColumnExpand=Component.UNDEFINED, afterColumnFreeze=Component.UNDEFINED, afterColumnMove=Component.UNDEFINED, afterColumnResize=Component.UNDEFINED, afterColumnSequenceChange=Component.UNDEFINED, afterColumnSort=Component.UNDEFINED, afterColumnUnfreeze=Component.UNDEFINED, afterContextMenuDefaultOptions=Component.UNDEFINED, afterContextMenuHide=Component.UNDEFINED, afterContextMenuShow=Component.UNDEFINED, afterCopy=Component.UNDEFINED, afterCopyLimit=Component.UNDEFINED, afterCreateCol=Component.UNDEFINED, afterCreateRow=Component.UNDEFINED, afterCut=Component.UNDEFINED, afterDeselect=Component.UNDEFINED, afterDestroy=Component.UNDEFINED, afterDetachChild=Component.UNDEFINED, afterDocumentKeyDown=Component.UNDEFINED, afterDrawSelection=Component.UNDEFINED, afterDropdownMenuDefaultOptions=Component.UNDEFINED, afterDropdownMenuHide=Component.UNDEFINED, afterDropdownMenuShow=Component.UNDEFINED, afterFilter=Component.UNDEFINED, afterFormulasValuesUpdate=Component.UNDEFINED, afterGetCellMeta=Component.UNDEFINED, afterGetColHeader=Component.UNDEFINED, afterGetColumnHeaderRenderers=Component.UNDEFINED, afterGetRowHeader=Component.UNDEFINED, afterGetRowHeaderRenderers=Component.UNDEFINED, afterHideColumns=Component.UNDEFINED, afterHideRows=Component.UNDEFINED, afterInit=Component.UNDEFINED, afterLanguageChange=Component.UNDEFINED, afterListen=Component.UNDEFINED, afterLoadData=Component.UNDEFINED, afterMergeCells=Component.UNDEFINED, afterModifyTransformEnd=Component.UNDEFINED, afterModifyTransformFocus=Component.UNDEFINED, afterModifyTransformStart=Component.UNDEFINED, afterMomentumScroll=Component.UNDEFINED, afterNamedExpressionAdded=Component.UNDEFINED, afterNamedExpressionRemoved=Component.UNDEFINED, afterOnCellContextMenu=Component.UNDEFINED, afterOnCellCornerDblClick=Component.UNDEFINED, afterOnCellCornerMouseDown=Component.UNDEFINED, afterOnCellMouseDown=Component.UNDEFINED, afterOnCellMouseOut=Component.UNDEFINED, afterOnCellMouseOver=Component.UNDEFINED, afterOnCellMouseUp=Component.UNDEFINED, afterPaste=Component.UNDEFINED, afterPluginsInitialized=Component.UNDEFINED, afterRedo=Component.UNDEFINED, afterRedoStackChange=Component.UNDEFINED, afterRefreshDimensions=Component.UNDEFINED, afterRemoveCellMeta=Component.UNDEFINED, afterRemoveCol=Component.UNDEFINED, afterRemoveRow=Component.UNDEFINED, afterRender=Component.UNDEFINED, afterRenderer=Component.UNDEFINED, afterRowMove=Component.UNDEFINED, afterRowResize=Component.UNDEFINED, afterRowSequenceChange=Component.UNDEFINED, afterScroll=Component.UNDEFINED, afterScrollHorizontally=Component.UNDEFINED, afterScrollVertically=Component.UNDEFINED, afterSelectColumns=Component.UNDEFINED, afterSelection=Component.UNDEFINED, afterSelectionByProp=Component.UNDEFINED, afterSelectionEnd=Component.UNDEFINED, afterSelectionEndByProp=Component.UNDEFINED, afterSelectionFocusSet=Component.UNDEFINED, afterSelectRows=Component.UNDEFINED, afterSetCellMeta=Component.UNDEFINED, afterSetDataAtCell=Component.UNDEFINED, afterSetDataAtRowProp=Component.UNDEFINED, afterSetSourceDataAtCell=Component.UNDEFINED, afterSheetAdded=Component.UNDEFINED, afterSheetRemoved=Component.UNDEFINED, afterSheetRenamed=Component.UNDEFINED, afterTrimRow=Component.UNDEFINED, afterUndo=Component.UNDEFINED, afterUndoStackChange=Component.UNDEFINED, afterUnhideColumns=Component.UNDEFINED, afterUnhideRows=Component.UNDEFINED, afterUnlisten=Component.UNDEFINED, afterUnmergeCells=Component.UNDEFINED, afterUntrimRow=Component.UNDEFINED, afterUpdateData=Component.UNDEFINED, afterUpdateSettings=Component.UNDEFINED, afterValidate=Component.UNDEFINED, afterViewportColumnCalculatorOverride=Component.UNDEFINED, afterViewportRowCalculatorOverride=Component.UNDEFINED, afterViewRender=Component.UNDEFINED, beforeAddChild=Component.UNDEFINED, beforeAutofill=Component.UNDEFINED, beforeBeginEditing=Component.UNDEFINED, beforeCellAlignment=Component.UNDEFINED, beforeChange=Component.UNDEFINED, beforeChangeRender=Component.UNDEFINED, beforeColumnCollapse=Component.UNDEFINED, beforeColumnExpand=Component.UNDEFINED, beforeColumnFreeze=Component.UNDEFINED, beforeColumnMove=Component.UNDEFINED, beforeColumnResize=Component.UNDEFINED, beforeColumnSort=Component.UNDEFINED, beforeColumnUnfreeze=Component.UNDEFINED, beforeColumnWrap=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'activeHeaderClassName', 'afterAddChild', 'afterAutofill', 'afterBeginEditing', 'afterCellMetaReset', 'afterChange', 'afterColumnCollapse', 'afterColumnExpand', 'afterColumnFreeze', 'afterColumnMove', 'afterColumnResize', 'afterColumnSequenceChange', 'afterColumnSort', 'afterColumnUnfreeze', 'afterContextMenuDefaultOptions', 'afterContextMenuHide', 'afterContextMenuShow', 'afterCopy', 'afterCopyLimit', 'afterCreateCol', 'afterCreateRow', 'afterCut', 'afterDeselect', 'afterDestroy', 'afterDetachChild', 'afterDocumentKeyDown', 'afterDrawSelection', 'afterDropdownMenuDefaultOptions', 'afterDropdownMenuHide', 'afterDropdownMenuShow', 'afterFilter', 'afterFormulasValuesUpdate', 'afterGetCellMeta', 'afterGetColHeader', 'afterGetColumnHeaderRenderers', 'afterGetRowHeader', 'afterGetRowHeaderRenderers', 'afterHideColumns', 'afterHideRows', 'afterInit', 'afterLanguageChange', 'afterListen', 'afterLoadData', 'afterMergeCells', 'afterModifyTransformEnd', 'afterModifyTransformFocus', 'afterModifyTransformStart', 'afterMomentumScroll', 'afterNamedExpressionAdded', 'afterNamedExpressionRemoved', 'afterOnCellContextMenu', 'afterOnCellCornerDblClick', 'afterOnCellCornerMouseDown', 'afterOnCellMouseDown', 'afterOnCellMouseOut', 'afterOnCellMouseOver', 'afterOnCellMouseUp', 'afterPaste', 'afterPluginsInitialized', 'afterRedo', 'afterRedoStackChange', 'afterRefreshDimensions', 'afterRemoveCellMeta', 'afterRemoveCol', 'afterRemoveRow', 'afterRender', 'afterRenderer', 'afterRowMove', 'afterRowResize', 'afterRowSequenceChange', 'afterScroll', 'afterScrollHorizontally', 'afterScrollVertically', 'afterSelectColumns', 'afterSelectRows', 'afterSelection', 'afterSelectionByProp', 'afterSelectionEnd', 'afterSelectionEndByProp', 'afterSelectionFocusSet', 'afterSetCellMeta', 'afterSetDataAtCell', 'afterSetDataAtRowProp', 'afterSetSourceDataAtCell', 'afterSheetAdded', 'afterSheetRemoved', 'afterSheetRenamed', 'afterTrimRow', 'afterUndo', 'afterUndoStackChange', 'afterUnhideColumns', 'afterUnhideRows', 'afterUnlisten', 'afterUnmergeCells', 'afterUntrimRow', 'afterUpdateData', 'afterUpdateSettings', 'afterValidate', 'afterViewRender', 'afterViewportColumnCalculatorOverride', 'afterViewportRowCalculatorOverride', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'beforeAddChild', 'beforeAutofill', 'beforeBeginEditing', 'beforeCellAlignment', 'beforeChange', 'beforeChangeRender', 'beforeColumnCollapse', 'beforeColumnExpand', 'beforeColumnFreeze', 'beforeColumnMove', 'beforeColumnResize', 'beforeColumnSort', 'beforeColumnUnfreeze', 'beforeColumnWrap', 'beforeContextMenuSetItems', 'beforeContextMenuShow', 'beforeCopy', 'beforeCreateCol', 'beforeCreateRow', 'beforeCut', 'beforeDetachChild', 'beforeDrawBorders', 'beforeDropdownMenuSetItems', 'beforeDropdownMenuShow', 'beforeFilter', 'beforeGetCellMeta', 'beforeHideColumns', 'beforeHideRows', 'beforeHighlightingColumnHeader', 'beforeHighlightingRowHeader', 'beforeInit', 'beforeInitWalkontable', 'beforeKeyDown', 'beforeLanguageChange', 'beforeLoadData', 'beforeMergeCells', 'beforeOnCellContextMenu', 'beforeOnCellMouseDown', 'beforeOnCellMouseOut', 'beforeOnCellMouseOver', 'beforeOnCellMouseUp', 'beforePaste', 'beforeRedo', 'beforeRedoStackChange', 'beforeRefreshDimensions', 'beforeRemoveCellClassNames', 'beforeRemoveCellMeta', 'beforeRemoveCol', 'beforeRemoveRow', 'beforeRender', 'beforeRenderer', 'beforeRowMove', 'beforeRowResize', 'beforeRowWrap', 'beforeSelectColumns', 'beforeSelectRows', 'beforeSelectionFocusSet', 'beforeSelectionHighlightSet', 'beforeSetCellMeta', 'beforeSetRangeEnd', 'beforeSetRangeStart', 'beforeSetRangeStartOnly', 'beforeStretchingColumnWidth', 'beforeTouchScroll', 'beforeTrimRow', 'beforeUndo', 'beforeUndoStackChange', 'beforeUnhideColumns', 'beforeUnhideRows', 'beforeUnmergeCells', 'beforeUntrimRow', 'beforeUpdateData', 'beforeValidate', 'beforeValueRender', 'beforeViewRender', 'beforeViewportScroll', 'beforeViewportScrollHorizontally', 'beforeViewportScrollVertically', 'bindRowsWithHeaders', 'cell', 'cells', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'construct', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataDotNotation', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'globalBucket', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'init', 'invalidCellClassName', 'isEmptyCol', 'isEmptyRow', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'modifyAutoColumnSizeSeed', 'modifyAutofillRange', 'modifyColHeader', 'modifyColWidth', 'modifyColumnHeaderHeight', 'modifyColumnHeaderValue', 'modifyCopyableRange', 'modifyData', 'modifyFiltersMultiSelectValue', 'modifyFocusOnTabNavigation', 'modifyFocusedElement', 'modifyGetCellCoords', 'modifyRowData', 'modifyRowHeader', 'modifyRowHeaderWidth', 'modifyRowHeight', 'modifySourceData', 'modifyTransformEnd', 'modifyTransformFocus', 'modifyTransformStart', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'persistentStateLoad', 'persistentStateReset', 'persistentStateSave', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'id', 'activeHeaderClassName', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'bindRowsWithHeaders', 'cell', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentData', 'currentDataAtRow', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'getData', 'getDataAtRow', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'invalidCellClassName', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectedCells', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
+        self.available_properties = ['children', 'id', 'activeHeaderClassName', 'afterAddChild', 'afterAutofill', 'afterBeginEditing', 'afterCellMetaReset', 'afterChange', 'afterColumnCollapse', 'afterColumnExpand', 'afterColumnFreeze', 'afterColumnMove', 'afterColumnResize', 'afterColumnSequenceChange', 'afterColumnSort', 'afterColumnUnfreeze', 'afterContextMenuDefaultOptions', 'afterContextMenuHide', 'afterContextMenuShow', 'afterCopy', 'afterCopyLimit', 'afterCreateCol', 'afterCreateRow', 'afterCut', 'afterDeselect', 'afterDestroy', 'afterDetachChild', 'afterDocumentKeyDown', 'afterDrawSelection', 'afterDropdownMenuDefaultOptions', 'afterDropdownMenuHide', 'afterDropdownMenuShow', 'afterFilter', 'afterFormulasValuesUpdate', 'afterGetCellMeta', 'afterGetColHeader', 'afterGetColumnHeaderRenderers', 'afterGetRowHeader', 'afterGetRowHeaderRenderers', 'afterHideColumns', 'afterHideRows', 'afterInit', 'afterLanguageChange', 'afterListen', 'afterLoadData', 'afterMergeCells', 'afterModifyTransformEnd', 'afterModifyTransformFocus', 'afterModifyTransformStart', 'afterMomentumScroll', 'afterNamedExpressionAdded', 'afterNamedExpressionRemoved', 'afterOnCellContextMenu', 'afterOnCellCornerDblClick', 'afterOnCellCornerMouseDown', 'afterOnCellMouseDown', 'afterOnCellMouseOut', 'afterOnCellMouseOver', 'afterOnCellMouseUp', 'afterPaste', 'afterPluginsInitialized', 'afterRedo', 'afterRedoStackChange', 'afterRefreshDimensions', 'afterRemoveCellMeta', 'afterRemoveCol', 'afterRemoveRow', 'afterRender', 'afterRenderer', 'afterRowMove', 'afterRowResize', 'afterRowSequenceChange', 'afterScroll', 'afterScrollHorizontally', 'afterScrollVertically', 'afterSelectColumns', 'afterSelectRows', 'afterSelection', 'afterSelectionByProp', 'afterSelectionEnd', 'afterSelectionEndByProp', 'afterSelectionFocusSet', 'afterSetCellMeta', 'afterSetDataAtCell', 'afterSetDataAtRowProp', 'afterSetSourceDataAtCell', 'afterSheetAdded', 'afterSheetRemoved', 'afterSheetRenamed', 'afterTrimRow', 'afterUndo', 'afterUndoStackChange', 'afterUnhideColumns', 'afterUnhideRows', 'afterUnlisten', 'afterUnmergeCells', 'afterUntrimRow', 'afterUpdateData', 'afterUpdateSettings', 'afterValidate', 'afterViewRender', 'afterViewportColumnCalculatorOverride', 'afterViewportRowCalculatorOverride', 'allowEmpty', 'allowHtml', 'allowInsertColumn', 'allowInsertRow', 'allowInvalid', 'allowRemoveColumn', 'allowRemoveRow', 'ariaTags', 'autoColumnSize', 'autoRowSize', 'autoWrapCol', 'autoWrapRow', 'beforeAddChild', 'beforeAutofill', 'beforeBeginEditing', 'beforeCellAlignment', 'beforeChange', 'beforeChangeRender', 'beforeColumnCollapse', 'beforeColumnExpand', 'beforeColumnFreeze', 'beforeColumnMove', 'beforeColumnResize', 'beforeColumnSort', 'beforeColumnUnfreeze', 'beforeColumnWrap', 'beforeContextMenuSetItems', 'beforeContextMenuShow', 'beforeCopy', 'beforeCreateCol', 'beforeCreateRow', 'beforeCut', 'beforeDetachChild', 'beforeDrawBorders', 'beforeDropdownMenuSetItems', 'beforeDropdownMenuShow', 'beforeFilter', 'beforeGetCellMeta', 'beforeHideColumns', 'beforeHideRows', 'beforeHighlightingColumnHeader', 'beforeHighlightingRowHeader', 'beforeInit', 'beforeInitWalkontable', 'beforeKeyDown', 'beforeLanguageChange', 'beforeLoadData', 'beforeMergeCells', 'beforeOnCellContextMenu', 'beforeOnCellMouseDown', 'beforeOnCellMouseOut', 'beforeOnCellMouseOver', 'beforeOnCellMouseUp', 'beforePaste', 'beforeRedo', 'beforeRedoStackChange', 'beforeRefreshDimensions', 'beforeRemoveCellClassNames', 'beforeRemoveCellMeta', 'beforeRemoveCol', 'beforeRemoveRow', 'beforeRender', 'beforeRenderer', 'beforeRowMove', 'beforeRowResize', 'beforeRowWrap', 'beforeSelectColumns', 'beforeSelectRows', 'beforeSelectionFocusSet', 'beforeSelectionHighlightSet', 'beforeSetCellMeta', 'beforeSetRangeEnd', 'beforeSetRangeStart', 'beforeSetRangeStartOnly', 'beforeStretchingColumnWidth', 'beforeTouchScroll', 'beforeTrimRow', 'beforeUndo', 'beforeUndoStackChange', 'beforeUnhideColumns', 'beforeUnhideRows', 'beforeUnmergeCells', 'beforeUntrimRow', 'beforeUpdateData', 'beforeValidate', 'beforeValueRender', 'beforeViewRender', 'beforeViewportScroll', 'beforeViewportScrollHorizontally', 'beforeViewportScrollVertically', 'bindRowsWithHeaders', 'cell', 'cells', 'checkedTemplate', 'className', 'colHeaders', 'colWidths', 'collapsibleColumns', 'columnHeaderHeight', 'columnSorting', 'columnSummary', 'columns', 'commentedCellClassName', 'comments', 'construct', 'contextMenu', 'copyPaste', 'copyable', 'correctFormat', 'currentColClassName', 'currentHeaderClassName', 'currentRowClassName', 'customBorders', 'data', 'dataDotNotation', 'dataSchema', 'dateFormat', 'datePickerConfig', 'defaultDate', 'disableVisualSelection', 'dragToScroll', 'dropdownMenu', 'editor', 'enterBeginsEditing', 'enterMoves', 'exportData', 'exportDataParams', 'fillHandle', 'filter', 'filteringCaseSensitive', 'filters', 'fixedColumnsLeft', 'fixedColumnsStart', 'fixedRowsBottom', 'fixedRowsTop', 'formulas', 'fragmentSelection', 'globalBucket', 'height', 'hiddenColumns', 'hiddenRows', 'imeFastEdit', 'init', 'invalidCellClassName', 'isEmptyCol', 'isEmptyRow', 'label', 'language', 'layoutDirection', 'licenseKey', 'locale', 'manualColumnFreeze', 'manualColumnMove', 'manualColumnResize', 'manualRowMove', 'manualRowResize', 'maxCols', 'maxRows', 'mergeCells', 'minCols', 'minRows', 'minSpareCols', 'minSpareRows', 'modifyAutoColumnSizeSeed', 'modifyAutofillRange', 'modifyColHeader', 'modifyColWidth', 'modifyColumnHeaderHeight', 'modifyColumnHeaderValue', 'modifyCopyableRange', 'modifyData', 'modifyFiltersMultiSelectValue', 'modifyFocusOnTabNavigation', 'modifyFocusedElement', 'modifyGetCellCoords', 'modifyRowData', 'modifyRowHeader', 'modifyRowHeaderWidth', 'modifyRowHeight', 'modifySourceData', 'modifyTransformEnd', 'modifyTransformFocus', 'modifyTransformStart', 'multiColumnSorting', 'navigableHeaders', 'nestedHeaders', 'nestedRows', 'noWordWrapClassName', 'numericFormat', 'observeDOMVisibility', 'outsideClickDeselects', 'persistentState', 'persistentStateLoad', 'persistentStateReset', 'persistentStateSave', 'placeholder', 'placeholderCellClassName', 'preventOverflow', 'preventWheel', 'readOnly', 'readOnlyCellClassName', 'renderAllColumns', 'renderAllRows', 'renderer', 'rowHeaderWidth', 'rowHeaders', 'rowHeights', 'search', 'selectOptions', 'selectionMode', 'settings', 'skipColumnOnPaste', 'skipRowOnPaste', 'sortByRelevance', 'source', 'startCols', 'startRows', 'stretchH', 'strict', 'style', 'tabMoves', 'tabNavigation', 'tableClassName', 'title', 'trimDropdown', 'trimRows', 'trimWhitespace', 'type', 'uncheckedTemplate', 'undo', 'validator', 'viewportColumnRenderingOffset', 'viewportRowRenderingOffset', 'visibleRows', 'width', 'wordWrap']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
